@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Task;
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,13 +21,18 @@ Route::get('/about', function () {
 });
 
 Route::get('/tasks', function () {
-    $tasks = DB::table('tasks')->get();
+    //$tasks = DB::table('tasks')->get();
+
+    // Refering to app/Task (which is a model)
+    //$tasks = App\Task::all();
+    $tasks = Task::all(); // Dont need App\Task since we 'use' it.
     return view('tasks.index', compact('tasks'));
 });
 
 Route::get('/tasks/{task}', function ($id) {
-    $task = DB::table('tasks')->find($id);
+    //$task = DB::table('tasks')->find($id);
     //dd($task);
+    $task = App\Task::find($id);
     return view('tasks/show', compact('task'));
 });
 
