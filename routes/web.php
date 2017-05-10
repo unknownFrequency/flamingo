@@ -25,7 +25,7 @@ Route::get('/tasks', function () {
 
     // Refering to app/Task (which is a model)
     //$tasks = App\Task::all();
-    $tasks = Task::all(); // Dont need App\Task since we 'use' it.
+    $tasks = Task::all();
     return view('tasks.index', compact('tasks'));
 });
 

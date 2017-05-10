@@ -1,0 +1,183 @@
+#main-slider{
+  padding-top: 34px;
+  display: none;
+}
+
+
+#top-header{
+  padding: 22px 0;
+  background-color: #FFF;
+  box-shadow: 0px -1px 7px #888888;
+text-transform: uppercase;
+
+}
+
+#top-header img{
+  height: 70px;
+  margin-top: -16px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+  color: #404040;
+}
+
+.btn.btn-primary {
+    background: #cd1959;
+    border-color: #cd1959;
+}
+
+.btn.btn-primary:hover {
+    background: #cc4072;
+    border-color: #cc4072;
+}
+
+#main-slider .slider-inner h2 > span {
+    color: #cd1959;
+
+}
+#bar{
+  background: #cd1959;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #cd1959;
+    border-color: #cd1959;
+    margin-left: 20px;
+
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #cc4072;
+    border-color: #cc4072;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #cd1959;
+    background-color: #cd1959;
+}
+
+.navbar-inverse .navbar-toggle:active {
+    border-color: #cd1959;
+    background-color: #cd1959;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    border-color: #cd1959;
+    background-color: #cd1959;
+}
+
+.column-title:after{
+    border-bottom: 1px solid #cd1a5a;
+}
+
+#cta2 h2 > span{
+      color: #cd1959;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+  color: #cd1959;
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus{
+  color: #cd1959;
+}
+
+.navbar-inverse .navbar-toggle{
+  float: left;
+  margin-left: 23px;
+}
+
+
+#portfolio .portfolio-filter > li a:hover, #portfolio .portfolio-filter > li a.active{
+      background: #cd1959;
+}
+
+/*VideoSlider */
+
+.video-section .pattern-overlay {
+background-color: rgba(71, 71, 71, 0.59);
+padding: 110px 0 32px;
+min-height: 714px;
+/* Incase of overlay problems just increase the min-height*/
+}
+.video-section h1, .video-section h3{
+text-align:center;
+color:#fff;
+}
+.video-section h1{
+font-size:110px;
+font-family: 'Roboto', sans-serif;
+font-weight:bold;
+text-transform: uppercase;
+margin: 40px auto 0px;
+text-shadow: 1px 1px 1px #000;
+-webkit-text-shadow: 1px 1px 1px #000;
+-moz-text-shadow: 1px 1px 1px #000;
+}
+.video-section h3{
+font-size: 65px;
+font-weight:lighter;
+margin-top: 240px;
+}
+.video-section .buttonBar{display:none;}
+.player {font-size: 1px;}
+
+.VideoKnapper{
+  text-align: center;
+  padding: 30px;
+}
+
+.VideoKnapper .btn.btn-primary{
+    margin: 6px;
+}
+
+/*Bootstrap Tabs */
+
+
+#exTab1 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+#exTab2 h3 {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+  width: 25%;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+#exTab1 .nav-pills>li+li{
+  width: 25%;
+}
+
+#exTab3 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+.nav nav-pills{
+  max-width: 1000px;
+}
+
+.nav-pills > li > a {
+  width: 25%;
+}
+
+.productcontainer{
+  width: 100%;
+}

@@ -12,6 +12,7 @@
 
 </head>
 <body>
+    <!-- TASKS -->
     <h2>Opgaver</h2>
     <ul>
         @foreach ($tasks as $task)
