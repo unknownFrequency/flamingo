@@ -1,22 +1,15 @@
 <!doctype html>
 <html lang="{{ config('app.locale') }}">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Flamingo</title>
+@include('include/head')
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-</head>
 <body>
-    <h2>Opgaver</h2>
+    @include('../include/navigation')
+
+    <br />
+    <h2>{{ $task->title }}</h2>
     <ul>
-          <li>{{ $task->title }}</li>
           <li>{{ $task->body }}</li>
-          <br />
     </ul>
 </body>
 </html>
