@@ -13,8 +13,8 @@ class TasksController extends Controller
             compact('tasks')); // <-- What to pass to the view
     }
 
-    public function show($id) {
-        $task = Task::find($id);
+    public function show(Task $task) { // == Task::find(wildcard) where wildcard isset in routes->web.php
+//        $task = Task::find($task);
         return view('tasks/show', compact('task'));
     }
 
