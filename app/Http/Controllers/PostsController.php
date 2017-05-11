@@ -21,9 +21,15 @@ class PostsController extends Controller
 
     public function store() {
 //        dd(request()->all());
-        $post =  new Post;
+//        $post =  new Post;
 //        $post->title = request('title');
 //        $post->body = request('body');
+//        $post->save();
+
+        $this->validate(request(), [
+            'title' => 'required',
+            'body'  => 'required'
+        ]);
 
         //Mass Assignment
         Post::create([
@@ -31,7 +37,6 @@ class PostsController extends Controller
             'body'  => request('body')
         ]);
 
-        $post->save();
 
         return redirect('/artikler');
     }
