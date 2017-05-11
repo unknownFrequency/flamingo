@@ -1,15 +1,5 @@
-<!doctype html>
-<html lang="{{ config('app.locale') }}">
+@include('include/layout')
 
-@include('include/head')
-
-<body>
-    @include('../include/navigation')
-
-    <br />
-    <h2>{{ $task->title }}</h2>
-    <ul>
-          <li>{{ $task->body }}</li>
-    </ul>
-</body>
-</html>
+@section('content')
+    <h1>Artikler</h1>
+@endsection

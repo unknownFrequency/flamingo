@@ -4,9 +4,11 @@
 @include('include/head');
 @include('include/navigation');
 <body>
-    @yield('content');
+    <div class="container">
+        @yield('content');
+    </div>
 
-
+    {{-- TODO: Extract footer to separate file--}}
     @yield('footer');
 </body>
 

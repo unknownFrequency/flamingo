@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('include/layout')
 
 {{-- @section('content') is being yield()'ed in layout.blade.php--}}
 @section('content')
