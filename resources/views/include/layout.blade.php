@@ -2,14 +2,13 @@
 
 <html>
 @include('include/head');
-@include('include/navigation');
 <body>
+@include('include/navigation');
+
     <div class="container">
         @yield('content');
     </div>
 
-    {{-- TODO: Extract footer to separate file--}}
-    @yield('footer');
+@include('include/footer');
 </body>
-
 </html>

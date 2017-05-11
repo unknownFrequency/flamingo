@@ -1,10 +1,10 @@
 <?php
 
 // Post / Artikler siden
-Route::get('/artikler', 'PostsController@index');
-Route::get('/artikler/create', 'PostsController@create');
-Route::get('/artikler/{post}', 'PostsController@show');
-Route::post('/artikler', 'PostsController@store');
+Route::get('/posts', 'PostsController@index');
+Route::get('/post/create', 'PostsController@create');
+Route::get('/post/{post}', 'PostsController@show');
+Route::post('/post', 'PostsController@store');
 
 // Forsiden
 Route::get('/', function () {

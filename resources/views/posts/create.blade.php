@@ -3,7 +3,7 @@
 @section('content')
     <h1>Skriv en artikel</h1>
 
-    <form method="POST" action="/artikler">
+    <form method="POST" action="/post">
         {{ csrf_field() }}
 
         <div class="form-group">
@@ -16,21 +16,12 @@
             <textarea class="form-control" id="body" name="body" placeholder="Tekst" ></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary">Gem</button>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Gem</button>
+        </div>
     </form>
 
-    <br />
-    @if(count($errors))
-        <div class="form-group-lg">
-            <div class="alert alert-danger">
-                <ul>
-                    {{--$errors is available on ALL pages--}}
-                    @foreach($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        </div>
-    @endif
+@include('include/errors')
+
 
 @endsection
