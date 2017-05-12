@@ -10,7 +10,8 @@
 <hr>
 <p>
     <a href="/posts/{{ $post->id }}">
+        {{--Display only 350 chars of full body--}}
         {{ Illuminate\Support\Str::limit($post->body, 350) }}
     </a>
 </p>
-<a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+<a class="btn btn-primary" href="#">Læs mere <span class="glyphicon glyphicon-chevron-right"></span></a>
