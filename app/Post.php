@@ -13,4 +13,10 @@ class Post extends Model
     // Fields not allowed in Mass Assignment
     protected $guarded = [];
 
+    // Call this as a property instead of as a function to let Laravel eager-load the HasMany relationship
+    // $post->comments (try in tinker)
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
 }
