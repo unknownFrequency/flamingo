@@ -19,4 +19,19 @@ class Post extends Model
     {
         return $this->hasMany(Comment::class);
     }
+
+    // eg. $comment->post->user
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
+
+    public function addComment($body)
+    {
+        $this->comments()->create(compact('body')); //Using the relationship to comments
+//        $this->comments()->create(['body' => $body]); //Using the relationship to comments
+        Comment::create([
+            'body' => $body,
+            'post' => $this->id
+        ]);
+    }
 }

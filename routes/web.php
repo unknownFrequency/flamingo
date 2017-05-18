@@ -1,15 +1,20 @@
 <?php
 
 // Post sider
-Route::get('/posts', 'PostsController@index');
-Route::get('/post/create', 'PostsController@create');
-Route::get('/post/{post}', 'PostsController@show');
-Route::post('/post', 'PostsController@store');
+Route::get('/posts', 'PostsController@index')->name('home');;
+Route::get('/posts/create', 'PostsController@create');
+Route::get('/posts/{post}', 'PostsController@show');
+Route::post('/posts', 'PostsController@store');
+
+// Comments
+Route::post('/posts/{post}/comments', 'CommentsController@store');
 
 // Forsiden
 Route::get('/', function () { return view('welcome'); });
 
-Auth::routes();
+//Auth::routes();
 
-// For logged in users
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/register', 'RegistrationController@create');
+Route::post('/register', 'RegistrationController@store');
+Route::get('/login', 'SessionController@create');
+Route::get('/logout', 'SessionController@destroy');

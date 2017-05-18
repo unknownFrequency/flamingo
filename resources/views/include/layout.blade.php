@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 
 <html>
-@include('include/head');
+@include('include/head')
 <body>
-@include('include/navigation');
+@include('include/navigation')
 
     <div class="container">
-        @yield('content');
+        @yield('content')
     </div>
 
-@include('include/footer');
+@include('include/footer')
 </body>
 </html>

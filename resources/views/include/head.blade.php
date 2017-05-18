@@ -10,19 +10,19 @@
     <link href="<?= url('/') ?>/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- core CSS -->
-    <link href="<?= url('/') ?>/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?= url('/') ?>/css/animate.min.css" rel="stylesheet">
-    <link href="<?= url('/') ?>/css/owl.carousel.css" rel="stylesheet">
-    <link href="<?= url('/') ?>/css/owl.transitions.css" rel="stylesheet">
-    <link href="<?= url('/') ?>/css/prettyPhoto.css" rel="stylesheet">
-    <link href="<?= url('/') ?>/css/main.css" rel="stylesheet">
-    <link href="<?= url('/') ?>/css/responsive.css" rel="stylesheet">
-    <link href="<?= url('/') ?>/css/custom.css" rel="stylesheet">
-    <link href="<?= url('/') ?>/css/YTPlayer.css" rel="stylesheet">
+    {{--<link href="<?= url('/') ?>/css/bootstrap.min.css" rel="stylesheet">--}}
+    {{--<link href="<?= url('/') ?>/css/animate.min.css" rel="stylesheet">--}}
+    {{--<link href="<?= url('/') ?>/css/owl.carousel.css" rel="stylesheet">--}}
+    {{--<link href="<?= url('/') ?>/css/owl.transitions.css" rel="stylesheet">--}}
+    {{--<link href="<?= url('/') ?>/css/prettyPhoto.css" rel="stylesheet">--}}
+    {{--<link href="<?= url('/') ?>/css/main.css" rel="stylesheet">--}}
+    {{--<link href="<?= url('/') ?>/css/responsive.css" rel="stylesheet">--}}
+    {{--<link href="<?= url('/') ?>/css/custom.css" rel="stylesheet">--}}
+    {{--<link href="<?= url('/') ?>/css/YTPlayer.css" rel="stylesheet">--}}
 
     <!--[if lt IE 9]>
-    <script src="<?= url('/') ?>/js/html5shiv.js"></script>
-    <script src="<?= url('/') ?>/js/respond.min.js"></script>
+    <!--<script src="<?= url('/') ?>/js/html5shiv.js"></script>-->
+    <!--<script src="<?= url('/') ?>/js/respond.min.js"></script>-->
     <![endif]-->
 
     <link rel="shortcut icon" href="<?= url('/') ?>/images/favicon.ico">

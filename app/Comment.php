@@ -10,4 +10,9 @@ class Comment extends Model
     {
         return $this->belongsTo(Comment::class);
     }
+
+    // Eg. $comment->user->name
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
 }
