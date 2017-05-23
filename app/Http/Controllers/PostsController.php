@@ -10,6 +10,7 @@ class PostsController extends Controller
 
     function __construct()
     {
+        // Only allow these path with auth
         $this->middleware('auth')->except(['index', 'show']);
     }
 
@@ -42,10 +43,11 @@ class PostsController extends Controller
         //Mass Assignment
         Post::create([
             'title' => request('title'),
-            'body'  => request('body')
+            'body'  => request('body'),
+            'user_id' => auth()->id()
         ]);
 
 
-        return redirect('/artikler');
+        return redirect('/posts');
     }
 }
