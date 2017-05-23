@@ -1,5 +1,5 @@
 <h2>
-    <a href="/post/{{ $post->id }}">{{ $post->title }}</a>
+    <a href="/posts/{{ $post->id }}">{{ $post->title }}</a>
 </h2>
 <p class="lead">
     af: <strong>{{ $post->user->name }}</strong>
