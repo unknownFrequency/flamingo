@@ -10,7 +10,7 @@ Route::post('/posts', 'PostsController@store');
 Route::post('/posts/{post}/comments', 'CommentsController@store');
 
 // Forsiden
-Route::get('/', function () { return view('welcome'); });
+Route::get('/', function () { return view('index'); });
 
 //Auth::routes();
 
