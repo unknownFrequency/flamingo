@@ -17248,11 +17248,9 @@ window._ = __webpack_require__(33);
  * code may be modified to fit the specific needs of your application.
  */
 
-try {
-  window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__(2);
-  __webpack_provided_window_dot_Tether = __webpack_require__(3);
-  __webpack_require__(4);
-} catch (e) {}
+window.$ = __webpack_provided_window_dot_jQuery = __webpack_require__(2);
+__webpack_provided_window_dot_Tether = __webpack_require__(3);
+__webpack_require__(4);
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -17262,8 +17260,10 @@ try {
 
 window.axios = __webpack_require__(14);
 
-window.axios.defaults.headers.common['X-CSRF-TOKEN'] = window.Laravel.csrfToken;
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.axios.defaults.headers.common = {
+  'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+  'X-Requested-With': 'XMLHttpRequest'
+};
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
