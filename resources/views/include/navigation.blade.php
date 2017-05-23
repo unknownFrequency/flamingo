@@ -1,30 +1,38 @@
-<nav class="navbar navbar-toggleable-xl navbar-light bg-faded">
-<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
 
-<!-- Brand -->
-<a class="navbar-brand" href="#">Logo</a>
+<header id="top-header" nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
+  <div class="container">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img src={{asset('images/FlamingoLogoDONEDONE.png')}} alt=""></a>
 
-<!-- Links -->
-<div class="collapse navbar-collapse" id="nav-content">
-<ul class="navbar-nav">
-<li class="nav-item">
-<a class="nav-link" href="#">Link 1</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Link 2</a>
-</li>
-<li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-Dropdown
-</a>
-<div class="dropdown-menu" aria-labelledby="Preview">
-<a class="dropdown-item" href="#">Dropdown Link 1</a>
-<a class="dropdown-item" href="#">Dropdown Link 2</a>
-<a class="dropdown-item" href="#">Dropdown Link 3</a>
-</div>
-</li>
-</ul>
-</div>
-</nav>
+    <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent" role="navigation">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Forside <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Produkter
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Priser</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kontakt</a>
+        </li>
+      </ul>
+      <button class="btn btn-danger navbar-btn">FÅ ET TILBUD</button>
+
+    </div>
+  </div>
+</header>

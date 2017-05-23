@@ -14,6 +14,7 @@
 
     <!-- Styles -->
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ URL::asset('css/custom.css') }}" />
 
     <!-- Scripts -->
     <script>
@@ -24,10 +25,9 @@
 </head>
 <body>
 @include('include/navigation')
-<div id="app">
+
     @yield('content')
-</div>
-@include('include/footer')
+
 <!-- Scripts -->
 <script src="{{ mix('/js/app.js') }}"></script>
 </body>
