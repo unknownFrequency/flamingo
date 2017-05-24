@@ -21,10 +21,11 @@ class PostsController extends Controller
             monthname(created_at) as month, 
             count(*) as published')
             ->groupBy('year', 'month')
+            ->orderByRaw('min(created_at)')
             ->get()
             ->toArray();
-//        return $archives;
-        return view('posts/index', compact('posts'));
+
+        return view('posts/index', compact('posts', 'archives'));
     }
 
     public function show($id) {
