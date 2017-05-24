@@ -12,14 +12,18 @@ class CommentsController extends Controller
     public function store(Post $post)
     {
 
-//        $this->validate(request(), ['body' => 'required|min:2']);
+        $this->validate(request(), ['body' => 'required|min:2']);
 
-        Comment::create([
+        if(Comment::create([
             'body' => request('body'),
             'post_id' => $post->id,
             'user_id' => Auth::user()->id
-        ]);
+        ])) {
+            return back()->with('status', 'Tak for kommentaren');
+        } else {
+            return back()->with('status', 'Noget gik sku galt!');
+        }
 
-        return back();
+
     }
 }

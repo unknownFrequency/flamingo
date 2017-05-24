@@ -11,7 +11,15 @@
     </p>
     <hr>
 
+    <!-- Show messages -->
     @include('include/errors')
+
+    @if (session('status'))
+        <div class="alert alert-success">
+            {{ session('status') }}
+        </div>
+    @endif
+
     <!-- Comments Form -->
     <div class="well">
         <h4>Skriv en kommentar:</h4>
@@ -31,7 +39,8 @@
         @foreach($post->comments as $comment)
             <div class="media">
                 <div class="media-body">
-                    <h4 class="media-heading">TODO: Brugernavn
+                    <h4 class="media-heading">
+                        {{ $comment->user->name }}
                         <small>{{ $comment->created_at->diffForHumans() }}</small>
                     </h4>
                     &nbsp;&nbsp;{{ $comment->body }}
