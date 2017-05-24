@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 <header id="top-header" nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
   <div class="container">
@@ -33,6 +34,13 @@
       </ul>
       <button class="btn btn-danger navbar-btn">FÅ ET TILBUD</button>
 
+        <div class="pull-xs-right">
+            @if(isset(Auth::user()->name))
+                {{ Auth::user()->name }}
+            @else
+                <a href="/login">Login</a>
+            @endif
+        </div>
     </div>
   </div>
 </header>
