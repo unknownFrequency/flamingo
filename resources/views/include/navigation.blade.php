@@ -5,10 +5,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="#"><img src={{asset('images/FlamingoLogoDONEDONE.png')}} alt=""></a>
-
-    <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent" role="navigation">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="#">Forside <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">

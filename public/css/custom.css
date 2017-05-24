@@ -25,6 +25,17 @@ text-transform: uppercase;
     margin-left: 20px;
 }
 
+.navbar-light .navbar-nav .nav-link{
+  color: rgb(29, 29, 29);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+  color: #cd1959;
+  border-bottom: 1px solid;
+}
+
 /*VIDEO*/
 
 .video-section{
@@ -124,4 +135,3 @@ height: auto;
       background: #cd1959;
       border-color: #cd1959;
     }
-    
