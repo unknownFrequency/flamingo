@@ -11,7 +11,7 @@
     </p>
     <hr>
 
-    @include('layouts/errors)
+    @include('include/errors')
     <!-- Comments Form -->
     <div class="well">
         <h4>Skriv en kommentar:</h4>
@@ -27,14 +27,17 @@
     <hr>
 
     <!-- Comment -->
-    @foreach($post->comments as $comment)
-        <div class="media">
-            <div class="media-body">
-                <h4 class="media-heading">TODO: Brugernavn
-                    <small>{{ $comment->created_at->diffForHumans() }}</small>
-                </h4>
-                &nbsp;&nbsp;{{ $comment->body }}
+    @if(isset($post->comments) && !empty($post->comments))
+        @foreach($post->comments as $comment)
+            <div class="media">
+                <div class="media-body">
+                    <h4 class="media-heading">TODO: Brugernavn
+                        <small>{{ $comment->created_at->diffForHumans() }}</small>
+                    </h4>
+                    &nbsp;&nbsp;{{ $comment->body }}
+                </div>
             </div>
-        </div>
-    @endforeach
+        @endforeach
+    @endif
+
 @endsection

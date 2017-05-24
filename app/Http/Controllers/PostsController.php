@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use App\Auth;
 
 class PostsController extends Controller
 {
@@ -22,7 +23,7 @@ class PostsController extends Controller
             ->groupBy('year', 'month')
             ->get()
             ->toArray();
-        //return $archives;
+//        return $archives;
         return view('posts/index', compact('posts'));
     }
 

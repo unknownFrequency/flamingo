@@ -25,13 +25,17 @@ class Post extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function addComment($body)
+    public function addComment($body, $user_id)
     {
-        $this->comments()->create(compact('body')); //Using the relationship to comments
+//        $this->comments()->create(compact('body')); //Using the relationship to comments
 //        $this->comments()->create(['body' => $body]); //Using the relationship to comments
         Comment::create([
-            'body' => $body,
-            'post' => $this->id
+            'post_id' => $this->id,
+            'user_id' => $user_id,
+            'body'    => $body
         ]);
+        return redirect()->action(
+            'PostController@show', ['id' => $this->id])
+            ->with('status', 'Kommentar tilføjet');
     }
 }
