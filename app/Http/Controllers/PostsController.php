@@ -10,6 +10,7 @@ class PostsController extends Controller
 
     function __construct()
     {
+        // Only allow these path with auth
         $this->middleware('auth')->except(['index', 'show']);
     }
 
@@ -33,19 +34,23 @@ class PostsController extends Controller
 //        $post->title = request('title');
 //        $post->body = request('body');
 //        $post->save();
-
+//
         $this->validate(request(), [
             'title' => 'required',
             'body'  => 'required'
         ]);
 
         //Mass Assignment
-        Post::create([
-            'title' => request('title'),
-            'body'  => request('body')
-        ]);
-
-
-        return redirect('/artikler');
+//        Post::create([
+//            'title' => request('title'),
+//            'body'  => request('body'),
+//            'user_id' => auth()->id()
+//        ]);
+        // OR using our own method from model User
+        auth()->user()->publish(new Post(request(['title', 'body'])));
+        return redirect('/posts');
     }
+
+
+
 }

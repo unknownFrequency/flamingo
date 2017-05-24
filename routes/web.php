@@ -16,5 +16,7 @@ Route::get('/', function () { return view('index'); });
 
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
+
+Route::post('/login', 'SessionController@store'); // logging in
 Route::get('/login', 'SessionController@create');
 Route::get('/logout', 'SessionController@destroy');

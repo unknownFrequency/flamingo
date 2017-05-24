@@ -1,3 +1,10 @@
+p{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  margin: 0 0 10px;
+}
+
 /*HEADER*/
 #top-header{
 padding: 22px 0;
@@ -95,3 +102,26 @@ display: block;
 max-width: 100%;
 height: auto;
 }
+
+.column-title {
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+.column-title:after {
+      content: " ";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 40%;
+      border-bottom: 1px solid #cd1a5a;
+  }
+
+  .btn.btn-primary {
+      background: #cd1959;
+      border-color: #cd1959;
+    }
+    

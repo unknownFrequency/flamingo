@@ -1,4 +1,5 @@
 @extends('include/layout')
+<<<<<<< HEAD
 @section('content')
 <section class="video-section">
   <div class="video">
@@ -22,6 +23,7 @@
     <div class="row">
       <div class="col-sm-5 wow fadeInRight">
           <h3 class="column-title">Kort om os</h3>
+          
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
           <a class="btn btn-primary" href="#">Læs mere om os</a>
@@ -35,3 +37,5 @@
 
 </section>
 @endsection
+=======
+>>>>>>> 92e6d222badae19dfe409f09334bb4f4a2b4e4c4

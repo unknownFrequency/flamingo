@@ -6,12 +6,28 @@ use Illuminate\Http\Request;
 
 class SessionController extends Controller
 {
-    public function create() {
+    public function __construct()
+    {
+        // only user not logged in can access this page, except the destroy session method
+        $this->middleware('guest', ['except' => 'destroy']);
+    }
 
+    public function create() {
+        return view('sessions/create');
     }
 
     public function destroy() {
         auth()->logout();
         return redirect()->home();
+    }
+
+    public function store()
+    {
+        if(! auth()->attempt(request(['email', 'password']))) {
+            return back()->withErrors([
+                'message' => 'Check dine oplysninger og prøv igen...'
+            ]);
+        }
+        return redirect('index');
     }
 }

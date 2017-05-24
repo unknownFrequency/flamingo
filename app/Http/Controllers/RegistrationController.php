@@ -16,10 +16,10 @@ class RegistrationController extends Controller
             'password' => 'required|confirmed'
         ]);
 
-        $user = User::create(request(['name', 'email', 'password']));
+        $password = Hash::make(request('password'));
+        $user = User::create(request(['name', 'email', $password]));
 
         auth()->login($user);
-
         return redirect()->home();
     }
 
