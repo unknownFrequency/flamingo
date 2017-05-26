@@ -26,7 +26,14 @@
 <body>
 @include('include/navigation')
 
+    @if($flash = session('message'))
+       <div id="flash-message" class="alert alert-success" role="alert">
+           {{ $flash }}
+       </div>
+    @endif
+
     @yield('content')
+
 
 <!-- Scripts -->
 <script src="{{ mix('/js/app.js') }}"></script>

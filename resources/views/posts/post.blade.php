@@ -12,3 +12,4 @@
         {{ Illuminate\Support\Str::limit($post->body, 350) }}
     </a>
 </p>
+<hr />

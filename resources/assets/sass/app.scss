@@ -8,3 +8,10 @@
 
 // Bootstrap
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+#flash-message {
+  position:absolute;
+  top: 140px;
+  left: 40px;
+  z-index: 90;
+}

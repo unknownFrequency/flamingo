@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Post;
 use App\Auth;
+use Carbon\Carbon;
 
 class PostsController extends Controller
 {
@@ -16,7 +17,13 @@ class PostsController extends Controller
     }
 
     public function index() {
-        $posts = Post::latest()->get();
+        // If the url param month + year is present
+
+        $posts = Post::latest()
+            ->filter(request(['month', 'year']))
+            ->get();
+
+
         $archives = Post::selectRaw('year(created_at) as year, 
             monthname(created_at) as month, 
             count(*) as published')
@@ -57,7 +64,7 @@ class PostsController extends Controller
 //        ]);
         // OR using our own method from model User
         auth()->user()->publish(new Post(request(['title', 'body'])));
-        return redirect('/posts');
+        return redirect('/posts')->with('message', "Din post blev tilføjet");
     }
 
 
