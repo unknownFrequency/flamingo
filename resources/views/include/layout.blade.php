@@ -37,6 +37,11 @@
 
 <!-- Scripts -->
 <script src="{{ mix('/js/app.js') }}"></script>
+<script>
+    $(document).ready(function() {
+        $('#flash-message').fadeOut(8000);
+    });
+</script>
 </body>
 </html>
 </body>
