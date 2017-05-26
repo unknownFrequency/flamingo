@@ -20,9 +20,13 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'role_id'
     ];
 
+    // Setting default value of role to customer(id = 2)
+    protected $attributes = [
+        'role_id' => 2
+    ];
     /**
      * The attributes that should be hidden for arrays.
      *

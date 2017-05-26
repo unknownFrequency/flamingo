@@ -11,6 +11,7 @@ Route::post('/posts/{post}/comments', 'CommentsController@store');
 
 // Forsiden
 Route::get('/', function () { return view('index'); });
+Route::get('/admin', function() { return view('admin/index'); });
 
 //Auth::routes();
 
@@ -20,3 +21,4 @@ Route::post('/register', 'RegistrationController@store');
 Route::post('/login', 'SessionController@store'); // logging in
 Route::get('/login', 'SessionController@create');
 Route::get('/logout', 'SessionController@destroy');
+
