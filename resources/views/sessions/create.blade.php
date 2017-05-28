@@ -1,6 +1,9 @@
 @extends('include/layout')
 @section('content')
-    <div>Login</div>
+
+
+
+    <h4>Login</h4>
 
     @include('include/errors')
 <br /><br /><br /><br />
@@ -16,8 +19,9 @@
             <input type="password" class="form-control" id="password" name="password">
         </div>
 
-        <div class="form-group">
+        <div style="display: inline" class="form-group">
             <button type="submit" class="btn btn-primary">Login</button>
         </div>
+        <h4 style="display: inline; margin-left: 40px;"><small>Ikke registreret?... </small><a href="/register">Opret konto</a></h4>
     </form>
 @endsection
