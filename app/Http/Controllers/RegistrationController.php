@@ -22,7 +22,8 @@ class RegistrationController extends Controller
         $user = User::create([
             'name' => request('name'),
             'email' => request('email'),
-            'password' => $password
+            'password' => $password,
+            'role_id' => 2
         ]);
 
         auth()->login($user);

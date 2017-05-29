@@ -25,3 +25,13 @@ Route::get('/logout', 'SessionController@destroy');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
