@@ -11,8 +11,7 @@ Route::post('/posts/{post}/comments', 'CommentsController@store');
 
 // Forsiden
 Route::get('/', function () { return view('index'); });
-Route::get('/admin', function() { return view('admin/index'); });
-
+//Route::get('/admin', function() { return view('admin/index'); });
 //Auth::routes();
 
 Route::get('/register', 'RegistrationController@create');
@@ -23,4 +22,6 @@ Route::post('/login', 'SessionController@store'); // logging in
 Route::get('/login',['as' => 'login', 'uses' => 'SessionController@create']);
 Route::get('/logout', 'SessionController@destroy');
 
-
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

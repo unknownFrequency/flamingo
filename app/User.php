@@ -24,9 +24,9 @@ class User extends Authenticatable
     ];
 
     // Setting default value of role to customer(id = 2)
-    protected $attributes = [
-        'role_id' => 2
-    ];
+//    protected $attributes = [
+//        'role_id' => 2
+//    ];
     /**
      * The attributes that should be hidden for arrays.
      *

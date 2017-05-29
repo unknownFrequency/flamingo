@@ -4,10 +4,10 @@
 
     <!-- Page Content -->
     <p class="lead">
-        af {{ $post->user->name }}
+        af {{ App\User::find($post->author_id)->name }}
     </p>
     <p class="lead">
-        {{ $post->body }}
+        {!! $post->body !!}
     </p>
     <hr>
 

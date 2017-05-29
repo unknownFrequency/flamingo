@@ -2,7 +2,7 @@
 
 @section('content')
 
-    @include('posts/include/sidebar')
+    {{--@include('posts/include/sidebar')--}}
 
     @foreach($posts as $post)
         @include('posts/post')
