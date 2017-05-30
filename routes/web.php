@@ -22,16 +22,9 @@ Route::post('/login', 'SessionController@store'); // logging in
 Route::get('/login',['as' => 'login', 'uses' => 'SessionController@create']);
 Route::get('/logout', 'SessionController@destroy');
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
-
+Route::get('/pages/{slug}', 'PagesController@getPage');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
