@@ -10,11 +10,15 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Flamingo Media') }}</title>
 
     <!-- Styles -->
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ URL::asset('css/custom.css') }}" />
+    <link rel="stylesheet" href="{{ URL::asset('css/tabs.css') }}" />
+    <link rel="stylesheet" href="{{ URL::asset('css/tabstyles.css') }}" />
+    <link rel="stylesheet" href="{{ URL::asset('css/normalize.css') }}" />
+
 
     <!-- Scripts -->
     <script>
@@ -37,11 +41,27 @@
 
 <!-- Scripts -->
 <script src="{{ mix('/js/app.js') }}"></script>
+<<<<<<< HEAD
 <script>
     $(document).ready(function() {
         $('#flash-message').fadeOut(8000);
     });
 </script>
+=======
+<script src="{{ asset('/js/cbpFWTabs.js') }}"></script>
+<script src="{{ asset('/js/modernizr.custom.js') }}"></script>
+
+<script>
+  (function() {
+
+    [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
+      new CBPFWTabs( el );
+    });
+
+  })();
+</script>
+
+>>>>>>> frontpage-changes
 </body>
 </html>
 </body>
