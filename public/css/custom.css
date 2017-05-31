@@ -1,3 +1,24 @@
+body{
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #eee;
+    box-shadow: 0 0 60px 0 rgba(112,132,154,0.65);
+}
+
+a{
+  color: #cd1959;
+  text-decoration: none;
+}
+a:hover{
+  color: #cd1959;
+  text-decoration: none;
+}
+
+a:focus{
+  text-decoration: none;
+}
+
 p{
   font-size: 14px;
   line-height: 24px;
@@ -23,6 +44,12 @@ text-transform: uppercase;
     background-color: #cd1959;
     border-color: #cd1959;
     margin-left: 20px;
+}
+
+.btn {
+    border-width: 0;
+    border-bottom-width: 0px;
+    border-radius: 30px;
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -135,3 +162,173 @@ height: auto;
       background: #cd1959;
       border-color: #cd1959;
     }
+
+/*PRODUKT TABS */
+
+.forsideicon {
+    height: 40px;
+    padding-right: 14px;
+}
+
+.testimonial{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #242a33;
+}
+
+.quote-title{
+  margin: 0 auto;
+padding: 0;
+text-align: center;
+font-weight: 700;
+font-size: 3.8rem;
+line-height: 1;
+color: #FFF;
+}
+
+.reviews{
+  margin: 2rem 0 0 0;
+  padding: 0 0 4rem 0;
+}
+
+.reviews__item{
+  padding: 4rem;
+  -webkit-transform: rotate(-1deg);
+-moz-transform: rotate(-1deg);
+-ms-transform: rotate(-1deg);
+transform: rotate(-1deg);
+left: 8rem;
+background-image: url(../images/testimonial-background.png);
+background-size: 100% 100%;
+
+}
+
+.reviews__item p{
+  color: #fff;
+}
+
+.intro{
+  margin: 1.25em auto -0.75em auto;
+  padding: 0;
+  max-width: 100% !important;
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+
+cite{
+  color: #fff;
+}
+
+.header-highlight{
+    color: #cd1959;
+
+}
+.highlight {
+    background-color: #cd1959;
+    padding: 1px 2px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.nomargin {
+    margin: 0;
+}
+
+.portfolio-image img{
+  height: auto;
+  width: 100%;
+}
+
+.portfolio-overlay{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.46);;
+  z-index: 1;
+  opacity: 0.4;
+  top: 0;
+}
+
+.portfolio-overlay:hover{
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+  background: #cd1959;
+  cursor: pointer;
+
+}
+
+.portfolio-text h1{
+  color: #FFF;
+  font-weight: 200;
+  z-index: 7;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 32%;
+}
+
+.portfolio-text p{
+  color: #FFF;
+  font-weight: 200;
+  width: 65%;
+  z-index: 7;
+  margin: 0 auto;
+  text-align: center;
+}
+.portfolio-text hr{
+  color: #FFF;
+  
+}
+
+
+#myFooter {
+    background-color: #242a33;
+    color: white;
+    padding-top: 30px;
+    width: 100%;
+}
+#myFooter .row {
+    margin-bottom: 60px;
+}
+#myFooter .footer-copyright {
+    background-color: #333333;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+#myFooter h2 a {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+#myFooter .btn {
+    color: white;
+    background-color: #cd1959;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
