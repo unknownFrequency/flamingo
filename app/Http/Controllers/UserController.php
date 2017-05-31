@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -45,8 +46,11 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        if($id == Auth()->user()->id) {
-            return view('users/show', ['user' => Auth()->user()]);
+        $user = DB::table('users')
+            ->where('id', $id)
+            ->first();
+        if(isset($user) && $user->id == Auth()->user()->id || Auth()->user->role_id == 1) {
+            return view('users/show', ['user' => $user]);
         } else {
             echo "bUuuHuuu!";
         }
