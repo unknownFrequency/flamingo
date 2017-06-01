@@ -3,12 +3,11 @@
 <section class="video-section">
   <div class="video">
     <video autoplay="auto" loop="loop" muted="true"
-    poster="/~/media/nybolig/billeder/forside/barnpaagynge-jpg.jpg" src="{{asset('video/flamingo-slider2.mp4')}}">
+        poster="/~/media/nybolig/billeder/forside/barnpaagynge-jpg.jpg" src="{{asset('video/flamingo-slider2.mp4')}}">
     </video>
     <div class="overlay-video"></div>
   </div>
   <div class="text-wrapper">
-    <h1> Hjemmesider der er til at forstå </h1>
     <h1 class="video-text"> Hjemmesider der er til at forstå </h1>
     <div class="video-link">
       <a href="www.vimeo.com"> Se vores introvideo her! </a>

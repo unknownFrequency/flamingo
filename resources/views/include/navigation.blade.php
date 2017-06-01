@@ -31,7 +31,7 @@
 
         <div class="pull-xs-right">
             @if(isset(Auth::user()->name))
-                {{ Auth::user()->name }}
+                @include('include/usermenu')
             @else
                 <a href="/login">Login</a>
             @endif
