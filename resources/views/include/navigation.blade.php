@@ -24,6 +24,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Kontakt</a>
+
         </li>
       </ul>
       <button class="btn btn-danger navbar-btn">FÅ ET TILBUD</button>

@@ -30,24 +30,22 @@
 <body>
 @include('include/navigation')
 
-    @if($flash = session('message'))
-       <div id="flash-message" class="alert alert-success" role="alert">
-           {{ $flash }}
-       </div>
-    @endif
+@if($flash = session('message'))
+    <div id="flash-message" class="alert alert-success" role="alert">
+        {{ $flash }}
+    </div>
+@endif
 
-    @yield('content')
+@yield('content')
 
 
 <!-- Scripts -->
 <script src="{{ mix('/js/app.js') }}"></script>
-<<<<<<< HEAD
 <script>
     $(document).ready(function() {
         $('#flash-message').fadeOut(8000);
     });
 </script>
-=======
 <script src="{{ asset('/js/cbpFWTabs.js') }}"></script>
 <script src="{{ asset('/js/modernizr.custom.js') }}"></script>
 

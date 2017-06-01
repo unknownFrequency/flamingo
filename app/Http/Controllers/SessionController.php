@@ -29,6 +29,6 @@ class SessionController extends Controller
                 'message' => 'Check dine oplysninger og prøv igen...'
             ]);
         }
-        return redirect('index');
+        return redirect('/user/' . Auth()->user()->id)->with('message', 'Velkommen tilbage '. Auth()->user()->name ? Auth()->user()->name : '.');
     }
 }

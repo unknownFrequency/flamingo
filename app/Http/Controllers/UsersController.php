@@ -49,10 +49,14 @@ class UsersController extends Controller
         $user = DB::table('users')
             ->where('id', $id)
             ->first();
-        if(isset($user) && $user->id == Auth()->user()->id || Auth()->user->role_id == 1) {
-            return view('users/show', ['user' => $user]);
+
+        if(isset($user->id) && Auth()->user()) {
+            dd(Auth()->user()->id);
+            if($user->id == Auth()->user()->id || Auth()->user()->role_id == 1) {
+                return view('users/show', ['user' => $user]);
+            }
         } else {
-            echo "bUuuHuuu!";
+            return view('sessions/create');
         }
     }
 
@@ -64,7 +68,7 @@ class UsersController extends Controller
      */
     public function edit($id)
     {
-        //
+        return redirect('/admin/users/'.$id.'/edit');
     }
 
     /**
