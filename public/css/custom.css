@@ -242,13 +242,16 @@ cite{
 }
 
 .portfolio-overlay{
-  width: 100%;
   position: absolute;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.46);;
-  z-index: 1;
-  opacity: 0.4;
   top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .3s ease-out;
+  -webkit-transition: opacity .3s ease-out;
+  padding: 10%;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .portfolio-overlay:hover{
@@ -258,9 +261,9 @@ cite{
   -webkit-transition:.5s;
   /* ...and now for the proper property */
   transition:.5s;
-  background: #cd1959;
   cursor: pointer;
-
+  opacity: 1;
+  background-color: rgba(205, 25, 92, 0.41);
 }
 
 .portfolio-text h1{
@@ -269,7 +272,16 @@ cite{
   z-index: 7;
   margin: 0 auto;
   text-align: center;
-  margin-top: 32%;
+  margin-top: 3%;
+}
+
+.portfolio-text img{
+  width: 125px;
+  height: 125px;
+  display: block;
+  margin-left: auto;
+  margin-top: 1%;
+  margin-right: auto;
 }
 
 .portfolio-text p{
@@ -281,9 +293,14 @@ cite{
   text-align: center;
 }
 .portfolio-text hr{
-  color: #FFF;
-  
+    color: #FFF;
+    border-top: 1px solid;
+    width: 70%;
+    opacity: 0.6;
+
 }
+
+
 
 
 #myFooter {
