@@ -1,10 +1,9 @@
 @extends('include/layout')
-<<<<<<< HEAD
 @section('content')
 <section class="video-section">
   <div class="video">
     <video autoplay="auto" loop="loop" muted="true"
-    poster="/~/media/nybolig/billeder/forside/barnpaagynge-jpg.jpg" src="{{asset('video/flamingo-slider2.mp4')}}">
+        poster="/~/media/nybolig/billeder/forside/barnpaagynge-jpg.jpg" src="{{asset('video/flamingo-slider2.mp4')}}">
     </video>
     <div class="overlay-video"></div>
   </div>
@@ -105,7 +104,7 @@
   <div class="row nomargin">
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" onclick="setLocation('/resultater/5-green-comfort-a-s');" style="padding: 0px;">
         <div class="portfolio-image"><img src="{{asset('images/portfolio/freqenz_case.png')}}" alt="Frisør Freqenz"></div>
-        <div class="portfolio-overlay"><div class="portfolio-text"><img src="{{asset('images/portfolio/freqenz_logo.png')}}" alt="Frisør Freqenz Logo"><h1>Frisør Freqenz</h1><hr><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp</p> </div></div>
+        <div class="portfolio-overlay"><div class="portfolio-text"><img src="{{asset('images/portfolio/freqenz_logo.png')}}" alt="Frisør Freqenz"><h1>Frisør Freqenz</h1><hr><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp</p> </div></div>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" onclick="setLocation('/resultater/5-green-comfort-a-s');" style="padding: 0px;">
         <div class="portfolio-image"><img src="{{asset('images/portfolio/hshop_case.png')}}" alt="Frisør Freqenz"></div>
@@ -155,5 +154,3 @@
        @include('include.footer')
 
 @endsection
-=======
->>>>>>> 92e6d222badae19dfe409f09334bb4f4a2b4e4c4

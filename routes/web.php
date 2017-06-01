@@ -16,19 +16,16 @@ Route::get('/', function () { return view('index'); });
 
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
-
 Route::post('/login', 'SessionController@store'); // logging in
-//Route::get('/login', 'SessionController@create', [ 'as' => 'auth.login' ]) ;
 Route::get('/login',['as' => 'login', 'uses' => 'SessionController@create']);
 Route::get('/logout', 'SessionController@destroy');
 
 Route::get('/pages/{slug}', 'PagesController@getPage');
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
-
-
+// USERS
+Route::get('/users/{id}', 'UsersController@show');
+// edit action redirects to Voyager edit user view /admin/users/{id}/edit
+Route::get('/users/{id}/edit', 'UsersController@edit');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

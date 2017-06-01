@@ -242,6 +242,13 @@ cite{
 }
 
 .portfolio-overlay{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.46);;
+  z-index: 1;
+  opacity: 0.4;
+  top: 0;
   position: absolute;
   top: 0;
   width: 100%;
@@ -261,6 +268,8 @@ cite{
   -webkit-transition:.5s;
   /* ...and now for the proper property */
   transition:.5s;
+  background: #cd1959;
+  cursor: pointer;
   cursor: pointer;
   opacity: 1;
   background-color: rgba(205, 25, 92, 0.55);
@@ -272,6 +281,7 @@ cite{
   z-index: 7;
   margin: 0 auto;
   text-align: center;
+  margin-top: 32%;
   margin-top: 3%;
 }
 
@@ -291,15 +301,11 @@ cite{
   text-align: center;
 }
 .portfolio-text hr{
-    color: #FFF;
+  color: #FFF;
     border-top: 1px solid;
     width: 70%;
     opacity: 0.6;
-
 }
-
-
-
 
 #myFooter {
     background-color: #242a33;

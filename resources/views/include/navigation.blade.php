@@ -24,15 +24,16 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Kontakt</a>
+
         </li>
       </ul>
       <button class="btn btn-danger navbar-btn">FÅ ET TILBUD</button>
 
         <div class="pull-xs-right">
             @if(isset(Auth::user()->name))
-                {{ Auth::user()->name }}
+                @include('include/usermenu')
             @else
-                <a href="/login">Login</a>
+                <a href="/admin/login">Login</a>
             @endif
         </div>
     </div>
