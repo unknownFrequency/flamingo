@@ -51,9 +51,8 @@ class UsersController extends Controller
             ->first();
 
         if(isset($user->id) && Auth()->user()) {
-            dd(Auth()->user()->id);
             if($user->id == Auth()->user()->id || Auth()->user()->role_id == 1) {
-                return view('users/show', ['user' => $user]);
+                return redirect('/admin/users/'.$id);
             }
         } else {
             return view('sessions/create');

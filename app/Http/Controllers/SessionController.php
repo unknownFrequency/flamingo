@@ -14,7 +14,8 @@ class SessionController extends Controller
     }
 
     public function create() {
-        return view('sessions/create');
+//        return view('sessions/create');
+        return redirect('/admin/login');
     }
 
     public function destroy() {
@@ -29,6 +30,6 @@ class SessionController extends Controller
                 'message' => 'Check dine oplysninger og prøv igen...'
             ]);
         }
-        return redirect('/user/' . Auth()->user()->id)->with('message', 'Velkommen tilbage '. Auth()->user()->name ? Auth()->user()->name : '.');
+        return redirect('/users/' . Auth()->user()->id)->with('message', 'Velkommen tilbage '. Auth()->user()->name ? Auth()->user()->name : '.');
     }
 }

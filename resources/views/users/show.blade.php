@@ -7,5 +7,6 @@
    <p>Brugernavn: {{ $user->name }} </p>
    <p>Email: {{ $user->email }} </p>
    <p>Oprettet: {{ Carbon\Carbon::parse($user->created_at)->format('d-m/Y') }}</p>
-
+   <br />
+   <p><a href="/">Rediger profil</a></p>
 @endsection
