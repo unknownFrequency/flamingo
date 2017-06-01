@@ -263,7 +263,7 @@ cite{
   transition:.5s;
   cursor: pointer;
   opacity: 1;
-  background-color: rgba(205, 25, 92, 0.41);
+  background-color: rgba(205, 25, 92, 0.55);
 }
 
 .portfolio-text h1{
@@ -276,8 +276,6 @@ cite{
 }
 
 .portfolio-text img{
-  width: 125px;
-  height: 125px;
   display: block;
   margin-left: auto;
   margin-top: 1%;

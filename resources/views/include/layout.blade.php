@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="{{ URL::asset('css/tabstyles.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/normalize.css') }}" />
 
-
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -41,6 +40,7 @@
 
 <!-- Scripts -->
 <script src="{{ mix('/js/app.js') }}"></script>
+
 <<<<<<< HEAD
 <script>
     $(document).ready(function() {
@@ -50,6 +50,7 @@
 =======
 <script src="{{ asset('/js/cbpFWTabs.js') }}"></script>
 <script src="{{ asset('/js/modernizr.custom.js') }}"></script>
+
 
 <script>
   (function() {
