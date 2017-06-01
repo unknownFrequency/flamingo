@@ -22,13 +22,9 @@ Route::get('/logout', 'SessionController@destroy');
 
 Route::get('/pages/{slug}', 'PagesController@getPage');
 
-
 // USERS
-Route::get('/user/{id}', 'UserController@show');
-
-
+Route::get('/user/{id}', 'UsersController@show');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
-
