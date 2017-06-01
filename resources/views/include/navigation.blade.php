@@ -33,7 +33,7 @@
             @if(isset(Auth::user()->name))
                 @include('include/usermenu')
             @else
-                <a href="/login">Login</a>
+                <a href="/admin/login">Login</a>
             @endif
         </div>
     </div>

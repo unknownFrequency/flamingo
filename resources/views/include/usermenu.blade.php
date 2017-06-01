@@ -1,5 +1,5 @@
 @if(Auth()->user()->id)
-        {{ $user_avatar = Auth()->user()->avatar }}
+         <?php $user_avatar = Auth()->user()->avatar ?>
 @endif
 <ul class="nav navbar-nav navbar-right">
     <li class="dropdown profile">
@@ -7,15 +7,16 @@
             <img src="{{ $user_avatar }}" class="profile-img">
             <span class="caret"></span>
         </a>
+
         <ul class="dropdown-menu dropdown-menu-animated">
-            <li class="profile-img">
-                <img src="{{ $user_avatar }}" class="profile-img">
-                <div class="profile-body">
+            <li>
+                <div>
                     <h5>{{ Auth::user()->name }}</h5>
                     <h6>{{ Auth::user()->email }}</h6>
                 </div>
             </li>
             <li class="divider"></li>
+
             <?php $nav_items = config('voyager.dashboard.navbar_items'); ?>
             @if(is_array($nav_items) && !empty($nav_items))
                 @foreach($nav_items as $name => $item)
@@ -23,7 +24,7 @@
                         @if(isset($item['route']) && $item['route'] == 'voyager.logout')
                             <form action="{{ route('voyager.logout') }}" method="POST">
                                 {{ csrf_field() }}
-                                <button type="submit" class="btn btn-danger btn-block">
+                                <button type="submit" class="btn btn-danger btn-block text-center">
                                     @if(isset($item['icon_class']) && !empty($item['icon_class']))
                                         <i class="{!! $item['icon_class'] !!}"></i>
                                     @endif
