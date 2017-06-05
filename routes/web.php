@@ -27,6 +27,8 @@ Route::get('/users/{id}', 'UsersController@show');
 // edit action redirects to Voyager edit user view /admin/users/{id}/edit
 Route::get('/users/{id}/edit', 'UsersController@edit');
 
+Route::get('/messages', 'MessagesController@index');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
