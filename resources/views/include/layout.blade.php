@@ -40,6 +40,8 @@
 
 <!-- Scripts -->
 <script src="{{ mix('/js/app.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/typed.js') }}"></script>
+
 
 <script>
     $(document).ready(function() {
@@ -58,7 +60,13 @@
     });
 
   })();
+
+  document.addEventListener("DOMContentLoaded", function(){
+		Typed.new(".element", {
+		});
+	});
 </script>
+
 
 </body>
 </html>

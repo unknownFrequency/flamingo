@@ -27,13 +27,13 @@
 
         </li>
       </ul>
-      <button class="btn btn-danger navbar-btn">FÅ ET TILBUD</button>
+      <div class="call-icon"> <img src="{{asset('images/call-icon.png')}}"></div>
 
         <div class="pull-xs-right">
             @if(isset(Auth::user()->name))
                 @include('include/usermenu')
             @else
-                <a href="/admin/login">Login</a>
+                <a class="login" href="/admin/login">Login<img src="{{asset('images/login-icon.png')}}"></a>
             @endif
         </div>
     </div>

@@ -8,7 +8,7 @@
     <div class="overlay-video"></div>
   </div>
   <div class="text-wrapper">
-    <h1 class="video-text"> Hjemmesider der er til at forstå </h1>
+    <h1 class="video-text"> <span class="element"></span> der er til at forstå </h1>
     <div class="video-link">
       <a href="www.vimeo.com"> Se vores introvideo her! </a>
     </div>
