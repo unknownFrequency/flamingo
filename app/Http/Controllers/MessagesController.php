@@ -27,6 +27,28 @@ class MessagesController extends Controller
         return view('messages/create');
     }
 
+    public function edit($id)
+    {
+        $message = Message::findOrFail($id);
+        return view('messages/edit', compact('id', 'message'));
+    }
+
+    public function update($id)
+    {
+        $this->validate(request(), [
+            'title'  => 'required',
+            'body'  => 'required'
+        ]);
+
+        $message = Message::findOrFail($id);
+        $message->update([
+            'title' => request('title'),
+            'body' => request('body')
+        ]);
+
+        return redirect("/messages/{$message->id}");
+    }
+
     public function store()
     {
         $this->validate(request(), [
@@ -38,12 +60,12 @@ class MessagesController extends Controller
             'user_id' => auth()->id(),
             'title'    => request('title'),
             'body'    => request('body')
-        ]))
-        {
+        ])) {
             return redirect("/messages/". $message->id)->with('message', 'Tak for beskeden');
         } else {
             return back()->with('status', 'Noget gik sku galt!');
-        }    }
+        }
+    }
 
     public function show($id)
     {

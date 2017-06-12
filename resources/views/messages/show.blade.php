@@ -8,14 +8,15 @@
     <small style="margin-left: 10px; background-color: greenyellow; padding: 10px;">
         Oprettet: {{ $message->created_at->diffForHumans() }}
     </small>
-    <p style="display: inline; margin-left: 30px;">
-        <a href="{{URL::to('/messages/' . $message->id . '/edit')}}">Rediger</a>
-    </p>
     @if(isset($message->updated_at) && $message->updated_at != $message->created_at)
         <small style="margin-left: 10px; background-color: yellow; padding: 10px;">
             Opdateret: {{ $message->updated_at->diffForHumans() }}
         </small>
     @endif
+
+    <p style="display: inline; margin-left: 30px;">
+        <a href="{{URL::to('/messages/' . $message->id . '/edit')}}">Rediger</a>
+    </p>
 
     <p style="padding: 30px;">
         {{ $message->body }}
@@ -32,7 +33,7 @@
                {{ $response->body }}
             </p>
         @endforeach
-    @endif;
+    @endif
 
     @include('messages.respond', ['message_id' => $message->id])
 
