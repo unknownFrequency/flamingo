@@ -46,9 +46,7 @@ text-transform: uppercase;
 }
 
 .btn {
-    border-width: 0;
-    border-bottom-width: 0px;
-    border-radius: 30px;
+  border-radius: 0px;
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -61,6 +59,13 @@ text-transform: uppercase;
   color: #cd1959;
   border-bottom: 1px solid;
 }
+.dropdown-toggle:focus{
+  color: #cd1959;
+}
+
+.dropdown-toggle:hover{
+  border-bottom: 1px solid;
+}
 
 .dropdown-toggle img{
   border-radius: 40px;
@@ -68,6 +73,120 @@ text-transform: uppercase;
   height: 50px !important;
   margin-left: 35px;
   margin-top: 0px !important;
+}
+
+.dropdown-line{
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgb(204, 30, 89);
+}
+.dropdown-toggle{
+  display: block;
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+}
+
+.show > .dropdown-menu{
+  display: inline-flex;
+
+}
+
+.show > a:focus{
+  color: #cd1959;
+}
+
+.dropdown-large {
+  position: static !important;
+
+}
+.dropdown-menu-large {
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 20px 0px;
+}
+.dropdown-menu-large > li > ul {
+  padding: 0;
+  margin: 0;
+}
+.dropdown-menu-large > li > ul > li {
+  list-style: none;
+}
+
+.dropdown-menu.dropdown-menu-large.row{
+  opacity: 0.9;
+}
+
+.dropdown-menu-large > li > ul > li > a {
+  display: block;
+  padding: 6px 21px;
+  text-transform: capitalize;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: normal;
+}
+.dropdown-menu-large > li ul > li > a:hover,
+.dropdown-menu-large > li ul > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #f5f5f5;
+}
+.dropdown-menu-large .disabled > a,
+.dropdown-menu-large .disabled > a:hover,
+.dropdown-menu-large .disabled > a:focus {
+  color: #999999;
+}
+.dropdown-menu-large .disabled > a:hover,
+.dropdown-menu-large .disabled > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: not-allowed;
+}
+.dropdown-menu-large .dropdown-header {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  margin: -20px -15px 19px -16px;
+  background-color: #ca1f5b;
+  padding: 23px 0px 23px 0px;
+  transition: opacity .3s ease-out;
+  -webkit-transition: opacity .3s ease-out;
+  box-shadow: 0px 1px 4px rgba(20, 12, 25, 0.52);
+}
+
+.dropdown-menu-large .dropdown-header:hover{
+      background-color: #9a1f4b;
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      /* ...and now for the proper property */
+      transition:.5s;
+}
+
+
+@media (max-width: 768px) {
+  .dropdown-menu-large {
+    margin-left: 0 ;
+    margin-right: 0 ;
+  }
+  .dropdown-menu-large > li {
+    margin-bottom: 30px;
+  }
+  .dropdown-menu-large > li:last-child {
+    margin-bottom: 0;
+  }
+  .dropdown-menu-large .dropdown-header {
+    padding: 3px 15px !important;
+  }
+}
+
+.dropdown-menu{
+  border-radius: 0px;
+  top: 116%;
 }
 
 .call-icon img{
@@ -131,6 +250,28 @@ a.login img{
   font-weight: lighter;
 }
 
+.video-image{
+  float: right;
+  height: 110px;
+  margin: 70px 0px 0px 0px;
+  opacity: 0.7;
+  transition: opacity .3s ease-out;
+  -webkit-transition: opacity .3s ease-out;
+  -webkit-box-shadow: 0px 0px 29px -5px rgba(0,0,0,0.51);
+-moz-box-shadow: 0px 0px 29px -5px rgba(0,0,0,0.51);
+box-shadow: 0px 0px 29px -5px rgba(0,0,0,0.51);
+}
+
+.video-image:hover{
+  opacity: 1;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+
 .typed-cursor{
 	opacity: 1;
 	-webkit-animation: blink 0.7s infinite;
@@ -151,6 +292,10 @@ a.login img{
 	0% { opacity:1; }
 	50% { opacity:0; }
 	100% { opacity:1; }
+}
+
+span.element{
+  font-weight: 400;
 }
 
 
@@ -209,6 +354,10 @@ height: auto;
   .btn.btn-primary {
       background: #cd1959;
       border-color: #cd1959;
+    }
+
+  .btn.btn-primary:focus{
+      color: #fff;
     }
 
 /*PRODUKT TABS */
@@ -393,11 +542,17 @@ cite{
 #myFooter .btn {
     color: white;
     background-color: #cd1959;
-    border-radius: 20px;
     border: none;
     width: 150px;
     display: block;
     margin: 0 auto;
     margin-top: 10px;
     line-height: 25px;
+}
+
+.fancybox-slide--video .fancybox-content {
+	width  : 800px;
+	height : 600px;
+	max-width  : 80%;
+	max-height : 80%;
 }

@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="{{ URL::asset('css/tabs.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/tabstyles.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/normalize.css') }}" />
+    <link rel="stylesheet" href="{{ URL::asset('css/fancybox/jquery.fancybox.min.css') }}" />
+    <link rel="stylesheet" href="{{ URL::asset('css/fancybox/jquery.fancybox.css') }}" />
+
+
 
     <!-- Scripts -->
     <script>
@@ -50,6 +54,10 @@
 </script>
 <script src="{{ asset('/js/cbpFWTabs.js') }}"></script>
 <script src="{{ asset('/js/modernizr.custom.js') }}"></script>
+<script src="{{ asset('/js/fancybox/jquery.fancybox.min.js') }}"></script>
+<script src="{{ asset('/js/fancybox/jquery.fancybox.js') }}"></script>
+<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+
 
 
 <script>

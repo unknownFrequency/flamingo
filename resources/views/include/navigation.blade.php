@@ -6,21 +6,61 @@
     <a class="navbar-brand" href="#"><img src={{asset('images/FlamingoLogoDONEDONE.png')}} alt=""></a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Produkter
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
+        <li class="dropdown dropdown-large">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Produkter <b class="caret"></b></a>
+
+				<ul class="dropdown-menu dropdown-menu-large row">
+            <li class="col-sm-3">
+						<ul>
+						<a href="#"><li class="dropdown-header">Webløsninger</li></a>
+              <li><a href="#">Wordpress</a></li>
+              <li><a href="#">Bootstrap</a></li>
+              <li><a href="#">Søgeoptimering</a></li>
+              <li><a href="#">Custom Kode</a></li>
+              <li><a href="#">Programmering</a></li>
+						</ul>
+					</li>
+          <li class="col-sm-3">
+						<ul>
+							<a href="#"><li class="dropdown-header">Webshops</li></a>
+              <li><a href="#">Magento</a></li>
+							<li><a href="#">WooCommerce</a></li>
+							<li><a href="#">Shopify</a></li>
+              <li><a href="#">Andet</a></li>
+
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<a href="#"><li class="dropdown-header">Grafisk Arbejde</li></a>
+							<li><a href="#">Logo</a></li>
+							<li><a href="#">Hjemmeside Materiale</a></li>
+							<li><a href="#">Tryksager</a></li>
+							<li><a href="#">Nesting</a></li>
+							<li><a href="#">Vertical variation</a></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<a href="#"><li class="dropdown-header">Foto/Video</li></a>
+							<li><a href="#">Default navbar</a></li>
+							<li><a href="#">Buttons</a></li>
+							<li><a href="#">Text</a></li>
+							<li><a href="#">Non-nav links</a></li>
+							<li><a href="#">Component alignment</a></li>
+						</ul>
+					</li>
+				</ul>
+
+			</li>
         <li class="nav-item">
           <a class="nav-link" href="#">Priser</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cases</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Kontakt</a>

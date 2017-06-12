@@ -10,10 +10,9 @@
   <div class="text-wrapper">
     <h1 class="video-text"> <span class="element"></span> der er til at forstå </h1>
     <div class="video-link">
-      <a href="www.vimeo.com"> Se vores introvideo her! </a>
+      <a data-fancybox="gallery" href="www.vimeo.com"><img class="video-image" src="{{asset('images/video-image.png')}}" alt=""></a>
     </div>
   </div>
-
 </section>
 
 <section class="about">
@@ -58,7 +57,12 @@
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <h2> Produkter </h2>
-            <p>Test</p>
+              <a class="btn btn-primary" href="#">Produkt</a>
+              <a class="btn btn-primary" href="#">Produkt</a>
+              <a class="btn btn-primary" href="#">Produkt</a>
+              <a class="btn btn-primary" href="#">Produkt</a>
+              <a class="btn btn-primary" href="#">Produkt</a>
+            </div>
           </div>
         </div>
       </section>
