@@ -14,7 +14,7 @@
         </small>
     @endif
 
-    <p style="display: inline; margin-left: 30px;">
+    <p style="margin: 20px 0 0 15px;">
         <a href="{{URL::to('/messages/' . $message->id . '/edit')}}">Rediger</a>
     </p>
 
