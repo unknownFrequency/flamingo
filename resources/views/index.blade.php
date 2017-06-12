@@ -10,7 +10,7 @@
   <div class="text-wrapper">
     <h1 class="video-text"> <span class="element"></span> der er til at forstå </h1>
     <div class="video-link">
-      <a data-fancybox="gallery" href="www.vimeo.com"><img class="video-image" src="{{asset('images/video-image.png')}}" alt=""></a>
+      <a href="www.vimeo.com"><img class="video-image" src="{{asset('images/video-image.png')}}" alt=""></a>
     </div>
   </div>
 </section>
@@ -54,15 +54,6 @@
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <h2> En fed overskrift </h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h2> Produkter </h2>
-              <a class="btn btn-primary" href="#">Produkt</a>
-              <a class="btn btn-primary" href="#">Produkt</a>
-              <a class="btn btn-primary" href="#">Produkt</a>
-              <a class="btn btn-primary" href="#">Produkt</a>
-              <a class="btn btn-primary" href="#">Produkt</a>
-            </div>
           </div>
         </div>
       </section>
