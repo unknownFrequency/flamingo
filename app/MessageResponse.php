@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Message extends Model
+class MessageResponse extends Model
 {
     // For allowing Mass Assignments. Like in Rails
     protected $fillable = ['user_id', 'title', 'body'];
@@ -16,8 +16,8 @@ class Message extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function messageResponse() {
-        return $this->hasMany(MessageResponse::class);
+    public function message() {
+        return $this->belongsTo(Message::class);
     }
 
     public function addMessage($title, $body, $user_id)

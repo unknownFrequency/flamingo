@@ -28,7 +28,9 @@ Route::get('/users/{id}', 'UsersController@show');
 Route::get('/users/{id}/edit', 'UsersController@edit');
 
 Route::get('/messages', 'MessagesController@index');
+Route::get('/messages/{id}', 'MessagesController@show');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+

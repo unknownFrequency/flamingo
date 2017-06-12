@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Auth;
 use App\Message;
 
-class MessagesController extends Controller
+class MessageResponsesController extends Controller
 {
 
 
@@ -25,10 +25,6 @@ class MessagesController extends Controller
     public function show($id)
     {
         $message = Message::find($id);
-        if(isset($message->messageResponse)) {
-            $responses = $message->messageResponse;
-        }
-
-        return view('messages/show', compact('message', 'responses'));
+        return view('messages/show', compact('message'));
     }
 }

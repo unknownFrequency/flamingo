@@ -35,7 +35,7 @@ class PostsController extends Controller
 //            ->get()
 //            ->toArray();
 
-        return view('posts/index', compact('posts'/*, 'archives'*/));
+        return view('posts/index', compact('posts'));
     }
 
     public function show($id) {
