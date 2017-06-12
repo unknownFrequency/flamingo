@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="{{ URL::asset('css/tabstyles.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/normalize.css') }}" />
 
-
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -41,6 +40,9 @@
 
 <!-- Scripts -->
 <script src="{{ mix('/js/app.js') }}"></script>
+<script type="text/javascript" src="{{ URL::asset('js/typed.js') }}"></script>
+
+
 <script>
     $(document).ready(function() {
         $('#flash-message').fadeOut(8000);
@@ -48,6 +50,7 @@
 </script>
 <script src="{{ asset('/js/cbpFWTabs.js') }}"></script>
 <script src="{{ asset('/js/modernizr.custom.js') }}"></script>
+
 
 <script>
   (function() {
@@ -57,7 +60,13 @@
     });
 
   })();
+
+  document.addEventListener("DOMContentLoaded", function(){
+		Typed.new(".element", {
+		});
+	});
 </script>
+
 
 </body>
 </html>
