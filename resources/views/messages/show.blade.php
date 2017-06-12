@@ -14,18 +14,20 @@
         </small>
     @endif
 
-    <p style="margin: 20px 0 0 15px;">
-        <a href="{{URL::to('/messages/' . $message->id . '/edit')}}">Rediger</a>
+    <p style="padding: 30px 0 0 15px;">
+        {{ $message->body }}
     </p>
 
-    <p style="padding: 30px;">
-        {{ $message->body }}
+    <p style="margin: 0px 0 0 15px;">
+        <a href="{{URL::to('/messages/' . $message->id . '/edit')}}">Rediger</a>
     </p>
 
     @if(isset($responses) && !empty($responses))
         @foreach($responses as $response)
             <p style="padding: 30px 0 10px 60px;">
-                <a href="admin/users/" . {{ $response->responder_id }}>{{ App\User::find($response->responder_id)->name }}</a>
+                <a href='{{ URL::to("admin/users/{$response->responder_id}") }}'>
+                    {{ App\User::find($response->responder_id)->name }}
+                </a>
                 <span style="font-size: 10px;">{{ Carbon\Carbon::parse($response->created_at)->format('m/d-Y, H:i') }}</span>
             </p>
 
