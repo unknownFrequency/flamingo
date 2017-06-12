@@ -22,6 +22,29 @@ class MessagesController extends Controller
         return view('messages/index', compact('messages'));
     }
 
+    public function create()
+    {
+        return view('messages/create');
+    }
+
+    public function store()
+    {
+        $this->validate(request(), [
+            'title'  => 'required',
+            'body'  => 'required'
+        ]);
+
+        if($message = Message::create([
+            'user_id' => auth()->id(),
+            'title'    => request('title'),
+            'body'    => request('body')
+        ]))
+        {
+            return redirect("/messages/". $message->id)->with('message', 'Tak for beskeden');
+        } else {
+            return back()->with('status', 'Noget gik sku galt!');
+        }    }
+
     public function show($id)
     {
         $message = Message::find($id);
