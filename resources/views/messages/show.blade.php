@@ -6,11 +6,11 @@
     </h1>
 
     <small style="margin-left: 10px; background-color: greenyellow; padding: 10px;">
-        Oprettet: {{ $message->created_at->diffForHumans() }}
+        Oprettet: {{ Carbon\Carbon::parse($message->created_at)->format('m/d-Y, H:i') }}
     </small>
     @if(isset($message->updated_at) && $message->updated_at != $message->created_at)
         <small style="margin-left: 10px; background-color: yellow; padding: 10px;">
-            Opdateret: {{ $message->updated_at->diffForHumans() }}
+            Opdateret: {{ Carbon\Carbon::parse($message->updated_at)->format('m/d-Y, H:i') }}
         </small>
     @endif
 
