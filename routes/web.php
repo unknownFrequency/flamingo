@@ -30,7 +30,20 @@ Route::get('/users/{id}/edit', 'UsersController@edit');
 Route::get('/messages', 'MessagesController@index');
 Route::get('/messages/{id}', 'MessagesController@show');
 
+Route::get('/messages/{id}/respond', 'MessageResponsesController@create');
+Route::post('/messages/{id}/respond', 'MessageResponsesController@store');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

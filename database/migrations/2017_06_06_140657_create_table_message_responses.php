@@ -18,6 +18,7 @@ class CreateTableMessageResponses extends Migration
             $table->string('body');
             $table->integer('message_id')->references('id')->on('messages')->unsigned();
             $table->integer('responder_id')->references('id')->on('users')->unsigned();
+            $table->timestamps();
         });
     }
 

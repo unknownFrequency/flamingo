@@ -20,18 +20,18 @@ class MessageResponse extends Model
         return $this->belongsTo(Message::class);
     }
 
-    public function addMessage($title, $body, $user_id)
-    {
-        if(Message::create([
-            'id' => $this->id,
-            'user_id' => $user_id,
-            'title'    => $title,
-            'body'    => $body
-        ]))
-        {
-            return back()->with('status', 'Tak for kommentaren');
-        } else {
-            return back()->with('status', 'Noget gik sku galt!');
-        }
-    }
+//    public function addMessage($title, $body, $user_id)
+//    {
+//        if(Message::create([
+//            'id' => $this->id,
+//            'user_id' => $user_id,
+//            'title'    => $title,
+//            'body'    => $body
+//        ]))
+//        {
+//            return back()->with('status', 'Tak for kommentaren');
+//        } else {
+//            return back()->with('status', 'Noget gik sku galt!');
+//        }
+//    }
 }

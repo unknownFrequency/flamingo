@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\MessageResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Auth;
@@ -9,22 +10,27 @@ use App\Message;
 
 class MessageResponsesController extends Controller
 {
+//    protected $fillable = ['message_id', 'responder_id', 'body'];
 
-
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    public function create($message_id)
     {
-        $messages  = DB::select('select * from messages where user_id = ?', [Auth::user()->id]);
-        return view('messages/index', compact('messages'));
+        return view('messages/respond', compact('message_id'));
     }
 
-    public function show($id)
+    public function store($id)
     {
-        $message = Message::find($id);
-        return view('messages/show', compact('message'));
+        $this->validate(request(), [
+            'body'  => 'required'
+        ]);
+
+        $response = New MessageResponse;
+        $response->message_id = $id;
+        $response->responder_id = auth()->id();
+        $response->body = request('body');
+
+        if($response->save()) {
+            return back()->with('message', 'Tak for dit svar');
+        }
     }
+
 }
