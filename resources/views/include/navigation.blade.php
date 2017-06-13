@@ -57,7 +57,7 @@
           <a class="nav-link" href="#">Priser</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="{{ URL::to('/posts') }}">Blog</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#portfolio">Cases</a>

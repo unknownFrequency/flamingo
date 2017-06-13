@@ -3,9 +3,9 @@
 @section('content')
 
     {{--@include('posts/include/sidebar')--}}
-
-    @foreach($posts as $post)
-        @include('posts/post')
-    @endforeach
-
+    <div class="text-center" style="margin-top:40px;">
+        @foreach($posts as $post)
+            @include('posts/post')
+        @endforeach
+    </div>
 @endsection
