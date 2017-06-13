@@ -39,6 +39,11 @@ text-transform: uppercase;
   height: 60px;
 }
 
+.navbar-light .navbar-toggler{
+  position: initial;
+  float: right;
+}
+
 .btn-danger {
     color: #fff;
     background-color: #cd1959;
@@ -185,6 +190,25 @@ text-transform: uppercase;
   }
 }
 
+@media (max-width: 991px) {
+  .dropdown-toggle{
+      display: block;
+      font-size: 1.2em;
+      padding: 25px 0px 8px 0px;
+      text-align: center;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+  .navbar-light .navbar-nav .nav-link{
+    text-align: center;
+    font-size: 1.2em;
+    width: 50%;
+    margin: 0 auto;
+  }
+  }
+
+
 .dropdown-menu{
   border-radius: 0px;
   top: 116%;
@@ -251,16 +275,19 @@ a.login img{
   font-weight: lighter;
 }
 
+.video-link{
+  padding-top: 30px;
+  border-top: 1px solid;
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
 .video-image{
-  float: right;
-  height: 165px;
-  margin: 115px 0px 0px 0px;
+  height: 100px;
   opacity: 0.9;
   transition: opacity .3s ease-out;
   -webkit-transition: opacity .3s ease-out;
-  -webkit-box-shadow: 0px 0px 29px -5px rgba(0,0,0,0.51);
-  -moz-box-shadow: 0px 0px 29px -5px rgba(0,0,0,0.51);
-  box-shadow: 0px 0px 29px -5px rgba(0,0,0,0.51);
 }
 
 .video-image:hover{
@@ -271,6 +298,14 @@ a.login img{
   /* ...and now for the proper property */
   transition:.5s;
   opacity: 1;
+}
+
+h2.play-text{
+    font-size: 1em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 100;
+    margin-top: 10px;
 }
 
 .typed-cursor{
@@ -299,6 +334,19 @@ span.element{
   font-weight: 400;
 }
 
+@media (max-width: 500px) {
+  .video-section h1 {
+      font-size: 28px;
+  }
+  .video-section{
+    height: 500px;
+  }
+
+  .video-section .text-wrapper{
+    top: 190px;
+  }
+}
+
 
 #about{
   padding: 70px 0 0;
@@ -312,6 +360,28 @@ span.element{
   padding-bottom: 30px;
 }
 
+@media (max-width: 1000px){
+
+  #about .col-sm-7 {
+      -webkit-box-flex: 0;
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+  }
+  #about .col-sm-5 {
+      -webkit-box-flex: 0;
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+  }
+
+  .testimonial .col-sm-6{
+    -webkit-box-flex: 0;
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 .section-title{
   margin-bottom: 15px;
 display: block;
@@ -383,7 +453,7 @@ height: auto;
 padding: 0;
 text-align: center;
 font-weight: 700;
-font-size: 3.8rem;
+font-size: 3em;
 line-height: 1;
 color: #FFF;
 }
@@ -479,7 +549,7 @@ cite{
 
 .portfolio-text h1{
   color: #FFF;
-  font-weight: 200;
+  font-weight: 500;
   z-index: 7;
   margin: 0 auto;
   text-align: center;
@@ -490,8 +560,18 @@ cite{
 .portfolio-text img{
   display: block;
   margin-left: auto;
-  margin-top: 1%;
+  margin-top: -5%;
   margin-right: auto;
+}
+
+@media (max-width: 1400px) {
+  .portfolio-text img{
+    display: none;
+  }
+
+  .portfolio-text p{
+    width: 100% !important;
+  }
 }
 
 .portfolio-text p{
