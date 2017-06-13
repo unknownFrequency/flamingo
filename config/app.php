@@ -163,12 +163,14 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+
         /*
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
         TCG\Voyager\VoyagerServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        Aloha\Twilio\Support\Laravel\ServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -226,6 +228,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Twilio' => 'Aloha\Twilio\Support\Laravel\Facade',
 
     ],
 

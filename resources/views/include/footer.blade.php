@@ -38,9 +38,9 @@
                     <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
                     <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
                 </div>
-                <form action="">
-                    <button type="button" class="btn btn-default">Kontact us</button>
-                </form>
+                <div>
+                    @include('include/sms_form')
+                </div>
 
             </div>
         </div>

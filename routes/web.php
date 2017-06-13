@@ -37,6 +37,8 @@ Route::patch('/messages/{id}', 'MessagesController@update');
 Route::get('/messages/{id}/respond', 'MessageResponsesController@create');
 Route::post('/messages/{id}/respond', 'MessageResponsesController@store');
 
+Route::post('/sms', 'SmsController@send');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
