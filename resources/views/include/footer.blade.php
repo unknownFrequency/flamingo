@@ -38,7 +38,10 @@
                     <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
                     <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
                 </div>
-                <button type="button" class="btn btn-default">Contact us</button>
+                <form action="">
+                    <button type="button" class="btn btn-default">Kontact us</button>
+                </form>
+
             </div>
         </div>
     </div>
