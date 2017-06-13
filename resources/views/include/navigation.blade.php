@@ -60,10 +60,10 @@
           <a class="nav-link" href="#">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Cases</a>
+          <a class="nav-link" href="#portfolio">Cases</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Kontakt</a>
+          <a class="nav-link" href="about.blade.php">Kontakt</a>
 
         </li>
       </ul>

@@ -9,13 +9,17 @@
   </div>
   <div class="text-wrapper">
     <h1 class="video-text"> <span class="element"></span> der er til at forstå </h1>
+
+<!--VIDEO LINK
     <div class="video-link">
       <a href="www.vimeo.com"><img class="video-image" src="{{asset('images/video-image.png')}}" alt=""></a>
     </div>
-  </div>
+      <a class="btn" href="//vimeo.com/1084537" data-lity="">Vimeo</a>
+    </div>
+//-->
 </section>
 
-<section class="about">
+<section id="about">
   <div class="container">
     <div class="section-header">
         <h2 class="section-title">Velkommen til Flamingo Media</h2>
@@ -54,6 +58,9 @@
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <h2> En fed overskrift </h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <h2> Produkter </h2>
           </div>
         </div>
       </section>
@@ -95,7 +102,7 @@
 </section>
 
 
-<section class="portfolio">
+<section id="portfolio">
   <div class="row nomargin">
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" onclick="setLocation('/resultater/5-green-comfort-a-s');" style="padding: 0px;">
         <div class="portfolio-image"><img src="{{asset('images/portfolio/freqenz_case.png')}}" alt="Frisør Freqenz"></div>
