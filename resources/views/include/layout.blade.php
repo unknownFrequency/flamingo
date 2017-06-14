@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="{{ URL::asset('css/tabstyles.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/normalize.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/lity.css') }}" />
+    <link rel="stylesheet" href="{{ URL::asset('css/font-awesome.min.css') }}" />
+    <link rel="stylesheet" href="{{ URL::asset('css/font-awesome.css') }}" />
+
 
 
     <!-- Scripts -->
@@ -101,7 +104,7 @@ $(document).ready(function(){
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
-        scrollTop: $(hash).offset().top 
+        scrollTop: $(hash).offset().top
       }, 800, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
