@@ -111,19 +111,22 @@ text-transform: uppercase;
   display: inline-flex;
 }
 
+.dropdown-menu.dropdown-menu-animated{
+  width: 210px;
+}
+
 .dropdown-menu.dropdown-menu-animated h5{
   font-size: 15px;
   text-align: center;
 }
 
 .dropdown-menu.dropdown-menu-animated h6{
-  font-size: 13px;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.66);
+display: none;
 }
 
 .dropdown-menu.dropdown-menu-animated button{
     width: 40%;
+    margin: 0 auto;
 }
 
 .show > a:focus{
