@@ -39,17 +39,12 @@ Route::post('/messages/{id}/respond', 'MessageResponsesController@store');
 
 Route::post('/sms', 'SmsController@send');
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
-
-
-
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
-
+Route::get('/weblosninger', 'WebsolutionsController@index');
+Route::get('/webshops', 'WebshopsController@index');
+Route::get('/grafik', 'GraphicsController@index');
+Route::get('/foto', 'PhotosController@index');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
