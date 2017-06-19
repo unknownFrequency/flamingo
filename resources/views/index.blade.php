@@ -1,22 +1,29 @@
 @extends('include/layout')
 @section('content')
 <section class="video-section">
-  <div class="video">
-    <video autoplay="auto" loop="loop" muted="true"
-        poster="/~/media/nybolig/billeder/forside/barnpaagynge-jpg.jpg" src="{{asset('video/flamingo-slider2.mp4')}}">
-    </video>
-    <div class="overlay-video"></div>
-  </div>
-  <div class="text-wrapper">
-    <h1 class="video-text"> <span class="element"></span> der er til at forstå </h1>
+       <div class="video">
+           <video id="change" autoplay="auto" loop="loop" muted="true" data-setup="{}"
+                  poster="/~/media/nybolig/billeder/forside/barnpaagynge-jpg.jpg">
+               <source id="source-video" src="video/flamingo-slider2.mp4" type='video/mp4' />
+           </video>
+           <div class="overlay-video"></div>
+       </div>
 
-    <div class="video-link">
-      <a href="www.vimeo.com"><img class="video-image" src="{{asset('images/play-icon.png')}}" alt=""><h2 class="play-text">Afspil Video</h2></a>
-    </div>
-    </div>
 
-</section>
+       <div class="text-wrapper">
+           <h1 class="video-text"> <span class="element"></span> der er til at forstå </h1>
+           <button class="video-btn" onClick="changeVid('video/Vranjes.mp4')">
+               <img class="video-image" src="{{asset('images/play-icon.png')}}" alt="">
+           </button>
+       </div>
+   </section>
 
+   <script>
+       function changeVid(buttonLink) {
+           document.getElementById('change').src = buttonLink;
+       }
+   </script>
+   
 <section id="about">
   <div class="container">
     <div class="section-header">
