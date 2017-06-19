@@ -6,6 +6,12 @@ body{
     box-shadow: 0 0 60px 0 rgba(112,132,154,0.65);
 }
 
+button.video-btn {
+  background-color: transparent;
+  border: none;
+
+}
+
 ::selection {
   background: #cd1959; /* WebKit/Blink Browsers */
 }
