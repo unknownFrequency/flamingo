@@ -13,11 +13,12 @@
   background-color: #fff;
  }
 .skin-voyager .main-header .navbar {
-  background-color: #fff;
+  background-color: #ffffff;
   border-bottom:1px solid #f1f1f1;
 }
 .skin-voyager .main-header .navbar .nav > li > a {
-  color: #212936;
+  /*color: #212936;*/
+  color: #0d9564;
 }
 .skin-voyager .main-header .navbar .nav > li > a:hover,
 .skin-voyager .main-header .navbar .nav > li > a:active,
@@ -27,7 +28,8 @@
 .skin-voyager .main-header .navbar .nav .open > a:focus,
 .skin-voyager .main-header .navbar .nav > .active > a {
   background: rgba(0, 0, 0, 0.05);
-  color: #212936;
+  /*color: #212936;*/
+  color: #0d9564;
 }
 .skin-voyager .main-header .navbar .sidebar-toggle {
   color: #212936;
@@ -157,7 +159,7 @@
 }
 
 .page-login-v2:before {
-    background: url('../images/bg.jpg');
+    /*background: url('');*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: -200px !important;
