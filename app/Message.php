@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Message extends Model
 {
@@ -18,6 +19,18 @@ class Message extends Model
 
     public function messageResponse() {
         return $this->hasMany(MessageResponse::class);
+    }
+
+    public static function getMessagesFrom($daysFromNow)
+    {
+        $from = Carbon::now()->subDay($daysFromNow)->startOfWeek()->toDateTimeString(); // or ->format(..)
+        $to = Carbon::now()->toDateTimeString();
+
+        $messages = Message::
+            whereBetween('created_at', array($from, $to))
+            ->get();
+
+       return $messages;
     }
 
     public function addMessage($title, $body, $user_id)
