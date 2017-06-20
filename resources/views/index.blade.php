@@ -54,8 +54,8 @@
     <nav>
       <ul>
         <li><a href="#section-iconbox-1" class="font-icons"><i class="fa fa-desktop" aria-hidden="true"></i><span>Webløsninger</span></a></li>
+        <li><a href="#section-iconbox-3" class="font-icons"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Webshops</span></a></li>
         <li><a href="#section-iconbox-2" class="font-icons"><i class="fa fa-paint-brush" aria-hidden="true"></i><span>Grafisk Arbejde</span></a></li>
-        <li><a href="#section-iconbox-3" class="font-icons"><i class="fa fa-line-chart" aria-hidden="true"></i><span>Markedsføring</span></a></li>
         <li><a href="#section-iconbox-4" class="font-icons"><i class="fa fa-camera" aria-hidden="true"></i><span>Foto/Video</span></a></li>
       </ul>
     </nav>
@@ -148,7 +148,7 @@
     </div>
   <div class="row">
     <div class="col-sm-6">
-        <img class="img-responsive" src="{{asset('images/feature-2.png')}}" alt="">
+        <img class="img-responsive" src="{{asset('images/thomas.png')}}" alt="">
     </div>
     <div class="col-sm-6">
       <div class="reviews">

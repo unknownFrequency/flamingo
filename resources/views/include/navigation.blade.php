@@ -3,7 +3,7 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#"><img src={{asset('images/FlamingoLogoDONEDONE.png')}} alt=""></a>
+    <a class="navbar-brand" href="{{ URL::to('/') }}"><img src={{asset('images/FlamingoLogoDONEDONE.png')}} alt=""></a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
       <ul class="navbar-nav mr-auto">
         <li class="dropdown dropdown-large">
@@ -32,7 +32,7 @@
 					</li>
 					<li class="col-sm-3">
 						<ul>
-							<a href="#"><li class="dropdown-header">Grafisk Arbejde</li></a>
+							<a href="{{ URL::to('/grafik') }}"><li class="dropdown-header">Grafisk Arbejde</li></a>
 							<li><a href="#">Logo</a></li>
 							<li><a href="#">Hjemmeside Materiale</a></li>
 							<li><a href="#">Tryksager</a></li>
@@ -42,7 +42,7 @@
 					</li>
 					<li class="col-sm-3">
 						<ul>
-							<a href="#"><li class="dropdown-header">Foto/Video</li></a>
+							<a href="{{ URL::to('/foto') }}"><li class="dropdown-header">Foto/Video</li></a>
 							<li><a href="#">Default navbar</a></li>
 							<li><a href="#">Buttons</a></li>
 							<li><a href="#">Text</a></li>
