@@ -18,8 +18,13 @@ class MessagesController extends Controller
      */
     public function index()
     {
-        $messages  = DB::select('select * from messages where user_id = ?', [Auth::user()->id]);
-        return view('messages/index', compact('messages'));
+        if(auth()->check()) {
+            $messages = DB::select('select * from messages where user_id = ?', [Auth::user()->id]);
+            return view('messages/index', compact('messages'));
+        }  else {
+           return redirect('/login')->with('message', 'Dun skal logge ind for at læse dine beskeder');
+        }
+
     }
 
     public function create()
@@ -74,6 +79,10 @@ class MessagesController extends Controller
             $responses = $message->messageResponse;
         }
 
-        return view('messages/show', compact('message', 'responses'));
+        if($message->user_id == auth()->user()->id || auth()->user()->role_id == 1) {
+            return view('messages/show', compact('message', 'responses'));
+        } else {
+            return redirect('messages/create');
+        }
     }
 }

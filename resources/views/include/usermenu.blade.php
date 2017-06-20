@@ -7,7 +7,7 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <span class="glyphicon glyphicon-user"></span> 
             @if(isset($user_avatar))
-                <img src="{{ $user_avatar }}" />
+                <img src="/storage/{{ $user_avatar }}" />
             @else
                 <span class="glyphicon glyphicon-chevron-down"></span>
             @endif
@@ -19,7 +19,7 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <p class="text-center">
-                                <img class="avatar-size" src="{{ $user_avatar }}" />
+                                <img class="avatar-size" src="/storage/{{ $user_avatar }}" />
                             </p>
                         </div>
 
@@ -27,6 +27,9 @@
                             <p class="text-left small"><strong>{{ auth()->user()->email }}</strong></p>
                             <p class="text-left">
                                 <a href="/admin/users/{{ auth()->user()->id}}/edit" class="btn btn-primary btn-block btn-sm profil-btn">Profil</a>
+                            </p>
+                            <p class="text-left">
+                                <a href="{{ URL::to('/messages') }}">Beskeder</a>
                             </p>
                         </div>
                     </div>
