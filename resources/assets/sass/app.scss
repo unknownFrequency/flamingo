@@ -764,3 +764,41 @@ cite{
 .social-nav .pinterest:hover {
     color: #CB2026;
 }
+
+//User Menu
+.navbar-login
+{
+  width: 305px;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+.navbar-login-session
+{
+  padding: 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-right:120px;
+}
+
+.avatar-size
+{
+  width: 50px;
+  height: 50px;
+}
+
+.menu-color {
+  background-color: #efefef;
+}
+
+.btn.btn-primary.btn-block.btn-sm.profil-btn {
+  background-color: #4d32ff;
+  border: none;
+
+}
+
+.logout-btn {
+  margin:17px 0 0 80px;
+}
+
+
