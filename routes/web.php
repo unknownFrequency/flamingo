@@ -47,6 +47,8 @@ Route::get('/grafik', 'GraphicsController@index');
 Route::get('/foto', 'PhotosController@index');
 
 
+Route::get('/kontakt', 'ContactController@index');
+Route::get('/priser', 'PricesController@index');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
