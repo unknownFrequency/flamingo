@@ -13,14 +13,14 @@
         <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider1_grafik.jpg')}}" alt="First slide">
           <div class="carousel-caption">
             <h3>Tryksager</h3>
-            <p>Fokus på blablablalalaaar</p>
+            <p>Vi designer alt fra flyers til visitkort, og sørger for at de bliver leveret til dig.</p>
           </div>
       </div>
       <div class="carousel-item">
         <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider2_grafik.jpg')}}" alt="Second slide">
           <div class="carousel-caption">
-            <h3>Print</h3>
-            <p>This is the second slide.</p>
+            <h3>Altid den billigste pris</h3>
+            <p>Vi garanterer altid den billigste pris, så du ikke skal betale mere hos os, for at få dine tryksager printet.</p>
           </div>
       </div>
     </div>

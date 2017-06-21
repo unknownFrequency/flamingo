@@ -12,7 +12,7 @@
 				<ul class="dropdown-menu dropdown-menu-large row">
             <li class="col-sm-3">
 						<ul>
-						<a href="#"><li class="dropdown-header">Webløsninger</li></a>
+						<a href="{{ URL::to('/weblosninger') }}"><li class="dropdown-header">Webløsninger</li></a>
               <li><a href="#">Wordpress</a></li>
               <li><a href="#">Bootstrap</a></li>
               <li><a href="#">Søgeoptimering</a></li>
@@ -22,32 +22,31 @@
 					</li>
           <li class="col-sm-3">
 						<ul>
-							<a href="#"><li class="dropdown-header">Webshops</li></a>
+							<a href="{{ URL::to('/webshops') }}"><li class="dropdown-header">Webshops</li></a>
               <li><a href="#">Magento</a></li>
 							<li><a href="#">WooCommerce</a></li>
 							<li><a href="#">Shopify</a></li>
-              <li><a href="#">Andet</a></li>
-
 						</ul>
 					</li>
 					<li class="col-sm-3">
 						<ul>
 							<a href="{{ URL::to('/grafik') }}"><li class="dropdown-header">Grafisk Arbejde</li></a>
 							<li><a href="#">Logo</a></li>
-							<li><a href="#">Hjemmeside Materiale</a></li>
+							<li><a href="#">Webdesign</a></li>
 							<li><a href="#">Tryksager</a></li>
-							<li><a href="#">Nesting</a></li>
-							<li><a href="#">Vertical variation</a></li>
+							<li><a href="#">Print</a></li>
+							<li><a href="#">Visitkort</a></li>
 						</ul>
 					</li>
 					<li class="col-sm-3">
 						<ul>
 							<a href="{{ URL::to('/foto') }}"><li class="dropdown-header">Foto/Video</li></a>
-							<li><a href="#">Default navbar</a></li>
-							<li><a href="#">Buttons</a></li>
-							<li><a href="#">Text</a></li>
-							<li><a href="#">Non-nav links</a></li>
-							<li><a href="#">Component alignment</a></li>
+							<li><a href="#">Personalebilleder</a></li>
+							<li><a href="#">Produktbilleder</a></li>
+							<li><a href="#">Andre Fotoopgaver</a></li>
+              <li><a href="#">Produktvideo</a></li>
+							<li><a href="#">Reklamevideo</a></li>
+							<li><a href="#">Profil Video</a></li>
 						</ul>
 					</li>
 				</ul>

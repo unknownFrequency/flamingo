@@ -12,18 +12,18 @@
 
        <div class="text-wrapper">
            <h1 class="video-text"> <span class="element"></span> der er til at forstå </h1>
-           <button class="video-btn" onClick="changeVid('video/Vranjes.mp4')">
+        <!--   <button class="video-btn" onClick="changeVid('video/Vranjes.mp4')">
                <img class="video-image" src="{{asset('images/play-icon.png')}}" alt="">
-           </button>
+           </button> -->
        </div>
    </section>
-
+<!--
    <script>
        function changeVid(buttonLink) {
            document.getElementById('change').src = buttonLink;
        }
    </script>
-
+-->
 <section id="about">
   <div class="container">
     <div class="section-header">
@@ -69,29 +69,42 @@
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <h2> Produkter </h2>
+            <a class="btn btn-primary" href="#">Wordpress</a>
+            <a class="btn btn-primary" href="#">Bootstrap</a>
+            <a class="btn btn-primary" href="#">Søgeoptimering</a>
+            <a class="btn btn-primary" href="#">Custom Kode</a>
+            <a class="btn btn-primary" href="#">Programmering</a>
           </div>
         </div>
       </section>
       <section id="section-iconbox-2">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h2> Grafisk Arbejde </h2>
+            <h2> Webshops </h2>
             <p>Vi har tre multimediedesignere ansat i virksomheden, som har specialiseret sig inden for blandt andet grafisk design.<br></br> Vi laver alt fra billederedigering, visitkort, logo, brochurer, flyers, tryk på tøj og alt hvad man ellers kan forestille sig. Det betyder at din visuelle identitet sidder helt i skabet.
 </p>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <h2> Produkter </h2>
+            <a class="btn btn-primary" href="#">Magento</a>
+            <a class="btn btn-primary" href="#">WooCommerce</a>
+            <a class="btn btn-primary" href="#">Shopify</a>
           </div>
         </div>
       </section>
       <section id="section-iconbox-3">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h2> Markedsføring </h2>
+            <h2> Grafisk Arbejde </h2>
             <p>Vi ved hvor vigtig en god markedsføringsstrategi er for din virksomhed, og det er vi også specialiserede inden for. Vi hjælper med opsætning af Google Adwords, generel søgeoptimering, opsætning af nyhedsbreve og meget mere. <br></br>Vi ved hvilke aktiviteter, der kan hjælpe din virksomhed, så din virksomhed kan vækste og gå op i en højere enhed. </p>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <h2> Produkter </h2>
+            <a class="btn btn-primary" href="#">Logo Design</a>
+            <a class="btn btn-primary" href="#">Webdesign</a>
+            <a class="btn btn-primary" href="#">Tryksager</a>
+            <a class="btn btn-primary" href="#">Print</a>
+            <a class="btn btn-primary" href="#">Visitkort</a>
           </div>
         </div>
       </section>
@@ -104,6 +117,12 @@
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <h2> Produkter </h2>
+            <a class="btn btn-primary" href="#">Personalebilleder</a>
+            <a class="btn btn-primary" href="#">Produktbilleder</a>
+            <a class="btn btn-primary" href="#">Andre Fotoopgaver</a>
+            <a class="btn btn-primary" href="#">Produktvideo</a>
+            <a class="btn btn-primary" href="#">Reklamevideo</a>
+            <a class="btn btn-primary" href="#">Profil Video</a>
           </div>
         </div>
       </section>

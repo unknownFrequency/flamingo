@@ -392,10 +392,20 @@ span.element{
   -webkit-box-shadow: inset 0px -3px 5px -1px rgba(0,0,0,0.24);
   -moz-box-shadow: inset 0px -3px 5px -1px rgba(0,0,0,0.24);
   box-shadow: inset 0px -2px 5px -2px rgba(0,0,0,0.24);
+
 }
 
 #overview .section-header{
   padding-bottom: 20px;
+}
+
+#features .btn.btn-primary{
+  float: left;
+  margin-top: 11px;
+  margin-right: 15px;
+  height: 40px;
+  width: 200px;
+
 }
 
 #about{
@@ -492,10 +502,18 @@ height: auto;
       border-bottom: 1px solid #cd1a5a;
   }
 
+  .btn{
+    border: 0;
+  }
+
   .btn.btn-primary {
       background: #cd1959;
       border-color: #cd1959;
     }
+
+  .btn.btn-primary:hover {
+        background: rgba(205, 25, 89, 0.75);;
+      }
 
   .btn.btn-primary:focus{
       color: #fff;
@@ -717,6 +735,10 @@ cite{
     line-height: 25px;
 }
 
+#myFooter .btn:hover {
+  background: rgba(205, 25, 89, 0.75);;
+}
+
 #myFooter li {
     display: block;
     margin-bottom: 10px;
@@ -803,4 +825,53 @@ cite{
 }
 .social-nav .pinterest:hover {
     color: #CB2026;
+}
+
+.stepwizard-step p {
+    margin-top: 10px;
+}
+
+.process-row {
+    display: table-row;
+}
+
+.process {
+   display: table;
+   width: 100%;
+   position: relative;
+   margin: 20px auto;
+
+}
+
+.process-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+    width: 10%;
+}
+
+.process-step p {
+  margin-top: 10px;
+  padding: 2px 24px 0px 24px;
+  color: #cd1959;
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: 13px;
+
+}
+
+.btn-circle {
+  width: 70px;
+      height: 70px;
+      text-align: center;
+      padding: 6px 0;
+      font-size: 12px;
+      line-height: 1.428571;
+      border-radius: 50px;
+      background-color: #cd1959;
+      cursor: auto;
+}
+
+.btn-circle:hover {
+      background-color: #de5385;
 }
