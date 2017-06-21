@@ -78,8 +78,8 @@ class MessagesController extends Controller
         if(isset($message->messageResponse)) {
             $responses = $message->messageResponse;
         }
-
-        if($message->user_id == auth()->user()->id || auth()->user()->role_id == 1) {
+        dd(auth()->check());
+        if(auth()->check() && $message->user_id == auth()->user()->id || auth()->user()->role_id == 1) {
             return view('messages/show', compact('message', 'responses'));
         } else {
             return redirect('messages/create');
