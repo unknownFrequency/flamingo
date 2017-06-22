@@ -48,7 +48,7 @@
                       </p>
                     </a>
                     <div>
-                        <a href="http://www.jquery2dotnet.com/2014/01/jquery-highlight-table-row-and-column.html" class="btn btn-warning btn-sm">Læs mere</a>
+                        <a href="/posts/{{ $post->id }}" class="btn btn-warning btn-sm">Læs mere</a>
                     </div>
                 </div>
             </div>

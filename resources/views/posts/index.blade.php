@@ -11,8 +11,8 @@
       <div class="carousel-item active">
         <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider1_blog.jpg')}}" alt="First slide">
           <div class="carousel-caption">
-            <h3 style="color: #333;">Blog</h3>
-            <p style="color: #333;">Vi sætter ikke begrænsinger for jeres drømme, når det gælder video.</p>
+            <h3>Blog</h3>
+            <p>Her holder vi jer opdateret om alle de nyeste trends og muligheder inden for webdesign - og alt det andet vi interesserer os for.</p>
           </div>
       </div>
     </div>
