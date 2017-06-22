@@ -7,7 +7,7 @@
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     </ol>
-    <div class="carousel-inner" style="box-shadow: 0px -1px 7px #888888;" role="listbox">
+    <div class="carousel-inner" style="box-shadow: 0px -1px 7px #888888; z-index: 1;" role="listbox">
       <div class="carousel-item active">
         <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider1_blog.jpg')}}" alt="First slide">
           <div class="carousel-caption">
@@ -17,14 +17,18 @@
       </div>
     </div>
   </div>
-<section>
-
-    {{--@include('posts/include/sidebar')--}}
-    <div class="text-center" style="padding-top:40px; background-color: #fff;">
-        @foreach($posts as $post)
-            @include('posts/post')
-        @endforeach
+</section>
+<section style="background-color: #fff;">
+  <div class="container">
+    <div class="row" style="padding-top: 50px; padding-bottom: 50px;">
+      {{--@include('posts/include/sidebar')--}}
+          @foreach($posts as $post)
+              @include('posts/post')
+          @endforeach
+      </div>
     </div>
+  </div>
+</section>
 
 @include('include.footer')
 @endsection
