@@ -36,8 +36,8 @@
 <section>
 
 
-<section id="overview">
-    <div class="container">
+<section id="grafisk-arbejde" name="grafisk-arbejde">
+    <div class="container" role="tabpanel" >
       <div class="section-header">
           <h2 class="section-title">Grafisk Arbejde</h2>
           <p class="section-text">Vi er et bureau med brede kompetencer, og vi er ikke tilfredse, før du er. Hos os får du mulighed for at købe en samlet pakke,<br> så du ikke skal overlade din virksomheds visuelle identitet til tilfældigheder.
@@ -59,7 +59,7 @@
     </div>
 </section>
 
-<section id="overview">
+<section id="webdesign">
     <div class="container">
       <div class="section-header">
       </div>
@@ -80,7 +80,7 @@
     </div>
 </section>
 
-<section id="overview" style="background-image: url({{ URL::asset('images/paper.png') }})">
+<section id="tryksager" style="background-image: url({{ URL::asset('images/paper.png') }})">
     <div class="container">
       <div class="section-header">
           <h2 class="section-title">Tryksager</h2>
@@ -103,7 +103,7 @@
           </div>
 
       </div>
-      <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px;">
+      <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px;" id="print">
         <div class="col-sm-5" style="padding-top: 8%;">
             <h3 class="column-title">Print</h3>
 
@@ -117,7 +117,7 @@
 
       </div>
 
-      <div class="row" style="margin-bottom: 42px;">
+      <div class="row" style="margin-bottom: 42px;" id="visitkort">
 
           <div class="col-sm-7">
             <img class="img-responsive" src="{{asset('images/grafisk/visitkort.png')}}" alt="">
