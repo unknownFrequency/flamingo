@@ -62,7 +62,7 @@
           </div>
       </div>
     </div>
-    <div class="container" style="margin-top: 38px;">
+    <div class="container reasons" style="margin-top: 38px;">
       <h3 style="text-align: center; font-weight:lighter; margin-bottom: 27px;"> 5 Grunde til at vælge Magento: </h3>
       <div class="process">
       <div class="process-row">
@@ -110,7 +110,7 @@
             <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
 
       </div>
-      <div class="container" style="margin-top: 38px;">
+      <div class="container reasons" style="margin-top: 38px;">
         <h3 style="text-align: center; font-weight:lighter; margin-bottom: 27px;"> 5 Grunde til at vælge Shopify: </h3>
         <div class="process">
         <div class="process-row">
@@ -160,7 +160,7 @@
         <img class="img-responsive" src="{{asset('images/webshop/woocommerce.png')}}" alt="">
       </div>
 
-      <div class="container" style="margin-top: 38px;">
+      <div class="container reasons" style="margin-top: 38px;">
         <h3 style="text-align: center; font-weight:lighter; margin-bottom: 27px;"> 5 Grunde til at vælge WooCommerce: </h3>
         <div class="process">
         <div class="process-row">
