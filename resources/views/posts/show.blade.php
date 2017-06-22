@@ -1,13 +1,18 @@
 @extends('include/layout')
-
 @section('content')
 
+<section style="padding-top: 50px; padding-bottom: 50px; background-color: #fff;">
+  <div class="container">
     <!-- Page Content -->
-    <p class="lead">
-        af {{ App\User::find($post->author_id)->name }}
+    <p class="lead" style="font-size: 2em;">
+        {!! $post->title !!}
     </p>
+    <hr>
     <p class="lead">
         {!! $post->body !!}
+    </p>
+    <p class="lead">
+        af {{ App\User::find($post->author_id)->name }}
     </p>
     <hr>
 
@@ -48,5 +53,8 @@
             </div>
         @endforeach
     @endif
+</div>
+</section>
+    @include('include.footer')
 
 @endsection
