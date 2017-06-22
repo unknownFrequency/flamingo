@@ -93,7 +93,7 @@
                       <div class="card-block">
                           <h4 class="card-title">Christopher Mørk</h4>
                           <div class="meta">
-                              <p>Designer - Projektleder</p>
+                              <p>Projektleder - Designer</p>
                           </div>
                           <div class="card-text">
                               Tawshif is a web designer living in Bangladesh.

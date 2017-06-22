@@ -1009,3 +1009,11 @@ color: #FFF;
 .h1 small {
 font-size: 24px;
 }
+
+.btn.btn-primary.btn-block.btn-sm.profil-btn, .btn-group-sm > .btn.btn-primary.btn-block.profil-btn{
+    background-color: #cd1959;
+}
+
+.text-left.small{
+  font-size: 9px;
+}
