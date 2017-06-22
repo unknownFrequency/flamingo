@@ -2,18 +2,21 @@
 
 // PROTECTED AREAS //
 Route::group(['middleware' => 'isAdmin'], function () {
-    Route::get('/messages', 'MessagesController@index');
-    Route::get('/messages/create', 'MessagesController@create');
-    Route::get('/messages/{id}', 'MessagesController@show');
-    Route::post('/messages', 'MessagesController@store');
-    Route::get('/messages/{id}/edit', 'MessagesController@edit');
-    Route::patch('/messages/{id}', 'MessagesController@update');
-    Route::get('/messages/{id}/respond', 'MessageResponsesController@create');
-    Route::post('/messages/{id}/respond', 'MessageResponsesController@store');
+
 
     Route::get('/posts/create', 'PostsController@create');
     Route::post('/posts', 'PostsController@store');
 });
+
+// MESSAGES //
+Route::get('/messages', 'MessagesController@index');
+Route::get('/messages/create', 'MessagesController@create');
+Route::get('/messages/{id}', 'MessagesController@show');
+Route::post('/messages', 'MessagesController@store');
+Route::get('/messages/{id}/edit', 'MessagesController@edit');
+Route::patch('/messages/{id}', 'MessagesController@update');
+Route::get('/messages/{id}/respond', 'MessageResponsesController@create');
+Route::post('/messages/{id}/respond', 'MessageResponsesController@store');
 
 // Post - BLOG //
 Route::get('/posts', 'PostsController@index')->name('home');;
