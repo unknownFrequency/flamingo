@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['middleware' => ['isAdmin', 'auth']], function () {
+Route::group(['middleware' => 'isAdmin'], function () {
     Route::get('/messages', 'MessagesController@index');
     Route::get('/messages/create', 'MessagesController@create');
     Route::get('/messages/{id}', 'MessagesController@show');

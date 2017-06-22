@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Auth;
 
 class IsAdmin
 {
@@ -13,13 +14,27 @@ class IsAdmin
      * @param  \Closure  $next
      * @return mixed
      */
+//    public function handle($request, Closure $next)
+//    {
+//
+////        dd(Auth::user());
+//        if (Auth::user() &&  Auth::user()->role_id == 1) {
+//            return $next($request);
+//        }
+//
+////        return redirect('/');
+//    }
+
     public function handle($request, Closure $next)
     {
-        if (Auth::user() &&  Auth::user()->admin == 1) {
-            return $next($request);
+        if ( (Auth::user() && Auth::user()->role_id !== 1) || Auth::user() === null) {
+            if ($request->ajax()) {
+                return response('Unauthorized.', 401);
+            } else {
+                return redirect()->back();
+            }
         }
 
-        return redirect('/');
+        return $next($request);
     }
-
 }
