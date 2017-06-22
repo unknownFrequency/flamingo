@@ -1,6 +1,7 @@
 <?php
 
-Route::group(['middleware' => ['isAdmin', 'auth']], function () {
+// PROTECTED AREAS //
+Route::group(['middleware' => 'isAdmin'], function () {
     Route::get('/messages', 'MessagesController@index');
     Route::get('/messages/create', 'MessagesController@create');
     Route::get('/messages/{id}', 'MessagesController@show');
@@ -14,17 +15,17 @@ Route::group(['middleware' => ['isAdmin', 'auth']], function () {
     Route::post('/posts', 'PostsController@store');
 });
 
-// Post sider
+// Post - BLOG //
 Route::get('/posts', 'PostsController@index')->name('home');;
 Route::get('/posts/{post}', 'PostsController@show');
 
-// Comments
+// Comments //
 Route::post('/posts/{post}/comments', 'CommentsController@store');
 
-// Forsiden
+// FORSIDEN //
 Route::get('/', function () { return view('index'); });
 
-//LOGIN, REGISTRATION ETC.
+// LOGIN, REGISTRATION ETC. //
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
 Route::post('/login', 'SessionController@store'); // logging in
@@ -33,7 +34,7 @@ Route::get('/logout', 'SessionController@destroy');
 
 Route::get('/pages/{slug}', 'PagesController@getPage');
 
-// USERS
+// USERS //
 Route::get('/users/{id}', 'UsersController@show');
 Route::get('/users/{id}/edit', 'UsersController@edit'); // edit action redirects to Voyager edit user view /admin/users/{id}/edit
 
@@ -46,8 +47,10 @@ Route::get('/webshops', 'WebshopsController@index');
 Route::get('/grafik', 'GraphicsController@index');
 Route::get('/foto', 'PhotosController@index');
 
-
+// KONTAKT //
 Route::get('/kontakt', 'ContactController@index');
+Route::post('/kontakt', 'ContactController@sendMail');
+
 Route::get('/priser', 'PricesController@index');
 
 Route::group(['prefix' => 'admin'], function () {

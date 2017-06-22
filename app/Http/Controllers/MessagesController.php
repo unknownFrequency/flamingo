@@ -57,14 +57,14 @@ class MessagesController extends Controller
     public function store()
     {
         $this->validate(request(), [
-            'title'  => 'required',
-            'body'  => 'required'
+            'title'   => 'required',
+            'body'    => 'required',
         ]);
 
         if($message = Message::create([
-            'user_id' => auth()->id(),
+            'user_id'  => auth()->id(),
             'title'    => request('title'),
-            'body'    => request('body')
+            'body'     => request('body')
         ])) {
             return redirect("/messages/". $message->id)->with('message', 'Tak for beskeden');
         } else {
