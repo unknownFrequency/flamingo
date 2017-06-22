@@ -53,7 +53,7 @@
 
 			</li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Priser</a>
+          <a class="nav-link" href="{{ URL::to('/priser') }}">Priser</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ URL::to('/posts') }}">Blog</a>
@@ -62,7 +62,7 @@
           <a class="nav-link" href="#portfolio">Cases</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.blade.php">Kontakt</a>
+          <a class="nav-link" href="{{ URL::to('/kontakt') }}">Kontakt</a>
 
         </li>
       </ul>
