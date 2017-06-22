@@ -11,10 +11,10 @@
             </div>
             <div class="col-sm-3">
                 <h5>Vores Produkter</h5>
-                    <li><a href="#">Webløsninger</a></li>
-                    <li><a href="#">Markedsføring</a></li>
-                    <li><a href="#">Grafisk Arbejde</a></li>
-                    <li><a href="#">Foto/Video</a></li>
+                    <li><a href="{{ URL::to('/weblosninger') }}">Webløsninger</a></li>
+                    <li><a href="{{ URL::to('/webshops') }}">Webshops</a></li>
+                    <li><a href="{{ URL::to('/grafik') }}">Grafisk Arbejde</a></li>
+                    <li><a href="{{ URL::to('/foto') }}">Foto/Video</a></li>
             </div>
             <div class="col-sm-3">
                 <h5>Kontaktinformation</h5>
