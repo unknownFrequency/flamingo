@@ -63,7 +63,8 @@ Det typiske WordPress site vil være et infosite, blog, galleri, portfolio, en l
 
           </div>
       </div>
-      <div class="container" style="margin-top: 38px;">
+
+      <div class="container reasons" style="margin-top: 38px;">
         <h3 style="text-align: center; font-weight:lighter; margin-bottom: 27px;"> 5 Grunde til at vælge Wordpress: </h3>
         <div class="process">
         <div class="process-row">
@@ -108,7 +109,7 @@ Det typiske WordPress site vil være et infosite, blog, galleri, portfolio, en l
           </div>
 
       </div>
-      <div class="container" style="margin-top: 38px;">
+      <div class="container reasons" style="margin-top: 38px;">
         <h3 style="text-align: center; font-weight:lighter; margin-bottom: 27px;"> 5 Grunde til at vælge Bootstrap: </h3>
         <div class="process">
         <div class="process-row">

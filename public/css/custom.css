@@ -831,6 +831,14 @@ cite{
     margin-top: 10px;
 }
 
+
+@media (max-width: 991px) {
+  .container.reasons{
+    display: none;
+  }
+  }
+
+
 .process-row {
     display: table-row;
 }
