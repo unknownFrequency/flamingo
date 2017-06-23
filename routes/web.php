@@ -47,7 +47,7 @@ Route::post('/sms', 'SmsController@send');
 
 Route::get('/weblosninger', 'WebsolutionsController@index');
 Route::get('/webshops', 'WebshopsController@index');
-Route::get('/grafik', 'GraphicsController@index');
+Route::get('/grafik/{id}', 'GraphicsController@index');
 Route::get('/foto', 'PhotosController@index');
 
 // KONTAKT //
