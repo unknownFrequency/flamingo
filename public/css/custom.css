@@ -912,7 +912,7 @@ cite{
 }
 
 .card-title {
-    font-size: 1.28571429em;
+    font-size: 1em;
     font-weight: 700;
     line-height: 1.2857em;
 }
@@ -921,6 +921,7 @@ cite{
     clear: both;
     margin-top: .5em;
     color: #fff;
+    font-size: 14px;
 }
 
 .card-footer {

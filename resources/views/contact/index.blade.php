@@ -90,7 +90,7 @@
           <div class="row">
               <div class="col-sm-6 col-md-4 col-lg-3 mt-4" style="margin: 0 auto;">
                   <div class="card">
-                      <img class="card-img-top" src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif">
+                      <img class="card-img-top" src="{{asset('images/christopher_kontakt.png')}}">
                       <div class="card-block">
                           <h4 class="card-title">Christopher Mørk</h4>
                           <div class="meta">
@@ -125,7 +125,7 @@
               </div>
               <div class="col-sm-6 col-md-4 col-lg-3 mt-4" style="margin: 0 auto;">
                   <div class="card">
-                      <img class="card-img-top" src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif">
+                      <img class="card-img-top" src="{{asset('images/anders_kontakt.png')}}">
                       <div class="card-block">
                           <h4 class="card-title">Anders Jakobsen</h4>
                           <div class="meta">
