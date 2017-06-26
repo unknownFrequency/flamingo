@@ -338,6 +338,50 @@ a.login img{
   opacity: 1;
 }
 
+.video-section .video>img {
+    width: 100%;
+    height: initial;
+}
+
+@media screen and (max-width: 767px){
+.video-section .video>img{
+  position: absolute;
+}
+
+.video>video{
+  display: none;
+}
+
+.video-section {
+    height: auto !important;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 36px;
+}
+.video-section .video {
+    overflow: hidden;
+    background-size: cover;
+    height: auto;
+    min-height: 190px;
+}
+
+.video-section .text-wrapper {
+    top: 190px;
+    position: absolute;
+    top: 68px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.video-section h1 {
+    font-size: 28px;
+}
+}
+
 h2.play-text{
     font-size: 1em;
     text-transform: uppercase;
@@ -370,19 +414,6 @@ h2.play-text{
 
 span.element{
   font-weight: 400;
-}
-
-@media (max-width: 500px) {
-  .video-section h1 {
-      font-size: 28px;
-  }
-  .video-section{
-    height: 500px;
-  }
-
-  .video-section .text-wrapper{
-    top: 190px;
-  }
 }
 
 
