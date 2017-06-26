@@ -29,7 +29,7 @@
         <div class="col-sm-4 col-md-4">
             <div class="post">
                 <div class="post-img-content">
-                  <a href="/posts/{{ $post->id }}">  <img class="img-responsive" src="{{ $post->image }}" /></a>
+                  <a href="/posts/{{ $post->id }}">  <img class="img-responsive" src="{{ asset('storage/'. $post->image) }}" /></a>
 
                 </div>
                 <div class="content">
