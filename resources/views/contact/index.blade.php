@@ -71,7 +71,7 @@
                 8000, Arhus C<br>
                 <abbr title="Phone">
                   </abbr>
-                56 56 81 81
+                81 81 56 56
             </address>
             <address>
                 <strong>Email</strong><br>
@@ -108,7 +108,7 @@
 
               <div class="col-sm-6 col-md-4 col-lg-3 mt-4" style="margin: 0 auto;">
                   <div class="card">
-                      <img class="card-img-top" src="http://success-at-work.com/wp-content/uploads/2015/04/free-stock-photos.gif">
+                      <img class="card-img-top" src="{{asset('images/ruben_kontakt.png')}}">
                       <div class="card-block">
                           <h4 class="card-title">Ruben Thuesen</h4>
                           <div class="meta">
