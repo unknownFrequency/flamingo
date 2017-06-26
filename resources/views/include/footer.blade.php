@@ -19,7 +19,7 @@
             <div class="col-sm-3">
                 <h5>Kontaktinformation</h5>
                     <p>Flamingomedia Aps<br>P. Hiort-Lorenzens Vej 4<br>8000 Aarhus C</p>
-                    <p>Telefon: <a href="tel:+4556568181">+45 56 56 81 81</a></p>
+                    <p>Telefon: <a href="tel:+4556568181">+45 81 81 56 56</a></p>
                     <p>Email: <a href="mailto:info@flamingomedia.dk?Subject=Hej%20Flamingoer" target="_top">info@flamingomedia.dk</a></p>
 
             </div>
