@@ -9,7 +9,7 @@ class GraphicsController extends Controller
 {
     public function index()
     {
-       return Redirect::to(route('grafik'). '#grafisk-arbejde');
+//       return Redirect::to(route('grafik'). '#grafisk-arbejde');
         return view('graphics/index');
     }
 }
