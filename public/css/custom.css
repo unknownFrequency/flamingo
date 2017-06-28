@@ -488,14 +488,14 @@ span.element{
 }
 .section-title{
   margin-bottom: 15px;
-display: block;
-clear: both;
-font-size: 28px;
-line-height: 38px;
-text-align: center;
-font-weight: 400;
-color: #262f32;
-text-transform: uppercase;
+  display: block;
+  clear: both;
+  font-size: 34px;
+  line-height: 38px;
+  text-align: center;
+  font-weight: 700;
+  color: #242a33;
+  text-transform: inherit;
 }
 
 .section-text{
@@ -1152,7 +1152,7 @@ Pricing table
 .pricing-active {
   border: 3px solid rgba(205, 25, 88, 0.67);
   margin-top: -10px;
-  box-shadow: 7px 7px rgba(54, 215, 172, 0.2);
+  box-shadow: 7px 7px rgba(215, 54, 128, 0.2);
 }
 
 .pricing:hover {
