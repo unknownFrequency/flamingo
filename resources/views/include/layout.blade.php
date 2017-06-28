@@ -114,7 +114,9 @@ $(document).ready(function(){
   });
 });
 
-
+$(document).on('click', '.caret-icon', function() {
+   $(this).toggleClass('fa-caret-up fa-caret-down');
+})
 
 
 </script>

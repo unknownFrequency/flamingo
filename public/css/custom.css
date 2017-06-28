@@ -544,8 +544,7 @@ height: auto;
     background-color:#cd1958;
     -moz-border-radius:2px;
     -webkit-border-radius:2px;
-    border-radius:2px;
-    border:1px solid #d64f80;
+    border-radius:3px;
     display:inline-block;
     cursor:pointer;
     color:#ffffff;
@@ -573,7 +572,6 @@ height: auto;
 
 .testimonial{
   padding-top: 50px;
-  padding-bottom: 30px;
   background-color: #242a33;
 }
 
@@ -594,7 +592,7 @@ height: auto;
 }
 
 .reviews{
-  margin: 2rem 0 0 0;
+  margin: 0 0 0 0;
   padding: 0 0 4rem 0;
 }
 
@@ -906,28 +904,39 @@ cite{
 .process-step p {
   margin-top: 10px;
   padding: 2px 24px 0px 24px;
-  color: #cd1959;
-  font-weight: 500;
+  color: #232323;
+  font-weight: 400;
   opacity: 0.8;
   font-size: 13px;
-
 }
 
 .btn-circle {
   width: 70px;
-      height: 70px;
-      text-align: center;
-      padding: 6px 0;
-      font-size: 12px;
-      line-height: 1.428571;
-      border-radius: 50px;
-      background-color: #cd1959;
-      cursor: auto;
+  height: 70px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571;
+  border-radius: 50px;
+  background-color: #eee;
+  cursor: auto;
+  box-shadow: 0px 1px 0px 0px rgba(36, 42, 51, 0.45);
+}
+.btn-circle h4{
+    color: #cd1958;
 }
 
+
 .btn-circle:hover {
-      background-color: #de5385;
+      background-color: rgba(238, 238, 238, 0.34);
+      border: 0;
 }
+
+.btn-circle:focus {
+      background-color: rgba(238, 238, 238, 0.34);
+      border: 0;
+}
+
 
 .card {
     font-size: 1em;
@@ -1177,21 +1186,26 @@ Pricing table
   color: #fafafa;
   padding: 12px 0;
   font-size: 27px;
-  background: #cd1958;
   border-bottom: solid 1px #98204a;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cd1958+0,cc376b+100 */
+background: rgb(205,25,88); /* Old browsers */
+background: -moz-linear-gradient(45deg,  rgba(205,25,88,1) 0%, rgba(204,55,107,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgba(205,25,88,1) 0%,rgba(204,55,107,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  rgba(205,25,88,1) 0%,rgba(204,55,107,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cd1958', endColorstr='#cc376b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 .pricing-head h4 {
-  color: #cd1958;
+  color: #3a3a3a;
   padding: 5px 0;
   font-size: 54px;
   font-weight: 300;
   background: #eee;
-  border-bottom: solid 1px #cd1958;
 }
 
 .pricing-head-active h4 {
-  color: #cd1958;
+  color: #3a3a3a;
 }
 
 .pricing-head h4 i {
@@ -1257,4 +1271,16 @@ Pricing table
 .yellow-crusta.btn.active {
     color: #FFFFFF;
     background-color: #cd1958;
+}
+
+button.btn.btn-primary.price{
+  background-color: #eee;
+  box-shadow: 0px 1px 0px 0px rgba(36, 42, 51, 0.45);
+  color: #cd1958;
+  text-shadow: none;
+  border: 0;
+}
+
+button.btn.btn-primary.price:hover{
+  background-color: rgba(238, 238, 238, 0.34);
 }

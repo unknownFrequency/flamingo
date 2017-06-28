@@ -165,10 +165,10 @@
                 <p class="quote-title">“Flamingo Media har udviklet en meget <span class="header-highlight">velfungerende</span> overordnet pakke til Hshop."</p>
             </div>
             <div class="row">
-                <div class="col-sm-6">
-                    <img class="img-responsive" src="{{asset('images/thomas.png')}}" alt="">
+                <div class="col-sm-4">
+                    <img class="img-responsive" src="{{asset('images/thomas2.png')}}" alt="" style="margin: 0 auto;">
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-8">
                     <div class="reviews">
                         <blockquote class="reviews__item">
                             <p>"Vi har været meget tilfredse med det stykke arbejde Flamingo Media har udført for os. Flamingo Media har etableret en <span class="highlight">velfungerende pakkeløsning,</span> , med en kompleks multi store forretning med eget lager, forskellige leverings- og betalingsmuligheder. Flamingo Media har udviklet en meget velfungerende overordnet pakke til Hshop, som vi selv er stolte og glade for at kunne vise til vores kunder."</p>
