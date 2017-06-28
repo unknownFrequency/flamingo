@@ -1284,3 +1284,9 @@ button.btn.btn-primary.price{
 button.btn.btn-primary.price:hover{
   background-color: rgba(238, 238, 238, 0.34);
 }
+
+@media (max-width: 442px) {
+  button.btn.btn-primary.price{
+    margin-top: 10px;
+  }
+}
