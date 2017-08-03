@@ -43,6 +43,15 @@
                 <p class="section-text">Vi er et bureau med brede kompetencer, og vi er ikke tilfredse, før du er. Hos os får du mulighed for at købe en samlet pakke,<br> så du ikke skal overlade din virksomheds visuelle identitet til tilfældigheder.
                 </p>
             </div>
+        </div>
+    </div>
+
+
+    <a id="wordpress-link" style="padding-top:100px;"></a>
+
+    <!-- Wordpress -->
+    <div class="section">
+        <div class="container">
             <div class="row">
                 <div class="col-sm-7">
                     <img class="img-responsive" src="{{asset('images/webløsninger/wordpress.png')}}" alt="">
@@ -202,6 +211,9 @@
         </div>
     </div> <!-- end Wordpress -->
 
+    <a id="bootstrap-link" style="padding-top:100px;"></a>
+
+    <!-- Bootstrap -->
     <div class="section">
         <div class="container">
             <div class="row">
@@ -367,6 +379,9 @@
         </div>
     </div> <!-- end Bootstrap -->
 
+    <a id="seo-link" style="padding-top:100px;"></a>
+
+    <!-- SEO -->
     <div class="section">
         <div class="container">
             <div class="row">
@@ -502,7 +517,7 @@
         </div>
     </div>
 
-        <a id="custom-code" style="padding-top:100px;"></a>
+    <a id="custom-link" style="padding-top:100px;"></a>
 
     <div class="section">
         <div class="container">
@@ -670,19 +685,6 @@
         </div>
     </div>
 
-    <script type="text/javascript">
-//        $(function() {
-//            $('html, body').animate({
-//                scrollTop: $(window.location.hash + "-anchor").offset().top
-//            }, 100);
-//            return false;
-//        });
-
-        $(document).ready(function() {
-            var offsetSize = $("#custom-code").innerHeight();
-            $("html, body").animate({scrollTop:$(window.location.hash).offset().bottom-offsetSize }, 1500);
-        });
-    </script>
 
     @include('include.footer')
 @endsection
