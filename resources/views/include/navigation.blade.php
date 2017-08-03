@@ -20,19 +20,18 @@
                         <li class="col-sm-3">
                             <ul>
                                 <li class="dropdown-header"><a href="{{ URL::to('/weblosninger') }}">Webløsninger</a></li>
-                                <li id="wordpress"><a href="{{ URL::to('/weblosninger') }}">Wordpress</a></li>
-                                <li id="bootstrap"><a href="{{ URL::to('/weblosninger') }}">Bootstrap</a></li>
-                                <li id="seo"><a href="{{ URL::to('/weblosninger') }}">Søgeoptimering</a></li>
-                                <li id="customcode"><a id="custom-code-link">Custom Kode</a></li>
-                                <li id="programmering"><a href="{{ URL::to('/weblosninger') }}">Programmering</a></li>
+                                <li><a href="/weblosninger#wordpress-link">Wordpress</a></li>
+                                <li><a href="/weblosninger#bootstrap-link">Bootstrap</a></li>
+                                <li><a href="/weblosninger#seo-link">Søgeoptimering</a></li>
+                                <li><a href="/weblosninger#custom-link">Custom Kode</a></li>
                             </ul>
                         </li>
                         <li class="col-sm-3">
                             <ul>
                                 <li class="dropdown-header"><a href="{{ URL::to('/webshops') }}">Webshops</a></li>
-                                <li><a href="{{ URL::to('/webshops') }}">Magento</a></li>
-                                <li><a href="{{ URL::to('/webshops') }}">WooCommerce</a></li>
-                                <li><a href="{{ URL::to('/webshops') }}">Shopify</a></li>
+                                <li><a href="/webshops#magento-link">Magento</a></li>
+                                <li><a href="/webshops#woo-link">WooCommerce</a></li>
+                                <li><a href="/webshops#shopify-link">Shopify</a></li>
                             </ul>
                         </li>
                         <li class="col-sm-3">
@@ -82,12 +81,6 @@
         </div>
     </div>
 </header>
-<script>
-    document.getElementById("custom-code-link").onclick = function () {
-        location.href = "weblosninger#custom-code";
-    };
-
-</script>
 
 
 
