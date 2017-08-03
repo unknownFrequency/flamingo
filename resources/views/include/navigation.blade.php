@@ -1,28 +1,35 @@
-<header id="top-header" nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top" >
+<header id="top-header" class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top" >
     <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <a class="navbar-brand" href="{{ URL::to('/') }}"><img src={{asset('images/FlamingoLogoDONEDONE.png')}} alt=""></a>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
             <ul class="navbar-nav mr-auto">
                 <li class="dropdown dropdown-large">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Produkter <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        Produkter
+                        <b class="caret"></b>
+                    </a>
 
                     <ul class="dropdown-menu dropdown-menu-large row">
                         <li class="col-sm-3">
                             <ul>
-                                <a href="{{ URL::to('/weblosninger') }}"><li class="dropdown-header">Webløsninger</li></a>
-                                <li><a href="{{ URL::to('/weblosninger') }}">Wordpress</a></li>
-                                <li><a href="{{ URL::to('/weblosninger') }}">Bootstrap</a></li>
-                                <li><a href="{{ URL::to('/weblosninger') }}">Søgeoptimering</a></li>
-                                <li><a href="{{ URL::to('/weblosninger') }}">Custom Kode</a></li>
-                                <li><a href="{{ URL::to('/weblosninger') }}">Programmering</a></li>
+                                <li class="dropdown-header"><a href="{{ URL::to('/weblosninger') }}">Webløsninger</a></li>
+                                <li id="wordpress"><a href="{{ URL::to('/weblosninger') }}">Wordpress</a></li>
+                                <li id="bootstrap"><a href="{{ URL::to('/weblosninger') }}">Bootstrap</a></li>
+                                <li id="seo"><a href="{{ URL::to('/weblosninger') }}">Søgeoptimering</a></li>
+                                <li id="customcode"><a id="custom-code-link">Custom Kode</a></li>
+                                <li id="programmering"><a href="{{ URL::to('/weblosninger') }}">Programmering</a></li>
                             </ul>
                         </li>
                         <li class="col-sm-3">
                             <ul>
-                                <a href="{{ URL::to('/webshops') }}"><li class="dropdown-header">Webshops</li></a>
+                                <li class="dropdown-header"><a href="{{ URL::to('/webshops') }}">Webshops</a></li>
                                 <li><a href="{{ URL::to('/webshops') }}">Magento</a></li>
                                 <li><a href="{{ URL::to('/webshops') }}">WooCommerce</a></li>
                                 <li><a href="{{ URL::to('/webshops') }}">Shopify</a></li>
@@ -40,7 +47,7 @@
                         </li>
                         <li class="col-sm-3">
                             <ul>
-                                <a href="{{ URL::to('/foto') }}"><li class="dropdown-header">Foto/Video</li></a>
+                                <li class="dropdown-header"><a href="{{ URL::to('/foto') }}">Foto/Video</a></li>
                                 <li><a href="{{ URL::to('/foto') }}">Personalebilleder</a></li>
                                 <li><a href="{{ URL::to('/foto') }}">Produktbilleder</a></li>
                                 <li><a href="{{ URL::to('/foto') }}">Andre Fotoopgaver</a></li>
@@ -75,3 +82,38 @@
         </div>
     </div>
 </header>
+<script>
+    document.getElementById("custom-code-link").onclick = function () {
+        location.href = "weblosninger#custom-code";
+    };
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

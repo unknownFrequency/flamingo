@@ -45,7 +45,12 @@ Route::get('/users/{id}/edit', 'UsersController@edit'); // edit action redirects
 
 Route::post('/sms', 'SmsController@send');
 
-Route::get('/weblosninger', 'WebsolutionsController@index');
+Route::get('/weblosninger', [
+        'as' => 'weblosninger',
+        'uses' => 'WebsolutionsController@index' ]
+);
+//Route::get('/weblosninger', 'WebsolutionsController@index');
+//Route::get('/weblosninger', array() 'WebsolutionsController@index');
 Route::get('/webshops', 'WebshopsController@index');
 Route::get('/grafik', 'GraphicsController@index');
 Route::get('/foto', 'PhotosController@index');
@@ -55,6 +60,16 @@ Route::get('/kontakt', 'ContactController@index');
 Route::post('/kontakt', 'ContactController@sendMail');
 
 Route::get('/priser', 'PricesController@index');
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
