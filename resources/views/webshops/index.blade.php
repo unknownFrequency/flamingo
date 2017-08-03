@@ -54,11 +54,281 @@
 
               </p>
               <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+              <button data-toggle="collapse" class="btn btn-primary price" data-target="#magento">Se Priser <i class="caret-icon fa fa-caret-down" aria-hidden="true"></i></button>
 
           </div>
 
           <div class="col-sm-7">
             <img class="img-responsive" src="{{asset('images/webshop/magento.png')}}" alt="">
+          </div>
+          <!-- Pricing -->
+          <div class="priser" style="padding-top: 45px; padding-bottom: 20px;">
+            <div id="magento" class="collapse" style="margin-top: 15px; text-align: center;">
+                  <div class="container content">
+                    <div class="row" style="border: 3px solid #eee;">
+                      <div class="col-md-3" style="padding:0px;">
+                        <div class="pricing hover-effect" style="border: 0;">
+                          <div class="pricing-head">
+                            <h3>Magento
+                            </h3>
+                            <h4><i>Ydelser </i><i></i></h4>
+                          </div>
+                          <ul class="pricing-content list-unstyled">
+                            <li>
+                              Installation af Magento
+                            </li>
+                            <li>
+                              Installation af tema
+                            </li>
+                            <li>
+                              Opsætning af sprog
+                            </li>
+                            <li>
+                              Opsætning af dansk moms
+                            </li>
+                            <li>
+                              SEO-optimering
+                            </li>
+                            <li>
+                              Betalingsmuligheder
+                            </li>
+                            <li>
+                              Epay installation
+                            </li>
+                            <li>
+                              Google Analytics
+                            </li>
+                            <li>
+                              Opsætning af GLS og Postnord
+                            </li>
+                            <li>
+                              Onestepcheckout installation
+                            </li>
+                            <li>
+                              Opsætning af søgefunktion
+                            </li>
+                            <li>
+                              Oprettelse af produkter
+                            </li>
+                            <li>
+                              Mailchimp integration
+                            </li>
+                            <li>
+                              Lagerstyring
+                            </li>
+                            <li>
+                              Support
+                            </li>
+                            <li>
+                              Unikt design
+                            </li>
+                          </ul>
+                          <div class="pricing-footer">
+                            <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3" style="padding:0px;">
+                        <div class="pricing hover-effect" style="border: 0;">
+                          <div class="pricing-head">
+                            <h3>Basis
+                            </h3>
+                            <h4><i>DKK </i><i>18.000,-</i></h4>
+                          </div>
+                          <ul class="pricing-content list-unstyled">
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-times" aria-hidden="true"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-times" aria-hidden="true"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-times" aria-hidden="true"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-times" aria-hidden="true"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-times" aria-hidden="true"></i>
+                            </li>
+                          </ul>
+                          <div class="pricing-footer">
+                            <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3" style="padding:0px;">
+                        <div class="pricing hover-effect" style="border: 0;">
+                          <div class="pricing-head">
+                            <h3>Plus
+                            </h3>
+                            <h4><i>DKK </i><i>25.000,-</i>
+                            </h4>
+                          </div>
+                          <ul class="pricing-content list-unstyled">
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-times" aria-hidden="true"></i>
+                            </li>
+                          </ul>
+                          <div class="pricing-footer">
+                            <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3" style="padding:0px;">
+                        <div class="pricing hover-effect" style="border: 0;">
+                          <div class="pricing-head">
+                            <h3>Pro
+                            </h3>
+                            <h4><i>DKK </i><i>40.000,-</i>
+                            </h4>
+                          </div>
+                          <ul class="pricing-content list-unstyled">
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                            <li>
+                              <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                            </li>
+                          </ul>
+                          <div class="pricing-footer">
+                            <p>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+              <!--//End Pricing -->
+            </div>
           </div>
       </div>
     </div>
