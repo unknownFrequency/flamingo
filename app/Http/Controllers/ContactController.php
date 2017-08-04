@@ -42,9 +42,9 @@ class ContactController extends Controller
                 'body' => $data['message'], // cannot use reserved name 'message'??
                 'subject' => $data['subject']
 //                'user_id' => $data['user_id']
-            ], function($message, $data)
+            ], function($message)
             {
-                $message->from(env($data['email']));
+                $message->from('Flamingo Kontakt Form');
                 $message->to('MAIL_FROM_NAME', 'Admin')->subject('Flamingo Kundekontakt');
             });
 
