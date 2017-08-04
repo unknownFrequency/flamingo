@@ -33,27 +33,33 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-<section>
-
+<section><!-- slider -->
 
 <section id="grafisk-arbejde" name="grafisk-arbejde">
-    <div class="container" role="tabpanel" >
+    <div class="container" role="tabpanel">
       <div class="section-header">
           <h2 class="section-title">Grafisk Arbejde</h2>
-          <p class="section-text">Vi er et bureau med brede kompetencer, og vi er ikke tilfredse, før du er. Hos os får du mulighed for at købe en samlet pakke,<br> så du ikke skal overlade din virksomheds visuelle identitet til tilfældigheder.
-  </p>
+
+          <p class="section-text">
+              Vi er et bureau med brede kompetencer, og vi er ikke tilfredse, før du er. Hos os får du mulighed for at købe en samlet pakke,
+              <br> så du ikke skal overlade din virksomheds visuelle identitet til tilfældigheder.
+          </p>
       </div>
+
       <div class="row">
           <div class="col-sm-7">
             <img class="img-responsive" src="{{asset('images/grafisk/logo.png')}}" alt="">
           </div>
+
           <div class="col-sm-5" style="padding-top: 8%;">
               <h3 class="column-title">Logo Design</h3>
 
-              <p>Dit logo er det første dine kunder, stifter bekendtskab med. Det er det vigtigste element i din visuelle identitet, og det er det, du bliver husket på. Derfor er det vigtigt, at logoet sidder helt i skabet, så du et letgenkendelig. Vi kan tegne et logo, der er din virksomhed værdig, og som vil komme til at fremstå helt skarp på din hjemmeside eller dine print.
+              <p>
+                  Dit logo er det første dine kunder, stifter bekendtskab med. Det er det vigtigste element i din visuelle identitet,
+                  og det er det, du bliver husket på. Derfor er det vigtigt, at logoet sidder helt i skabet, så du et letgenkendelig.
+                  Vi kan tegne et logo, der er din virksomhed værdig, og som vil komme til at fremstå helt skarp på din hjemmeside eller dine print.
               </p>
               <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
-
           </div>
       </div>
     </div>

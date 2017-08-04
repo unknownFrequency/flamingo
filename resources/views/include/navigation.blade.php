@@ -36,22 +36,22 @@
                         </li>
                         <li class="col-sm-3">
                             <ul>
-                                <a href="{{ URL::to('/grafik') }}"><li class="dropdown-header">Grafisk Arbejde</li></a>
-                                <li><a href="{{ URL::to('/grafik') }}">Logo</a></li>
-                                <li><a href="{{ URL::to('/grafik') }}">Webdesign</a></li>
-                                <li><a href="{{ URL::to('/grafik') }}">Tryksager</a></li>
-                                <li><a href="{{ URL::to('/grafik') }}">Print</a></li>
-                                <li><a href="{{ URL::to('/grafik') }}">Visitkort</a></li>
+                                <li class="dropdown-header"><a href="{{ URL::to('/grafik') }}">Grafisk Arbejde</a></li>
+                                <li><a href="/grafik#logo">Logo</a></li>
+                                <li><a href="/grafik#webdesign">Webdesign</a></li>
+                                <li><a href="/grafik#tryksager">Tryksager</a></li>
+                                <li><a href="/grafik#print">Print</a></li>
+                                <li><a href="/grafik#visitkort">Visitkort</a></li>
                             </ul>
                         </li>
                         <li class="col-sm-3">
                             <ul>
                                 <li class="dropdown-header"><a href="{{ URL::to('/foto') }}">Foto/Video</a></li>
-                                <li><a href="{{ URL::to('/foto') }}">Personalebilleder</a></li>
-                                <li><a href="{{ URL::to('/foto') }}">Produktbilleder</a></li>
-                                <li><a href="{{ URL::to('/foto') }}">Andre Fotoopgaver</a></li>
-                                <li><a href="{{ URL::to('/foto') }}">Produktvideo</a></li>
-                                <li><a href="{{ URL::to('/foto') }}">Reklamevideo</a></li>
+                                <li><a href="/foto#personalebilleder">Personalebilleder</a></li>
+                                <li><a href="/foto#produktbilleder">Produktbilleder</a></li>
+                                <li><a href="/foto#produktvideo">Produktvideo</a></li>
+                                <li><a href="/foto#reklamevideo">Reklamevideo</a></li>
+                                <li><a href="/foto#profilvideo">Profilvideo</a></li>
 
                             </ul>
                         </li>
