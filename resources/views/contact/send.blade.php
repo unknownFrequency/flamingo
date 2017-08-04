@@ -5,6 +5,6 @@
     <p>Vi vender tilbage hurtigst muligt</p>
     <p>Email: {{ $email }}</p>
     <p>Subject: {{ $subject }}</p>
-    <p>Message: {{ $message }}</p>
+    <p>Message: {{ $body }}</p>
 </body>
 </html>

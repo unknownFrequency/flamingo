@@ -39,7 +39,7 @@ class ContactController extends Controller
         Mail::send('contact.send',
             [
                 'email' => $data['email'],
-                'message' => $data['message'],
+                'body' => $data['message'], // cannot use reserved name 'message'??
                 'subject' => $data['subject']
 //                'user_id' => $data['user_id']
             ], function($message, $data)
