@@ -45,7 +45,7 @@ class ContactController extends Controller
             ], function($message)
             {
                 $message->from('info@flamingo.dk');
-                $message->to('MAIL_FROM_NAME', 'Admin')->subject('Flamingo Kundekontakt');
+                $message->to(env('MAIL_FROM_NAME', 'Admin'))->subject('Flamingo Kundekontakt');
             });
 
         return \Redirect::route('kontakt')
