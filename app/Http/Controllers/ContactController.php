@@ -40,8 +40,8 @@ class ContactController extends Controller
             [
                 'email' => $data['email'],
                 'message' => $data['message'],
-                'subject' => $data['subject'],
-                'user_id' => $data['user_id']
+                'subject' => $data['subject']
+//                'user_id' => $data['user_id']
             ], function($message, $data)
             {
                 $message->from(env($data['email']));
