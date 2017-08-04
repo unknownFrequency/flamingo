@@ -44,7 +44,7 @@ class ContactController extends Controller
 //                'user_id' => $data['user_id']
             ], function($message)
             {
-                $message->from('Flamingo Kontakt Form');
+                $message->from('info@flamingo.dk');
                 $message->to('MAIL_FROM_NAME', 'Admin')->subject('Flamingo Kundekontakt');
             });
 
