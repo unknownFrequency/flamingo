@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
-# Include the Autoloader (see "Libraries" for install instructions)
-require 'vendor/autoload.php';
 //use Mailgun\Mailgun;
 use Mail;
 
