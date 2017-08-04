@@ -49,7 +49,7 @@ class ContactController extends Controller
                 $message->to('rt@hshop.dk', 'Admin')->subject('Flamingo Kundekontakt');
             });
 
-        return \Redirect::route('kontakt')
+        return back()
             ->with('message', 'Tak for din henvendelse, vi vender tilbage hurtigst muligt');
 
 //        Mailgun::sendMessage('emails.invoice', $data, function ($message) {
