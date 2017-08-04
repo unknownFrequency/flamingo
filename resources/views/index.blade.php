@@ -49,6 +49,7 @@
             </div>
         </div>
     </section>
+
     <section id="features">
         <div class="tabs tabs-style-iconbox">
             <nav>
@@ -59,6 +60,7 @@
                     <li><a data-togle="collapse" data-target="section-iconbox-3" class="font-icons"><i class="fa fa-camera" aria-hidden="true"></i><span>Foto/Video</span></a></li>
                 </ul>
             </nav>
+
             <div class="content-wrap">
                 <section id="section-iconbox-1">
                     <div class="row">
@@ -69,14 +71,14 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <h2> Produkter </h2>
-                            <a class="btn btn-primary" href="#">Wordpress</a>
-                            <a class="btn btn-primary" href="#">Bootstrap</a>
-                            <a class="btn btn-primary" href="#">Søgeoptimering</a>
-                            <a class="btn btn-primary" href="#">Custom Kode</a>
-                            <a class="btn btn-primary" href="#">Programmering</a>
+                            <a class="btn btn-primary" href="/weblosninger#wordpress-link">Wordpress</a>
+                            <a class="btn btn-primary" href="/weblosninger#bootstap-link">Bootstrap</a>
+                            <a class="btn btn-primary" href="/weblosninger#seo-link">Søgeoptimering</a>
+                            <a class="btn btn-primary" href="/weblosninger#custom-link">Custom Kode</a>
                         </div>
                     </div>
                 </section>
+
                 <section id="section-iconbox-2">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">

@@ -115,7 +115,8 @@
                               <p>Programmør</p>
                           </div>
                           <div class="card-text">
-                              Tawshif is a web designer living in Bangladesh.
+                              8 års erfaring med programmering af hjemmesider. <br />
+                              Backend, Serveropsætning, Sikkerhed, Linux, Scripting mm.
                           </div>
                       </div>
                       <div class="card-footer">
