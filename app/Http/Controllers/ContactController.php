@@ -36,7 +36,7 @@ class ContactController extends Controller
            $data['name'] = request('name');
         }
 
-        Mail::send('emails.contact',
+        Mail::send('emails.kontakt',
             [
                 'email' => $data['email'],
                 'message' => $data['message'],
