@@ -1,7 +1,6 @@
 @extends('include/layout')
 
 @section('content')
-
     <section class="slider">
         <div id="myCarousel" class="carousel slide bg-inverse" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -43,7 +42,8 @@
                 <h2 class="section-title">Grafisk Arbejde</h2>
 
                 <p class="section-text">
-                    Vi er et bureau med brede kompetencer, og vi er ikke tilfredse, før du er. Hos os får du mulighed for at købe en samlet pakke,
+                    Vi er et bureau med brede kompetencer, og vi er ikke tilfredse, før du er.
+                    Hos os får du mulighed for at købe en samlet pakke,
                     <br> så du ikke skal overlade din virksomheds visuelle identitet til tilfældigheder.
                 </p>
             </div>
@@ -89,7 +89,6 @@
                 <div class="col-sm-7">
                     <img class="img-responsive" src="{{asset('images/grafisk/webdesign.png')}}" alt="">
                 </div>
-
             </div>
         </div>
     </section>
@@ -115,7 +114,6 @@
                     <p>Vi har mulighed for at trykke tøj til din virksomhed, så dine ansatte er en del af jeres visuelle identitet. Vi fører selv simple hvide og sorte t-shirts, men du kan naturligvis selv vælge nøjagtigt hvilket tøj du vil have trykt.
                     </p>
                 </div>
-
             </div>
 
             <a class="jump-link" id="print"></a>
@@ -124,7 +122,11 @@
                 <div class="col-sm-5" style="padding-top: 8%;">
                     <h3 class="column-title">Print</h3>
 
-                    <p>Flamingo Media er et ambitiøst bureau, med mange forskellige færdigheder inden for webdesign, backend kodning, visuelt design, billederedigering, tryk i eget hus og markedsføring på flere platforme. Vi er dygtige til det vi laver, og vil altid gå distancen for at du som kunde, bliver helt tilfreds med det færdige resultat.
+                    <p>
+                        Flamingo Media er et ambitiøst bureau, med mange forskellige færdigheder inden for webdesign,
+                        backend kodning, visuelt design, billederedigering, tryk i eget hus og markedsføring på flere platforme.
+                        Vi er dygtige til det vi laver, og vil altid gå distancen for at du som kunde,
+                        bliver helt tilfreds med det færdige resultat.
                     </p>
                 </div>
                 <div class="col-sm-7">
@@ -141,7 +143,9 @@
                 <div class="col-sm-5" style="padding-top: 8%;">
                     <h3 class="column-title">Visitkort</h3>
 
-                    <p>Vi designer også visitkort til dig eller hele din virksomhed, så alle får deres egen visuelle identitet. Vi kan også få dem printet, så du ikke skal gøre andet end at sige ja eller nej til vores design.
+                    <p>
+                        Vi designer også visitkort til dig eller hele din virksomhed, så alle får deres egen visuelle identitet.
+                        Vi kan også få dem printet, så du ikke skal gøre andet end at sige ja eller nej til vores design.
                     </p>
                 </div>
             </div>

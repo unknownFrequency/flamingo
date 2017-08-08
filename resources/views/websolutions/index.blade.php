@@ -519,6 +519,7 @@
 
     <a id="custom-link" style="padding-top:100px;"></a>
 
+    <!-- Custom kode -->
     <div class="section">
         <div class="container">
             <div class="section-header">
@@ -527,14 +528,27 @@
                 <div class="col-sm-5" style="padding-top: 8%;">
                     <h3 class="column-title">Custom Kode</h3>
 
-                    <p>Vi sætter en ære i udelukkende at lave smukke hjemmesider, så vores kunder stolt kan vise den frem til deres kunder. Vi laver layoutet, som du ønsker det, og udvikler hjemmesiden med nøjagtigt det farmetema, der passer til din virksomheds visuelle identitet. Vi har dygtiggjort os inden for alle former for webdesign, og kan derfor altid tilbyde en fuldstændig pakke.
+                    <p>
+                        Vi sætter en ære i udelukkende at lave smukke hjemmesider, så vores kunder stolt kan vise den frem til deres kunder.
+                        Vi laver layoutet, som du ønsker det, og udvikler hjemmesiden med nøjagtigt det farmetema,
+                        der passer til din virksomheds visuelle identitet. Vi har dygtiggjort os inden for alle former for webdesign,
+                        og kan derfor altid tilbyde en fuldstændig pakke.
                     </p>
                     <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
                     <button data-toggle="collapse" class="btn btn-primary price" data-target="#">Se Priser <i class="fa fa-caret-down" aria-hidden="true"></i></button>
                 </div>
+
                 <div class="col-sm-7">
-                    <img class="img-responsive" src="{{asset('images/webløsninger/bootstrap.png')}}" alt="">
+                    <img class="img-responsive img-lang" src="{{asset('images/websolutions/bootstrap.gif')}}" alt="">
+                    <img class="img-responsive img-lang" src="{{asset('images/websolutions/ruby.png')}}" alt="">
+                    <img class="img-responsive img-lang" src="{{asset('images/websolutions/rails.png')}}" alt="">
+                    <img class="img-responsive img-lang" src="{{asset('images/websolutions/react.png')}}" alt="">
+                    <img class="img-responsive img-lang" src="{{asset('images/websolutions/laravel.png')}}" alt="">
+                    <img class="img-responsive img-lang" src="{{asset('images/websolutions/php_mysql.png')}}" alt="">
+                    <img class="img-responsive img-lang" src="{{asset('images/websolutions/docker.png')}}" alt="">
+                    <img class="img-responsive img-lang" src="{{asset('images/websolutions/linux.png')}}" alt="">
                 </div>
+
                 <div class="priser" style="padding-top: 45px; padding-bottom: 20px;">
                     <div id="custom" class="collapse" style="margin-top: 15px; text-align: center;">
                         <!-- Pricing -->

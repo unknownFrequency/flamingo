@@ -8,6 +8,7 @@ window._ = require('lodash');
  */
 
 // global.$ = global.jQuery = require('jquery');
+global.$ = global.jQuery = require('jquery');
 window.Tether = require('tether');
 require('bootstrap');
 
