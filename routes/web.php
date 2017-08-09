@@ -2,8 +2,6 @@
 
 // PROTECTED AREAS //
 Route::group(['middleware' => 'isAdmin'], function () {
-
-
     Route::get('/posts/create', 'PostsController@create');
     Route::post('/posts', 'PostsController@store');
 });
@@ -66,3 +64,8 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 //Route::get('mail', 'MailController@mail');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
