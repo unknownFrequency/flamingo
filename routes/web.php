@@ -2,8 +2,6 @@
 
 // PROTECTED AREAS //
 Route::group(['middleware' => 'isAdmin'], function () {
-
-
     Route::get('/posts/create', 'PostsController@create');
     Route::post('/posts', 'PostsController@store');
 });
