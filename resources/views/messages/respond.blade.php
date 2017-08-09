@@ -1,4 +1,4 @@
-    <form method="POST" action="{{'/messages/' . (int)$message_id . '/respond'}}">
+    <form method="POST" action="{{'/beskeder/' . (int)$message_id . '/respond'}}">
         {{ csrf_field() }}
 
         <div class="form-group">

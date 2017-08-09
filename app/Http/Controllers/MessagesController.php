@@ -35,7 +35,7 @@ class MessagesController extends Controller
     public function edit($id)
     {
         $message = Message::findOrFail($id);
-        return view('beskeder/edit', compact('id', 'message'));
+        return view('messages/edit', compact('id', 'message'));
     }
 
     public function update($id)
@@ -61,11 +61,17 @@ class MessagesController extends Controller
             'body'    => 'required',
         ]);
 
-        if($message = Message::create([
+        $data = [
             'user_id'  => auth()->id(),
             'title'    => request('title'),
             'body'     => request('body')
-        ])) {
+        ];
+
+        if(request('til_id')) {
+            $data['to_id'] = (int)request('til_id');
+        }
+
+        if($message = Message::create($data)) {
             return redirect("/beskeder/". $message->id)->with('message', 'Tak for beskeden');
         } else {
             return back()->with('status', 'Noget gik sku galt!');
@@ -82,9 +88,9 @@ class MessagesController extends Controller
             || $message->responder_id == auth()->user()->id
             || auth()->user()->role_id == 1)
         {
-            return view('beskeder/show', compact('message', 'responses'));
+            return view('messages/show', compact('message', 'responses'));
         } else {
-            return redirect('beskeder/create');
+            return redirect('admin/users');
         }
     }
 }

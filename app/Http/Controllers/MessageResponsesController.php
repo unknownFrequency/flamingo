@@ -14,7 +14,10 @@ class MessageResponsesController extends Controller
 
     public function create($message_id)
     {
-        return view('beskeder/respond', compact('message_id'));
+        if(auth()->check()) {
+            return view('messages/respond', compact('message_id'));
+        }
+
     }
 
     public function store($id)
@@ -30,6 +33,7 @@ class MessageResponsesController extends Controller
 
         if($response->save()) {
             return back()->with('message', 'Tak for dit svar');
+//            return URL::to('/beskeder/').$id;
         }
     }
 

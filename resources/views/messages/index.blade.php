@@ -2,7 +2,7 @@
 
 @section('content')
 <h2>Beskeder</h2>
-<p><a href="/messages/create">Skriv ny besked</a></p>
+<p><a href="/beskeder/create">Skriv ny besked</a></p>
     @foreach($messages as $message)
         <h1 style="margin-top:150px; padding: 50px;">
             <a href="{{ URL::to('messages/' . $message->id) }}">

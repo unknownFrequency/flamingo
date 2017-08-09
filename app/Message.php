@@ -8,7 +8,7 @@ use Carbon\Carbon;
 class Message extends Model
 {
     // For allowing Mass Assignments. Like in Rails
-    protected $fillable = ['user_id', 'title', 'body'];
+    protected $fillable = ['user_id', 'title', 'body', 'to_id'];
 
     // Fields not allowed in Mass Assignment
     protected $guarded = [];

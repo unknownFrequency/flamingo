@@ -1,5 +1,7 @@
 @extends('include/layout')
 
+@if( (auth()->check() && auth()->user()->id == $message->user_id) || auth()->user()->role_id == 1 )
+
     @section('content')
         <h1 style="margin-top:150px; padding: 50px;">
             {{ $message->title }}
@@ -45,3 +47,10 @@
         @include('messages.respond', ['message_id' => $message->id])
 
     @endsection
+
+@else
+   <script>
+       window.location = "/admin/users";
+   </script>
+@endif
+
