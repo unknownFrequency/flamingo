@@ -41,8 +41,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </section><!-- end slider -->
-
+    </section> <!-- end Slider -->
 
     <!-- Foto -->
     <section id="overview">
@@ -53,10 +52,11 @@
                 </p>
             </div>
         </div>
-    </section>
+    </section> <!-- end Foto -->
 
     <a class="jump-link" id="personalebilleder"></a>
 
+    <!-- Personalebilleder -->
     <section id="overview">
         <div class="container">
             <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px;">
@@ -67,17 +67,22 @@
                 <div class="col-sm-5" style="padding-top: 8%;">
                     <h3 class="column-title">Personalebilleder</h3>
 
-                    <p>Flotte personalebilleder af dig og dine ansatte, signalerer kvalitet og professionalisme. I vores fotostudie har vi mulighed for at skyde billeder af dig i høj opløsning og høj kvalitet. Vi redigerer billederne som du ønsker, så dit visitkort eller dine billeder på hjemmesiden hard et visuelle udtryk du vil have. Vi tilbyder også on-shoot location, hvis du foretrækker at skyde billederne i din virksomhed.
-
+                    <p>
+                        Flotte personalebilleder af dig og dine ansatte, signalerer kvalitet og professionalisme.
+                        I vores fotostudie har vi mulighed for at skyde billeder af dig i høj opløsning og høj kvalitet.
+                        Vi redigerer billederne som du ønsker, så dit visitkort eller dine billeder på hjemmesiden hard et
+                        visuelle udtryk du vil have. Vi tilbyder også on-shoot location, hvis du foretrækker at skyde
+                        billederne i din virksomhed.
                     </p>
                     <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
                 </div>
             </div>
         </div>
-    </section>
+    </section> <!-- end Personalebilleder -->
 
     <a class="jump-link" id="produktbilleder"></a>
 
+    <!-- Produktbilleder -->
     <section id="overview">
         <div class="container">
             <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px;">
@@ -99,7 +104,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> <!-- end Produktbilleder -->
 
     <!-- Andre fotoopgaver -->
     <section id="overview">
@@ -153,7 +158,7 @@
 
     <!-- Reklamevideo -->
     <section id="overview">
-        <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px;">
+        <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px; margin-left: 280px;">
             <div class="col-sm-5" style="padding-top: 8%;">
                 <h3 class="column-title">Reklamevideo</h3>
 
@@ -194,8 +199,7 @@
                 <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
             </div>
         </div>
-        </div>
-    </section><!-- end Reklamevideo  -->
+    </section><!-- end profilvideo   -->
 
     @include('include.portfolio')
     @include('include.footer')

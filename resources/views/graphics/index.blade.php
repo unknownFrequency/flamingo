@@ -1,7 +1,6 @@
 @extends('include/layout')
 
 @section('content')
-
     <section class="slider">
         <div id="myCarousel" class="carousel slide bg-inverse" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -33,115 +32,125 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <section><!-- slider -->
+    </section><!-- end slider -->
 
-            <section id="grafisk-arbejde" name="grafisk-arbejde">
-                <div class="container" role="tabpanel">
-                    <div class="section-header">
-                        <h2 class="section-title">Grafisk Arbejde</h2>
+    <a class="jump-link" id="grafisk-arbejde"></a>
 
-                        <p class="section-text">
-                            Vi er et bureau med brede kompetencer, og vi er ikke tilfredse, før du er. Hos os får du mulighed for at købe en samlet pakke,
-                            <br> så du ikke skal overlade din virksomheds visuelle identitet til tilfældigheder.
-                        </p>
-                    </div>
+    <section name="grafisk-arbejde" style="margin-bottom:90px;">
+        <div class="container" role="tabpanel">
+            <div class="section-header">
+                <h2 class="section-title">Grafisk Arbejde</h2>
 
-                    <div class="row">
-                        <div class="col-sm-7">
-                            <img class="img-responsive" src="{{asset('images/grafisk/logo.png')}}" alt="">
-                        </div>
+                <p class="section-text">
+                    Vi er et bureau med brede kompetencer, og vi er ikke tilfredse, før du er.
+                    Hos os får du mulighed for at købe en samlet pakke,
+                    <br> så du ikke skal overlade din virksomheds visuelle identitet til tilfældigheder.
+                </p>
+            </div>
+        </div>
+    </section>
 
-                        <div class="col-sm-5" style="padding-top: 8%;">
-                            <h3 class="column-title">Logo Design</h3>
+    <a class="jump-link" id="logo"></a>
 
-                            <p>
-                                Dit logo er det første dine kunder, stifter bekendtskab med. Det er det vigtigste element i din visuelle identitet,
-                                og det er det, du bliver husket på. Derfor er det vigtigt, at logoet sidder helt i skabet, så du et letgenkendelig.
-                                Vi kan tegne et logo, der er din virksomhed værdig, og som vil komme til at fremstå helt skarp på din hjemmeside eller dine print.
-                            </p>
-                            <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <section name="logo">
+        <div class="row">
+            <div class="col-sm-7" style="margin-top:-70px;">
+                <img class="img-responsive" src="{{asset('images/grafisk/logo.png')}}" alt="">
+            </div>
 
-            <section id="webdesign">
-                <div class="container">
-                    <div class="section-header">
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-5" style="padding-top: 8%;">
-                            <h3 class="column-title">Websdesign</h3>
+            <div class="col-sm-5" >
+                <h3 class="column-title">Logo Design</h3>
 
-                            <p>Vi sætter en ære i udelukkende at lave smukke hjemmesider, så vores kunder stolt kan vise den frem til deres kunder. Vi laver layoutet, som du ønsker det, og udvikler hjemmesiden med nøjagtigt det farmetema, der passer til din virksomheds visuelle identitet. Vi har dygtiggjort os inden for alle former for webdesign, og kan derfor altid tilbyde en fuldstændig pakke.
-                            </p>
-                            <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+                <p>
+                    Dit logo er det første dine kunder, stifter bekendtskab med. Det er det vigtigste element i din visuelle identitet,
+                    og det er det, du bliver husket på. Derfor er det vigtigt, at logoet sidder helt i skabet, så du et letgenkendelig.
+                    Vi kan tegne et logo, der er din virksomhed værdig, og som vil komme til at fremstå helt skarp på din hjemmeside eller dine print.
+                </p>
+                <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+            </div>
+        </div>
+    </section><!-- end grafiks-arbejde -->
 
-                        </div>
-                        <div class="col-sm-7">
-                            <img class="img-responsive" src="{{asset('images/grafisk/webdesign.png')}}" alt="">
-                        </div>
+    <a class="jump-link" id="webdesign"></a>
 
-                    </div>
-                </div>
-            </section>
+    <section>
+        <div class="container">
+            <div class="section-header">
+            </div>
+            <div class="row">
+                <div class="col-sm-5" style="padding-top: 8%;">
+                    <h3 class="column-title">Websdesign</h3>
 
-            <section id="tryksager" style="background-image: url({{ URL::asset('images/paper.png') }})">
-                <div class="container">
-                    <div class="section-header">
-                        <h2 class="section-title">Tryksager</h2>
-                        <p class="section-text">Har du noget information du vil præsentere på en lækker og tydelig måde kan en brochure eller flyer være måden at gøre det på. Vi designer dem selvfølgelig altid fra bunden, nøjagtigt som du ønsker. Vi kan også få dem printet til dig, så du bare skal vente på leveringen.
-
-                        </p>
-                    </div>
-
-                    <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px;">
-
-                        <div class="col-sm-7">
-                            <img class="img-responsive" src="{{asset('images/grafisk/tøjtryk.png')}}" alt="">
-                        </div>
-                        <div class="col-sm-5" style="padding-top: 8%;">
-                            <h3 class="column-title">Tryk på tøj</h3>
-
-                            <p>Vi har mulighed for at trykke tøj til din virksomhed, så dine ansatte er en del af jeres visuelle identitet. Vi fører selv simple hvide og sorte t-shirts, men du kan naturligvis selv vælge nøjagtigt hvilket tøj du vil have trykt.
-                            </p>
-
-                        </div>
-
-                    </div>
-                    <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px;" id="print">
-                        <div class="col-sm-5" style="padding-top: 8%;">
-                            <h3 class="column-title">Print</h3>
-
-                            <p>Flamingo Media er et ambitiøst bureau, med mange forskellige færdigheder inden for webdesign, backend kodning, visuelt design, billederedigering, tryk i eget hus og markedsføring på flere platforme. Vi er dygtige til det vi laver, og vil altid gå distancen for at du som kunde, bliver helt tilfreds med det færdige resultat.
-                            </p>
-
-                        </div>
-                        <div class="col-sm-7">
-                            <img class="img-responsive" src="{{asset('images/grafisk/print.png')}}" alt="">
-                        </div>
-
-                    </div>
-
-                    <div class="row" style="margin-bottom: 42px;" id="visitkort">
-
-                        <div class="col-sm-7">
-                            <img class="img-responsive" src="{{asset('images/grafisk/visitkort.png')}}" alt="">
-                        </div>
-                        <div class="col-sm-5" style="padding-top: 8%;">
-                            <h3 class="column-title">Visitkort</h3>
-
-                            <p>Vi designer også visitkort til dig eller hele din virksomhed, så alle får deres egen visuelle identitet. Vi kan også få dem printet, så du ikke skal gøre andet end at sige ja eller nej til vores design.
-
-                            </p>
-
-                        </div>
-
-                    </div>
+                    <p>Vi sætter en ære i udelukkende at lave smukke hjemmesider, så vores kunder stolt kan vise den frem til deres kunder. Vi laver layoutet, som du ønsker det, og udvikler hjemmesiden med nøjagtigt det farmetema, der passer til din virksomheds visuelle identitet. Vi har dygtiggjort os inden for alle former for webdesign, og kan derfor altid tilbyde en fuldstændig pakke.
+                    </p>
+                    <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
 
                 </div>
+                <div class="col-sm-7">
+                    <img class="img-responsive" src="{{asset('images/grafisk/webdesign.png')}}" alt="">
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
+
+    <a class="jump-link" id="tryk"></a>
+
+    <section style="background-image: url({{ URL::asset('images/paper.png') }})">
+        <div class="container">
+            <div class="section-header" style="padding-top:15px;">
+                <h2 class="section-title">Tryksager</h2>
+                <p class="section-text">Har du noget information du vil præsentere på en lækker og tydelig måde kan en brochure eller flyer være måden at gøre det på. Vi designer dem selvfølgelig altid fra bunden, nøjagtigt som du ønsker. Vi kan også få dem printet til dig, så du bare skal vente på leveringen.
+
+                </p>
+            </div>
+
+            <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px;">
+                <div class="col-sm-7">
+                    <img class="img-responsive" src="{{asset('images/grafisk/tøjtryk.png')}}" alt="">
+                </div>
+                <div class="col-sm-5" style="padding-top: 8%;">
+                    <h3 class="column-title" style="padding-top:75px;">Tryk på tøj</h3>
+
+                    <p>Vi har mulighed for at trykke tøj til din virksomhed, så dine ansatte er en del af jeres visuelle identitet. Vi fører selv simple hvide og sorte t-shirts, men du kan naturligvis selv vælge nøjagtigt hvilket tøj du vil have trykt.
+                    </p>
+                </div>
+            </div>
+
+            <a class="jump-link" id="print"></a>
+
+            <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px;">
+                <div class="col-sm-5" style="padding-top: 8%;">
+                    <h3 class="column-title">Print</h3>
+
+                    <p>
+                        Flamingo Media er et ambitiøst bureau, med mange forskellige færdigheder inden for webdesign,
+                        backend kodning, visuelt design, billederedigering, tryk i eget hus og markedsføring på flere platforme.
+                        Vi er dygtige til det vi laver, og vil altid gå distancen for at du som kunde,
+                        bliver helt tilfreds med det færdige resultat.
+                    </p>
+                </div>
+                <div class="col-sm-7">
+                    <img class="img-responsive" src="{{asset('images/grafisk/print.png')}}" alt="">
+                </div>
+            </div>
+
+            <a class="jump-link" id="visitkort"></a>
+
+            <div class="row" style="margin-bottom: 42px;" id="visitkort">
+                <div class="col-sm-7">
+                    <img class="img-responsive" src="{{asset('images/grafisk/visitkort.png')}}" alt="">
+                </div>
+                <div class="col-sm-5" style="padding-top: 8%;">
+                    <h3 class="column-title">Visitkort</h3>
+
+                    <p>
+                        Vi designer også visitkort til dig eller hele din virksomhed, så alle får deres egen visuelle identitet.
+                        Vi kan også få dem printet, så du ikke skal gøre andet end at sige ja eller nej til vores design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     @include('include.portfolio')
     @include('include.footer')

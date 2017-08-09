@@ -3,10 +3,10 @@
     <section class="video-section">
         <div class="video">
             <video id="change" autoplay="auto" loop="loop" muted="true" data-setup="{}"
-                   poster="{{asset('images/video_loading.png')}}">
+                   poster="{{asset('images/video_loading.jpg')}}">
                 <source id="source-video" src="video/flamingo-slider2.mp4" type='video/mp4' />
             </video>
-            <img src="{{asset('images/video_loading.png')}}" width="1280" height="720">
+            <img src="{{asset('images/video_loading.jpg')}}" width="1280" height="720">
             <div class="overlay-video"></div>
         </div>
 
@@ -88,9 +88,9 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <h2> Produkter </h2>
-                            <a class="btn btn-primary" href="#">Magento</a>
-                            <a class="btn btn-primary" href="#">WooCommerce</a>
-                            <a class="btn btn-primary" href="#">Shopify</a>
+                            <a class="btn btn-primary" href="/webshops#magento">Magento</a>
+                            <a class="btn btn-primary" href="/webshops#woo">WooCommerce</a>
+                            <a class="btn btn-primary" href="/webshops#shopify">Shopify</a>
                         </div>
                     </div>
                 </section>
@@ -102,11 +102,11 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <h2> Produkter </h2>
-                            <a class="btn btn-primary" href="#">Logo Design</a>
-                            <a class="btn btn-primary" href="#">Webdesign</a>
-                            <a class="btn btn-primary" href="#">Tryksager</a>
-                            <a class="btn btn-primary" href="#">Print</a>
-                            <a class="btn btn-primary" href="#">Visitkort</a>
+                            <a class="btn btn-primary" href="grafik#logo">Logo Design</a>
+                            <a class="btn btn-primary" href="grafik#webdesign">Webdesign</a>
+                            <a class="btn btn-primary" href="grafik#tryk">Tryksager</a>
+                            <a class="btn btn-primary" href="grafik#print">Print</a>
+                            <a class="btn btn-primary" href="grafik#visitkort">Visitkort</a>
                         </div>
                     </div>
                 </section>
