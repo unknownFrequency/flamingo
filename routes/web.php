@@ -7,14 +7,14 @@ Route::group(['middleware' => 'isAdmin'], function () {
 });
 
 // MESSAGES //
-Route::get('/messages', 'MessagesController@index');
-Route::get('/messages/create', 'MessagesController@create');
-Route::get('/messages/{id}', 'MessagesController@show');
-Route::post('/messages', 'MessagesController@store');
-Route::get('/messages/{id}/edit', 'MessagesController@edit');
-Route::patch('/messages/{id}', 'MessagesController@update');
-Route::get('/messages/{id}/respond', 'MessageResponsesController@create');
-Route::post('/messages/{id}/respond', 'MessageResponsesController@store');
+Route::get('/beskeder', 'MessagesController@index');
+Route::get('/beskeder/create', 'MessagesController@create');
+Route::get('/beskeder/{id}', 'MessagesController@show');
+Route::post('/beskeder', 'MessagesController@store');
+Route::get('/beskeder/{id}/edit', 'MessagesController@edit');
+Route::patch('/beskeder/{id}', 'MessagesController@update');
+Route::get('/beskeder/{id}/respond', 'MessageResponsesController@create');
+Route::post('/beskeder/{id}/respond', 'MessageResponsesController@store');
 
 // Post - BLOG //
 Route::get('/posts', 'PostsController@index')->name('home');;

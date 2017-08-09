@@ -14,7 +14,7 @@ class MessageResponsesController extends Controller
 
     public function create($message_id)
     {
-        return view('messages/respond', compact('message_id'));
+        return view('beskeder/respond', compact('message_id'));
     }
 
     public function store($id)

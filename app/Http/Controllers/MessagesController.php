@@ -22,7 +22,7 @@ class MessagesController extends Controller
             $messages = DB::select('select * from messages where user_id = ?', [Auth::user()->id]);
             return view('messages/index', compact('messages'));
         }  else {
-           return redirect('/login')->with('message', 'Dun skal logge ind for at læse dine beskeder');
+           return redirect('/login')->with('message', 'Du skal logge ind for at læse dine beskeder');
         }
 
     }
@@ -35,7 +35,7 @@ class MessagesController extends Controller
     public function edit($id)
     {
         $message = Message::findOrFail($id);
-        return view('messages/edit', compact('id', 'message'));
+        return view('beskeder/edit', compact('id', 'message'));
     }
 
     public function update($id)
@@ -51,7 +51,7 @@ class MessagesController extends Controller
             'body' => request('body')
         ]);
 
-        return redirect("/messages/{$message->id}");
+        return redirect("/beskeder/{$message->id}");
     }
 
     public function store()
@@ -66,7 +66,7 @@ class MessagesController extends Controller
             'title'    => request('title'),
             'body'     => request('body')
         ])) {
-            return redirect("/messages/". $message->id)->with('message', 'Tak for beskeden');
+            return redirect("/beskeder/". $message->id)->with('message', 'Tak for beskeden');
         } else {
             return back()->with('status', 'Noget gik sku galt!');
         }
@@ -82,9 +82,9 @@ class MessagesController extends Controller
             || $message->responder_id == auth()->user()->id
             || auth()->user()->role_id == 1)
         {
-            return view('messages/show', compact('message', 'responses'));
+            return view('beskeder/show', compact('message', 'responses'));
         } else {
-            return redirect('messages/create');
+            return redirect('beskeder/create');
         }
     }
 }
