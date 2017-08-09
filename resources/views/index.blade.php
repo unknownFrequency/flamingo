@@ -53,7 +53,7 @@
     <section id="features">
         <div class="tabs tabs-style-iconbox">
             <nav>
-                <ul>
+                <ul class="hand-cursor">
                     <li><a data-togle="collapse" data-target="section-iconbox-1" class="font-icons"><i class="fa fa-desktop" aria-hidden="true"></i><span>Webløsninger</span></a></li>
                     <li><a data-togle="collapse" data-target="section-iconbox-2" class="font-icons"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Webshops</span></a></li>
                     <li><a data-togle="collapse" data-target="section-iconbox-3" class="font-icons"><i class="fa fa-paint-brush" aria-hidden="true"></i><span>Grafisk Arbejde</span></a></li>

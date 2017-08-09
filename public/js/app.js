@@ -17269,7 +17269,6 @@ window._ = __webpack_require__(34);
  * code may be modified to fit the specific needs of your application.
  */
 
-// global.$ = global.jQuery = require('jquery');
 global.$ = global.jQuery = __webpack_require__(9);
 __webpack_provided_window_dot_Tether = __webpack_require__(2);
 __webpack_require__(3);
