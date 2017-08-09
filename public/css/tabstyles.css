@@ -991,3 +991,8 @@ e/* Individual tab styles */
 .tabs-style-circlefill .content-wrap {
 	border-top: 1px solid #2CC185;
 }
+
+.hand-cursor {
+    cursor: pointer;
+	cursor: hand;
+}

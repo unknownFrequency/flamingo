@@ -54,7 +54,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-7">
-                    <img class="img-responsive" src="{{asset('images/webløsninger/wordpress.png')}}" alt="">
+                    <img class="img-responsive" src="{{asset('images/websolutions/wordpress.png')}}" alt="">
                 </div>
                 <div class="col-sm-5" style="padding-top: 8%;">
                     <h3 class="column-title">Wordpress Hjemmeside</h3>
@@ -227,7 +227,7 @@
 
                 </div>
                 <div class="col-sm-7">
-                    <img class="img-responsive" src="{{asset('images/webløsninger/bootstrap.png')}}" alt="">
+                    <img class="img-responsive" src="{{asset('images/websolutions/bootstrap.png')}}" alt="">
                 </div>
 
             </div>
@@ -386,7 +386,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-7">
-                    <img class="img-responsive" src="{{asset('images/webløsninger/wordpress.png')}}" alt="">
+                    <img class="img-responsive" src="{{asset('images/websolutions/wordpress.png')}}" alt="">
                 </div>
                 <div class="col-sm-5" style="padding-top: 8%;">
                     <h3 class="column-title">Søgeoptimering</h3>
@@ -529,24 +529,27 @@
                     <h3 class="column-title">Custom Kode</h3>
 
                     <p>
-                        Vi sætter en ære i udelukkende at lave smukke hjemmesider, så vores kunder stolt kan vise den frem til deres kunder.
-                        Vi laver layoutet, som du ønsker det, og udvikler hjemmesiden med nøjagtigt det farmetema,
-                        der passer til din virksomheds visuelle identitet. Vi har dygtiggjort os inden for alle former for webdesign,
-                        og kan derfor altid tilbyde en fuldstændig pakke.
+                        Forskellige programmeringssprog har forskellige fordele. Derfor mestrer vi hos Flamingo Media flere teknologier,
+                        så din idé kan blive til virkelighed uden at du skal begrænses af temaer, plugins osv. Med en "Custom kode" løsning kan du få dit
+                        website præcist som du ønsker.
                     </p>
                     <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
                     <button data-toggle="collapse" class="btn btn-primary price" data-target="#">Se Priser <i class="fa fa-caret-down" aria-hidden="true"></i></button>
                 </div>
 
-                <div class="col-sm-7">
-                    <img class="img-responsive img-lang" src="{{asset('images/websolutions/bootstrap.gif')}}" alt="">
-                    <img class="img-responsive img-lang" src="{{asset('images/websolutions/ruby.png')}}" alt="">
-                    <img class="img-responsive img-lang" src="{{asset('images/websolutions/rails.png')}}" alt="">
-                    <img class="img-responsive img-lang" src="{{asset('images/websolutions/react.png')}}" alt="">
-                    <img class="img-responsive img-lang" src="{{asset('images/websolutions/laravel.png')}}" alt="">
-                    <img class="img-responsive img-lang" src="{{asset('images/websolutions/php_mysql.png')}}" alt="">
-                    <img class="img-responsive img-lang" src="{{asset('images/websolutions/docker.png')}}" alt="">
-                    <img class="img-responsive img-lang" src="{{asset('images/websolutions/linux.png')}}" alt="">
+                <div class="col-sm-7 bottom-margin">
+                    <div class="img-lang-container">
+                        <img class="img-responsive img-lang" src="{{asset('images/websolutions/bootstrap.gif')}}" alt="">
+                        <img class="img-responsive img-lang" src="{{asset('images/websolutions/ruby.jpg')}}" alt="">
+                        <img class="img-responsive img-lang" src="{{asset('images/websolutions/rails.png')}}" alt="">
+                        <img class="img-responsive img-lang" src="{{asset('images/websolutions/react.png')}}" alt="">
+                    </div>
+                    <div class="img-lang-container">
+                        <img class="img-responsive img-lang" src="{{asset('images/websolutions/laravel.png')}}" alt="">
+                        <img class="img-responsive img-lang" src="{{asset('images/websolutions/php_mysql.png')}}" alt="">
+                        <img class="img-responsive img-lang" src="{{asset('images/websolutions/docker.png')}}" alt="">
+                        <img class="img-responsive img-lang" src="{{asset('images/websolutions/linux.png')}}" alt="">
+                    </div>
                 </div>
 
                 <div class="priser" style="padding-top: 45px; padding-bottom: 20px;">
