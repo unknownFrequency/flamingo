@@ -6,7 +6,7 @@
                    poster="{{asset('images/video_loading.png')}}">
                 <source id="source-video" src="video/flamingo-slider2.mp4" type='video/mp4' />
             </video>
-            <img src="{{asset('images/video_loading.png')}}" width="1280" height="720">
+            <img src="{{asset('images/video_loading.jpg')}}" width="1280" height="720">
             <div class="overlay-video"></div>
         </div>
 
