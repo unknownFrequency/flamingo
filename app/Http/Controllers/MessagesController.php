@@ -19,7 +19,16 @@ class MessagesController extends Controller
     public function index()
     {
         if(auth()->check()) {
-            $messages = DB::select('select * from messages where user_id = ?', [Auth::user()->id]);
+            (int)$user_id = auth()->user()->id;
+        }
+
+        if($user_id) {
+            $messages = DB::table('messages')
+                ->select(DB::raw(' * '))
+                ->where('user_id', '=', $user_id)
+                ->orWhere('to_id', '=', $user_id)
+                ->get();
+
             return view('messages/index', compact('messages'));
         }  else {
            return redirect('/login')->with('message', 'Du skal logge ind for at læse dine beskeder');
@@ -81,16 +90,41 @@ class MessagesController extends Controller
     public function show($id)
     {
         $message = Message::find($id);
+
         if(isset($message->messageResponse)) {
             $responses = $message->messageResponse;
         }
         if(auth()->check() && $message->user_id == auth()->user()->id
-            || $message->responder_id == auth()->user()->id
-            || auth()->user()->role_id == 1)
+            || auth()->check() && auth()->user()->role_id == 1)
         {
+            $data = ['message' => $message];
+            if(isset($responses) && !empty($responses)) {
+                $data['responses'] = $responses;
+            }
+            return view('messages/show', compact('data', ['data' => $data]));
+        } elseif(isset($message->responder_id) && $message->responder_id == auth()->user()->id) {
             return view('messages/show', compact('message', 'responses'));
         } else {
             return redirect('admin/users');
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
