@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;
 
@@ -46,5 +47,13 @@ class Message extends Model
         } else {
             return back()->with('status', 'Noget gik sku galt!');
         }
+    }
+
+    public static function getMessages($user_id) {
+            return DB::table('messages')
+                ->select(DB::raw(' * '))
+                ->where('user_id', '=', $user_id)
+                ->orWhere('to_id', '=', $user_id)
+                ->get();
     }
 }

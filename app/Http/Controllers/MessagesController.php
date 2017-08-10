@@ -23,13 +23,9 @@ class MessagesController extends Controller
         }
 
         if($user_id) {
-            $messages = DB::table('messages')
-                ->select(DB::raw(' * '))
-                ->where('user_id', '=', $user_id)
-                ->orWhere('to_id', '=', $user_id)
-                ->get();
-
-            return view('messages/index', compact('messages'));
+            if($messages = Message::getMessages($user_id)) {
+                 return view('messages/index', compact('messages'));
+            }
         }  else {
            return redirect('/login')->with('message', 'Du skal logge ind for at læse dine beskeder');
         }
