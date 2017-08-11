@@ -24,7 +24,7 @@ class Message extends Model
 
     public static function getMessagesFrom($daysFromNow)
     {
-        $from = Carbon::now()->subDay($daysFromNow)->startOfWeek()->toDateTimeString(); // or ->format(..)
+        $from = Carbon::now()->subDay($daysFromNow)->toDateTimeString(); // or ->format(..)
         $to = Carbon::now()->toDateTimeString();
 
         if($messages = Message::whereBetween('created_at', array($from, $to))->get()) {
