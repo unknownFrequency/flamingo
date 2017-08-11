@@ -45,12 +45,18 @@ class MessagesController extends Controller
 
     public function update($id)
     {
+        $message = Message::findOrFail($id);
+        if(request('solved') === "true") {
+            $message->solved = 1;
+            //$message->update(['solved' => 1]);
+            $message->save();
+            return redirect("/beskeder/{$message->id}");
+        }
         $this->validate(request(), [
             'title'  => 'required',
             'body'  => 'required'
         ]);
 
-        $message = Message::findOrFail($id);
         $message->update([
             'title' => request('title'),
             'body' => request('body')
