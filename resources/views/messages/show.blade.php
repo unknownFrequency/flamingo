@@ -51,5 +51,4 @@
     @endif
 
     @include('messages.respond', ['message_id' => $data['message']->id])
-
 @endsection

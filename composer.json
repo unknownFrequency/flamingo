@@ -13,7 +13,6 @@
         "php-http/guzzle6-adapter": "^1.1",
         "phpmailer/phpmailer": "^5.2",
         "tcg/voyager": "^0.11.14",
-        "laravelcollective/html": "~5.4"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
