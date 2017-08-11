@@ -27,11 +27,12 @@ class Message extends Model
         $from = Carbon::now()->subDay($daysFromNow)->startOfWeek()->toDateTimeString(); // or ->format(..)
         $to = Carbon::now()->toDateTimeString();
 
-        $messages = Message::
-            whereBetween('created_at', array($from, $to))
-            ->get();
+        if($messages = Message::whereBetween('created_at', array($from, $to))->get()) {
+           return $messages;
+        } else {
+            return false;
+        }
 
-       return $messages;
     }
 
     public function addMessage($title, $body, $user_id)
