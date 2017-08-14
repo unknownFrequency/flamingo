@@ -520,7 +520,7 @@ height: auto;
     border-bottom: 1px solid #eee;
     margin-bottom: 15px;
     position: relative;
-    font-weight: lighter;
+    font-weight: 200;
     font-size: 2em;
 }
   }
@@ -741,8 +741,31 @@ cite{
 }
 
 .carousel-caption h3{
-  font-size: 60px;
+  font-size: 45px;
   font-weight: lighter;
+}
+
+@media (max-width: 1230px) {
+
+  .carousel-caption{
+    bottom: 10%;
+  }
+  .carousel-caption h3{
+    font-size: 30px;
+    font-weight: 200;
+  }
+}
+
+@media (max-width: 840px) {
+  .carousel-caption p{
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .slider.section {
+    display: none;
+  }
 }
 
 #myFooter {
