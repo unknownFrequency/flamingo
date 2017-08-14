@@ -36,7 +36,7 @@
 
     <a class="jump-link" id="grafisk-arbejde"></a>
 
-    <section name="grafisk-arbejde" style="margin-bottom:90px;">
+    <section id="overview">
         <div class="container" role="tabpanel">
             <div class="section-header">
                 <h2 class="section-title">Grafisk Arbejde</h2>
@@ -52,7 +52,8 @@
 
     <a class="jump-link" id="logo"></a>
 
-    <section name="logo">
+    <section id="overview">
+        <div class="container">
         <div class="row">
             <div class="col-sm-7" style="margin-top:-70px;">
                 <img class="img-responsive" src="{{asset('images/grafisk/logo.png')}}" alt="">
@@ -73,7 +74,7 @@
 
     <a class="jump-link" id="webdesign"></a>
 
-    <section>
+    <section id="overview">
         <div class="container">
             <div class="section-header">
             </div>

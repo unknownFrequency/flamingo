@@ -35,8 +35,7 @@
         </div>
     </div> <!-- Carousel -->
 
-
-    <div class="section">
+    <section id="overview">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Webløsninger</h2>
@@ -210,11 +209,12 @@
             </div>
         </div>
     </div> <!-- end Wordpress -->
+  </section>
 
     <a id="bootstrap-link" style="padding-top:100px;"></a>
 
     <!-- Bootstrap -->
-    <div class="section">
+    <section id="overview">
         <div class="container">
             <div class="row">
                 <div class="col-sm-5" style="padding-top: 8%;">
@@ -377,12 +377,12 @@
                 </div>
             </div>
         </div>
+      </section>
     </div> <!-- end Bootstrap -->
-
     <a id="seo-link" style="padding-top:100px;"></a>
 
     <!-- SEO -->
-    <div class="section">
+    <section id="overview">
         <div class="container">
             <div class="row">
                 <div class="col-sm-7">
@@ -516,11 +516,13 @@
             </div>
         </div>
     </div>
+      </section>
+
 
     <a id="custom-link" style="padding-top:100px;"></a>
 
     <!-- Custom kode -->
-    <div class="section">
+    <section id="overview">
         <div class="container">
             <div class="section-header">
             </div>
@@ -672,7 +674,7 @@
             </div>
         </div>
     </div>
-
+</section>
     @include('include.portfolio')
     @include('include.footer')
 

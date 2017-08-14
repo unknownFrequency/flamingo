@@ -52,12 +52,11 @@
                 </p>
             </div>
         </div>
-    </section> <!-- end Foto -->
+     <!-- end Foto -->
 
     <a class="jump-link" id="personalebilleder"></a>
 
     <!-- Personalebilleder -->
-    <section id="overview">
         <div class="container">
             <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px;">
                 <div class="col-sm-7">
@@ -78,12 +77,11 @@
                 </div>
             </div>
         </div>
-    </section> <!-- end Personalebilleder -->
+    <!-- end Personalebilleder -->
 
     <a class="jump-link" id="produktbilleder"></a>
 
     <!-- Produktbilleder -->
-    <section id="overview">
         <div class="container">
             <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px;">
                 <div class="col-sm-5" style="padding-top: 8%;">
@@ -104,10 +102,9 @@
                 </div>
             </div>
         </div>
-    </section> <!-- end Produktbilleder -->
+    <!-- end Produktbilleder -->
 
     <!-- Andre fotoopgaver -->
-    <section id="overview">
         <div class="container">
             <div class="row">
                 <div class="col-sm-7">
@@ -125,7 +122,8 @@
                 </div>
             </div>
         </div>
-    </section> <!-- end Fotoopgaver -->
+        </section>
+  <!-- end Fotoopgaver -->
 
     <a class="jump-link" id="produktbilleder"></a>
 
@@ -152,12 +150,12 @@
                 </div>
             </div>
         </div>
-    </section> <!-- end Video -->
+
+  <!-- end Video -->
 
     <a class="jump-link" id="reklamevideo"></a>
 
     <!-- Reklamevideo -->
-    <section id="overview">
         <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px; margin-left: 280px;">
             <div class="col-sm-5" style="padding-top: 8%;">
                 <h3 class="column-title">Reklamevideo</h3>
@@ -175,12 +173,12 @@
                 <img class="img-responsive" src="{{asset('images/foto/reklamevideo.png')}}" alt="">
             </div>
         </div>
-    </section> <!-- end Reklamevideo -->
+    <!-- end Reklamevideo -->
 
     <a class="jump-link" id="profilvideo"></a>
 
     <!-- profilvideo -->
-    <section id="overview">
+        <div class="container">
         <div class="row">
             <div class="col-sm-7">
                 <img class="img-responsive" src="{{asset('images/foto/profilvideo.png')}}" alt="">
