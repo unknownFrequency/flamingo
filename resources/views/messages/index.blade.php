@@ -1,8 +1,8 @@
 @extends('include/layout')
 
 @section('content')
-<h2>Beskeder</h2>
-<p><a href="/beskeder/create">Skriv ny besked</a></p>
+    <h2>Beskeder</h2>
+    <p><a href="/beskeder/create">Skriv ny besked</a></p>
     @foreach($messages as $message)
         <h1 style="margin-top:150px; padding: 50px;">
             <a href="{{ URL::to('beskeder/' . $message->id) }}">
@@ -16,5 +16,4 @@
         <p>
         </p>
     @endforeach
-
 @endsection

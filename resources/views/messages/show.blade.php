@@ -28,7 +28,7 @@
         </a>
     </p>
     <p style="padding: 30px 0 0 15px;">
-        {{ $data['message']->body }}
+        {!! $data['message']->body !!}
     </p>
 
     <p style="margin: 0px 0 0 15px;">

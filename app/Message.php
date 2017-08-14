@@ -18,6 +18,9 @@ class Message extends Model
         return $this->belongsTo(User::class);
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
     public function messageResponse() {
         return $this->hasMany(MessageResponse::class);
     }
@@ -42,8 +45,7 @@ class Message extends Model
             'user_id' => $user_id,
             'title'    => $title,
             'body'    => $body
-        ]))
-        {
+        ])) {
             return back()->with('status', 'Tak for kommentaren');
         } else {
             return back()->with('status', 'Noget gik sku galt!');
