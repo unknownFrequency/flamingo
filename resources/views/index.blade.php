@@ -40,7 +40,7 @@
                     <p>Flamingo Media er et ambitiøst bureau, med mange forskellige færdigheder inden for webdesign, backend kodning, visuelt design, billederedigering, tryk i eget hus og markedsføring på flere platforme. Vi er dygtige til det vi laver, og vil altid gå distancen for at du som kunde, bliver helt tilfreds med det færdige resultat.
                     </p>
 
-                    <a class="btn btn-primary" href="{{ URL::to('/kontakt') }}">Læs mere om os</a>
+                    <a class="btn btn-primary" href="{{ URL::to('/kontakt#about') }}">Læs mere om os</a>
 
                 </div>
                 <div class="col-sm-7">
