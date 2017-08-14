@@ -4,7 +4,7 @@
         <div class="video">
             <video id="change" autoplay="auto" loop="loop" muted="true" data-setup="{}"
                    poster="{{asset('images/video_loading.jpg')}}">
-                <source id="source-video" src="video/flamingo-slider2.mp4" type='video/mp4' />
+                <source id="source-video" src="video/frontpage_video.mp4" type='video/mp4' />
             </video>
             <img src="{{asset('images/video_loading.jpg')}}" width="1280" height="720">
             <div class="overlay-video"></div>
