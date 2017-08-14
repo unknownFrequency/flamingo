@@ -18,15 +18,15 @@ class MessagesController extends Controller
      */
     public function index()
     {
+        // TODO: Use middleware
         if(auth()->check()) {
             (int)$user_id = auth()->user()->id;
         }
-
-        if($user_id) {
-            if($messages = Message::getMessages($user_id)) {
+        if(isset($user_id)) {
+            if($messages = Message::getMessagesFrom(7, $user_id, false)) {
                  return view('messages/index', compact('messages'));
             }
-        }  else {
+        } else {
            return redirect('/login')->with('message', 'Du skal logge ind for at læse dine beskeder');
         }
 

@@ -25,17 +25,18 @@ class Message extends Model
         return $this->hasMany(MessageResponse::class);
     }
 
-    public static function getMessagesFrom($daysFromNow)
+    public static function getMessagesFrom($daysFromNow, $user_id, $solved = false)
     {
         $from = Carbon::now()->subDay($daysFromNow)->toDateTimeString(); // or ->format(..)
         $to = Carbon::now()->toDateTimeString();
+        $messages = Message::
+            whereBetween('updated_at', array($from, $to))
+            ->where('solved', '=', $solved)
+            ->where('user_id', '=', $user_id)
+            ->orWhere('to_id', '=', $user_id)
+            ->get();
 
-        if($messages = Message::whereBetween('created_at', array($from, $to))->get()) {
-           return $messages;
-        } else {
-            return false;
-        }
-
+        return $messages ? $messages : false;
     }
 
     public function addMessage($title, $body, $user_id)
