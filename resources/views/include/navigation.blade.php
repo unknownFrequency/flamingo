@@ -19,7 +19,7 @@
                     <ul class="dropdown-menu dropdown-menu-large row">
                         <li class="col-sm-3">
                             <ul>
-                                <li class="dropdown-header"><a href="{{ URL::to('/weblosninger') }}">Webløsninger</a></li>
+                                <li class="dropdown-header"><a href="{{ URL::to('/weblosninger') }}" style="color:#fff;">Webløsninger</a></li>
                                 <li><a href="/weblosninger#wordpress-link">Wordpress</a></li>
                                 <li><a href="/weblosninger#bootstrap-link">Bootstrap</a></li>
                                 <li><a href="/weblosninger#seo-link">Søgeoptimering</a></li>
@@ -28,7 +28,7 @@
                         </li>
                         <li class="col-sm-3">
                             <ul>
-                                <li class="dropdown-header"><a href="{{ URL::to('/webshops') }}">Webshops</a></li>
+                                <li class="dropdown-header"><a href="{{ URL::to('/webshops') }}" style="color:#fff;">Webshops</a></li>
                                 <li><a href="/webshops#magento-link">Magento</a></li>
                                 <li><a href="/webshops#woo-link">WooCommerce</a></li>
                                 <li><a href="/webshops#shopify-link">Shopify</a></li>
@@ -36,7 +36,7 @@
                         </li>
                         <li class="col-sm-3">
                             <ul>
-                                <li class="dropdown-header"><a href="{{ URL::to('/grafik') }}">Grafisk Arbejde</a></li>
+                                <li class="dropdown-header"><a href="{{ URL::to('/grafik') }}" style="color:#fff;">Grafisk Arbejde</a></li>
                                 <li><a href="/grafik#logo">Logo</a></li>
                                 <li><a href="/grafik#webdesign">Webdesign</a></li>
                                 <li><a href="/grafik#tryksager">Tryksager</a></li>
@@ -46,7 +46,7 @@
                         </li>
                         <li class="col-sm-3">
                             <ul>
-                                <li class="dropdown-header"><a href="{{ URL::to('/foto') }}">Foto/Video</a></li>
+                                <li class="dropdown-header"><a href="{{ URL::to('/foto') }}" style="color:#fff;">Foto/Video</a></li>
                                 <li><a href="/foto#personalebilleder">Personalebilleder</a></li>
                                 <li><a href="/foto#produktbilleder">Produktbilleder</a></li>
                                 <li><a href="/foto#produktvideo">Produktvideo</a></li>
@@ -70,7 +70,7 @@
                 </li>
             </ul>
             <!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
+            <a class="btn-number" href="tel:+4556568181"><i class="fa fa-phone" aria-hidden="true"></i> 81 81 56 56</a><button id="myBtn">Bliv Kontaktet</button>
             <div class="pull-xs-right">
                 @if(isset(Auth::user()->name))
                     @include('include/usermenu')
@@ -89,11 +89,12 @@
   <div class="modal-content">
     <div class="modal-header">
       <span class="close">&times;</span>
-      <h2>Indhent Tilbud</h2>
     </div>
     <div class="modal-body">
       <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:20px;">
+            <h2>Indhent dit gratis tilbud i dag.</h2>
+
             <div class="well well-sm">
                 <form method="POST" action="/kontakt">
                     {{ csrf_field() }}
@@ -141,65 +142,19 @@
             </div>
           </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:20px;">
-              <p class="lead">Register now for <span class="text-success">FREE</span></p>
+              <p class="lead">Få et uforpligtende tilbud <span class="text-success">indenfor 24 timer</span></p>
                   <ul class="list-unstyled" style="line-height: 2">
                       <li><span class="fa fa-check text-success"></span> See all your orders</li>
                       <li><span class="fa fa-check text-success"></span> Fast re-order</li>
                       <li><span class="fa fa-check text-success"></span> Save your favorites</li>
-                      <li><span class="fa fa-check text-success"></span> Fast checkout</li>
-                      <li><span class="fa fa-check text-success"></span> Get a gift <small>(only new customers)</small></li>
-                      <li><a href="/read-more/"><u>Read more</u></a></li>
+                      <img class="img-responsive" src="{{asset('images/tilbud.png')}}" alt="">
+
                   </ul>
             </div>
         </div>
     </div>
     <div class="modal-footer">
-      <div class="container">
-              <div class="row">
-                  <div class="col-sm-6 col-md-4 col-lg-3 mt-4" style="margin: 0 auto;">
-                      <div class="card">
-                          <img class="card-img-top" src="{{asset('images/christopher_kontakt.png')}}">
-                          <div class="card-block">
-                              <h4 class="card-title">Christopher Mørk</h4>
-                              <div class="meta">
-                                  <p>Projektleder - Designer</p>
-                              </div>
-                          </div>
-                          <div class="card-footer">
-                            <span><i class=""></i><a href="mailto:#">cm@flamingomedia.dk</a></span>
-                          </div>
-                      </div>
-                  </div>
 
-                  <div class="col-sm-6 col-md-4 col-lg-3 mt-4" style="margin: 0 auto;">
-                      <div class="card">
-                          <img class="card-img-top" src="{{asset('images/ruben_kontakt.png')}}">
-                          <div class="card-block">
-                              <h4 class="card-title">Ruben Thuesen</h4>
-                              <div class="meta">
-                                  <p>Programmør</p>
-                              </div>
-                          </div>
-                          <div class="card-footer">
-                            <span><i class=""></i><a href="mailto:#">rt@flamingomedia.dk</a></span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-sm-6 col-md-4 col-lg-3 mt-4" style="margin: 0 auto;">
-                      <div class="card">
-                          <img class="card-img-top" src="{{asset('images/anders_kontakt.png')}}">
-                          <div class="card-block">
-                              <h4 class="card-title">Anders Jakobsen</h4>
-                              <div class="meta">
-                                  <p>Webdesign - Foto/Video</p>
-                              </div>
-                          </div>
-                          <div class="card-footer">
-                              <span><i class=""></i><a href="mailto:#">aj@flamingomedia.dk</a></span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
       </div>
     </div>
   </div>

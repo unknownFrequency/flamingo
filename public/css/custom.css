@@ -57,7 +57,7 @@ text-transform: uppercase;
 }
 
 .navbar-brand img{
-  height: 60px;
+  height: 45px;
 }
 
 .navbar-light .navbar-toggler{
@@ -176,6 +176,7 @@ display: none;
   color: #262626;
   background-color: #f5f5f5;
 }
+
 .dropdown-menu-large .disabled > a,
 .dropdown-menu-large .disabled > a:hover,
 .dropdown-menu-large .disabled > a:focus {
@@ -1360,4 +1361,46 @@ button.btn.btn-primary.price:hover{
     padding: 2px 16px;
     background-color: #fff;
     color: white;
+}
+
+.text-success{
+  color: #cd1959 !important;
+}
+#myBtn{
+-moz-box-shadow: 0px 1px 0px 0px #d17b9a;
+-webkit-box-shadow: 0px 1px 0px 0px #d17b9a;
+box-shadow: 0px 1px 0px 0px #d17b9a;
+background-color:#cd1958;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial;
+font-size:15px;
+padding:0px 23px;
+text-decoration:none;
+text-shadow:0px 1px 0px #943558;
+border: none;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;
+}
+
+.btn-number{
+  -moz-box-shadow: 0px 1px 0px 0px #d17b9a;
+  -webkit-box-shadow: 0px 1px 0px 0px #d17b9a;
+  box-shadow: 0px 1px 0px 0px #d17b9a;
+  background-color: #f7f7f7;
+  -moz-border-radius: 2px;
+  /* -webkit-border-radius: 2px; */
+  /* border-radius: 3px; */
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 9px;
+  text-decoration: none;
+  color: #cd1959;
+  font-weight: 900;
 }
