@@ -1,7 +1,7 @@
 @extends('include/layout')
 @section('content')
     <div>
-        <h2>Beskeder fra de sidste 7 dage</h2>
+        <h2>Beskeder @if(auth()->user()->role_id == 1) fra sidste 7 dage @endif</h2>
 
         @foreach($messages as $message)
             Fra bruger: <a href="{{ URL::to('/admin/users/'.$message->user_id) }}">{{ App\User::find($message->user_id)->name }}</a> <br /><br />

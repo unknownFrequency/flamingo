@@ -23,8 +23,14 @@ class MessagesController extends Controller
             (int)$user_id = auth()->user()->id;
         }
         if(isset($user_id)) {
-            if($messages = Message::getMessagesFrom(7, $user_id, false)) {
-                 return view('messages/index', compact('messages'));
+            if(auth()->user()->role_id == 1) {
+                if($messages = Message::getMessagesFrom(777, $user_id, false)) {
+                    return view('messages/index', compact('messages'));
+                }
+            } else {
+                if($messages = Message::getMessages($user_id)) {
+                    return view('messages/index', compact('messages'));
+                }
             }
         } else {
            return redirect('/login')->with('message', 'Du skal logge ind for at læse dine beskeder');
@@ -47,14 +53,14 @@ class MessagesController extends Controller
     {
         $message = Message::findOrFail($id);
 
-        if(request('solved') === "1" || request('solved') === "0"){
+        if(!empty(request('solved')) && request('solved') === "1" || request('solved') === "0"){
             //(int)request('solved') === 1 ? $message->solved = 1  : $message->solved = 0 ;
             $message->solved = (int)request('solved');
             $message->save();
             if($message->solved === 0) {
                 return redirect("/beskeder/{$message->id}");
             } else {
-                return redirect("/admin");
+                return redirect("/beskeder");
             }
         }
 

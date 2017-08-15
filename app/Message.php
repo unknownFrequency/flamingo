@@ -25,6 +25,18 @@ class Message extends Model
         return $this->hasMany(MessageResponse::class);
     }
 
+    public function messagesWithoutResponse() {
+        // TODO
+    }
+
+    public static function getMessages($user_id) {
+            return DB::table('messages')
+                ->select(DB::raw(' * '))
+                ->where('user_id', '=', $user_id)
+                ->orWhere('to_id', '=', $user_id)
+                ->get();
+    }
+
     public static function getMessagesFrom($daysFromNow, $user_id, $solved = false)
     {
         $from = Carbon::now()->subDay($daysFromNow)->toDateTimeString(); // or ->format(..)
@@ -32,8 +44,8 @@ class Message extends Model
         $messages = Message::
             whereBetween('updated_at', array($from, $to))
             ->where('solved', '=', $solved)
-            ->where('user_id', '=', $user_id)
-            ->orWhere('to_id', '=', $user_id)
+//            ->where('user_id', '=', $user_id)
+//            ->orWhere('to_id', '=', $user_id)
             ->get();
 
         return $messages ? $messages : false;
@@ -53,11 +65,4 @@ class Message extends Model
         }
     }
 
-    public static function getMessages($user_id) {
-            return DB::table('messages')
-                ->select(DB::raw(' * '))
-                ->where('user_id', '=', $user_id)
-                ->orWhere('to_id', '=', $user_id)
-                ->get();
-    }
 }
