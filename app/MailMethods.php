@@ -15,6 +15,22 @@ use Illuminate\Support\Facades\Response;
 
 class MailMethods
 {
+
+    public static function sendNotificationToAdmin(Array $data, $message_id) {
+        Mail::send(
+            'contact.send_notification',
+            [
+                'user'  => User::find($data['user_id'])->name,
+                'body'  => $data['title'],
+                'title' => $data['body'],
+                'url'   => URL::to('/beskeder/'.$message_id)
+            ], function($message) {
+                $message->from('info@flamingomedia.dk');
+                $message->to('rt@hshop.dk', 'Admin')->subject('Ny besked fra kunde');
+            }
+        );
+    }
+
     public static function sendMail(\Illuminate\Http\Request $request)
     {
         $data =  [

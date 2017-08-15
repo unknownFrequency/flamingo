@@ -1,5 +1,9 @@
 @extends('include/layout')
 @section('content')
+    <div style="float:right; font-size: 20px; margin: 20px 50px 0 0;background-color: lightgrey; padding: 15px;">
+        <a href="{{URL::to('/beskeder/create')}}">Ny besked</a>
+    </div>
+
     <div>
         <h2>Beskeder @if(auth()->user()->role_id == 1) fra sidste 7 dage @endif</h2>
 

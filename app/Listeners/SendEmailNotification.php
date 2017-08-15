@@ -3,6 +3,7 @@
 namespace App\Listeners;
 
 use App\Events\MessageCreated;
+use App\MailMethods;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
@@ -26,6 +27,6 @@ class SendEmailNotification
      */
     public function handle(MessageCreated $event)
     {
-        $event->message;
+        MailMethods::sendNotificationToAdmin($event->message, $event->message_id);
     }
 }

@@ -15,15 +15,17 @@ class MessageCreated
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     public $message;
+    public $message_id;
 
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct(Message $message)
+    public function __construct(Array $data, $message_id)
     {
-        $this->message = $message;
+        $this->message = $data;
+        $this->message_id = $message_id;
     }
 
     /**

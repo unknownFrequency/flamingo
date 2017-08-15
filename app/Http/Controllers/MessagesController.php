@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\MessageCreated;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Auth;
@@ -24,7 +25,7 @@ class MessagesController extends Controller
         }
         if(isset($user_id)) {
             if(auth()->user()->role_id == 1) {
-                if($messages = Message::getMessagesFrom(777, $user_id, false)) {
+                if($messages = Message::getMessagesFrom(10, $user_id, false)) {
                     return view('messages/index', compact('messages'));
                 }
             } else {
@@ -57,6 +58,8 @@ class MessagesController extends Controller
             //(int)request('solved') === 1 ? $message->solved = 1  : $message->solved = 0 ;
             $message->solved = (int)request('solved');
             $message->save();
+            event(new MessageCreated($message));
+
             if($message->solved === 0) {
                 return redirect("/beskeder/{$message->id}");
             } else {
@@ -95,6 +98,7 @@ class MessagesController extends Controller
         }
 
         if($message = Message::create($data)) {
+            event(new MessageCreated($data, $message->id));
             return redirect("/beskeder/". $message->id)->with('message', 'Tak for beskeden');
         } else {
             return back()->with('status', 'Noget gik sku galt!');
