@@ -55,7 +55,7 @@ Route::get('/foto', 'PhotosController@index');
 
 // KONTAKT //
 Route::get('/kontakt', 'ContactController@index');
-Route::post('/kontakt', 'ContactController@sendMail');
+Route::post('/kontakt', 'ContactController@contact');
 
 Route::get('/priser', 'PricesController@index');
 
