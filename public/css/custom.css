@@ -1454,7 +1454,7 @@ div.product-chooser{
 	}
 
 	div.product-chooser div.product-chooser-item{
-		padding: 11px;
+		padding: 6px 0px 11px 0px;
 		border-radius: 6px;
 		cursor: pointer;
 		position: relative;
@@ -1479,8 +1479,8 @@ div.product-chooser{
 		div.product-chooser div.product-chooser-item span.title{
 			display: block;
 			margin: 10px 0 5px 0;
-			font-weight: bold;
-			font-size: 12px;
+			font-weight: 500;
+			font-size: 16px;
 		}
 
 		div.product-chooser div.product-chooser-item span.description{
