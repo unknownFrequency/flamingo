@@ -539,19 +539,8 @@
                     <button data-toggle="collapse" class="btn btn-primary price" data-target="#">Se Priser <i class="fa fa-caret-down" aria-hidden="true"></i></button>
                 </div>
 
-                <div class="col-sm-7 bottom-margin">
-                    <div class="img-lang-container">
-                        <img class="img-responsive img-lang" src="{{asset('images/websolutions/bootstrap.gif')}}" alt="">
-                        <img class="img-responsive img-lang" src="{{asset('images/websolutions/ruby.jpg')}}" alt="">
-                        <img class="img-responsive img-lang" src="{{asset('images/websolutions/rails.png')}}" alt="">
-                        <img class="img-responsive img-lang" src="{{asset('images/websolutions/react.png')}}" alt="">
-                    </div>
-                    <div class="img-lang-container">
-                        <img class="img-responsive img-lang" src="{{asset('images/websolutions/laravel.png')}}" alt="">
-                        <img class="img-responsive img-lang" src="{{asset('images/websolutions/php_mysql.png')}}" alt="">
-                        <img class="img-responsive img-lang" src="{{asset('images/websolutions/docker.png')}}" alt="">
-                        <img class="img-responsive img-lang" src="{{asset('images/websolutions/linux.png')}}" alt="">
-                    </div>
+                <div class="col-sm-7">
+                    <img class="img-responsive" src="{{asset('images/websolutions/customkode.png')}}" alt="">
                 </div>
 
                 <div class="priser" style="padding-top: 45px; padding-bottom: 20px;">
