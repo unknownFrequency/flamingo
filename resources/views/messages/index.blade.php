@@ -1,5 +1,8 @@
 @extends('include/layout')
 @section('content')
+
+    <div id="support-slider"></div>
+
     <div style="float:right; font-size: 20px; margin: 20px 50px 0 0;background-color: lightgrey; padding: 15px;">
         <a href="{{URL::to('/beskeder/create')}}">Ny besked</a>
     </div>
