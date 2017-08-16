@@ -14,7 +14,8 @@
 
     <div class="form-group">
         <label for="title">Overskrift</label>
-        <input type="text" class="form-control" id="title" name="title" placeholder="Titel" value="{{ $message->title or 'Overskrift' }}">
+        <input type="text" class="form-control" id="title" name="title"
+               placeholder="Titel" value="{{ $message->title or 'Overskrift' }}">
     </div>
 
     <div class="form-group">

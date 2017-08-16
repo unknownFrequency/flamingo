@@ -58,7 +58,6 @@ class MessagesController extends Controller
             //(int)request('solved') === 1 ? $message->solved = 1  : $message->solved = 0 ;
             $message->solved = (int)request('solved');
             $message->save();
-            event(new MessageCreated($message));
 
             if($message->solved === 0) {
                 return redirect("/beskeder/{$message->id}");
@@ -72,11 +71,16 @@ class MessagesController extends Controller
             'body'  => 'required'
         ]);
 
-        $message->update([
+        $data = [
+            'user_id' => request('user_id'),
             'title' => request('title'),
             'body' => request('body')
+        ];
+
+        $message->update([
         ]);
 
+        event(new MessageCreated($message));
         return redirect("/beskeder/{$message->id}");
     }
 
