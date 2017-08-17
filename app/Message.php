@@ -18,36 +18,15 @@ class Message extends Model
         return $this->belongsTo(User::class);
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
     public function messageResponse() {
         return $this->hasMany(MessageResponse::class);
     }
 
-    public static function getMessagesFrom($daysFromNow)
-    {
-        $from = Carbon::now()->subDay($daysFromNow)->toDateTimeString(); // or ->format(..)
-        $to = Carbon::now()->toDateTimeString();
-
-        if($messages = Message::whereBetween('created_at', array($from, $to))->get()) {
-           return $messages;
-        } else {
-            return false;
-        }
-
-    }
-
-    public function addMessage($title, $body, $user_id)
-    {
-        if(Message::create([
-            'id' => $this->id,
-            'user_id' => $user_id,
-            'title'    => $title,
-            'body'    => $body
-        ]))
-        {
-            return back()->with('status', 'Tak for kommentaren');
-        } else {
-            return back()->with('status', 'Noget gik sku galt!');
-        }
+    public function messagesWithoutResponse() {
+        // TODO
     }
 
     public static function getMessages($user_id) {
@@ -57,4 +36,66 @@ class Message extends Model
                 ->orWhere('to_id', '=', $user_id)
                 ->get();
     }
+
+    public static function getMessagesFrom($daysFromNow, $user_id, $solved = false)
+    {
+        $from = Carbon::now()->subDay($daysFromNow)->toDateTimeString(); // or ->format(..)
+        $to = Carbon::now()->toDateTimeString();
+        $messages = Message::
+            whereBetween('updated_at', array($from, $to))
+            ->where('solved', '=', $solved)
+//            ->where('user_id', '=', $user_id)
+//            ->orWhere('to_id', '=', $user_id)
+            ->get();
+
+        return $messages ? $messages : false;
+    }
+
+    public function addMessage($title, $body, $user_id)
+    {
+        if(Message::create([
+            'id' => $this->id,
+            'user_id' => $user_id,
+            'title'    => $title,
+            'body'    => $body
+        ])) {
+            return back()->with('status', 'Tak for kommentaren');
+        } else {
+            return back()->with('status', 'Noget gik sku galt!');
+        }
+    }
+
+    public static function getMessagesWithoutResponse($user_id) {
+        $messages = Message::with('MessageResponse')->get();
+
+        foreach ($messages as $message) {
+            if(!isset($message->relations['MessageResponse'][0]) && User::find($message->user_id)->role_id != 1) {
+                $needsResponse[] = $message;
+            }
+        }
+        return $needsResponse ? $needsResponse : false;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

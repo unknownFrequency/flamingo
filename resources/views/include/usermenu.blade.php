@@ -29,6 +29,11 @@
                                 <a href="/admin/users/{{ auth()->user()->id}}/edit" class="btn btn-primary btn-block btn-sm profil-btn">Profil</a>
                             </p>
                             <p class="text-left">
+                                @if(auth()->user()->role_id === 1)
+                                    Der er
+                                        {{ count(\App\Message::getMessagesWithoutResponse(auth()->user()->id)) + count(\App\MessageResponse::getLatestResponse(auth()->user()->id)) }}
+                                    ubesvarede
+                                @endif
                                 <a href="{{ URL::to('/messages') }}">Beskeder</a>
                             </p>
                         </div>

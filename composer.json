@@ -8,6 +8,7 @@
         "php": ">=5.6.4",
         "aloha/twilio": "^3.0",
         "bogardo/mailgun": "^5.0",
+        "jeroennoten/laravel-ckeditor": "^3.8",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "php-http/guzzle6-adapter": "^1.1",

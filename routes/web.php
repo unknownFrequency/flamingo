@@ -55,7 +55,7 @@ Route::get('/foto', 'PhotosController@index');
 
 // KONTAKT //
 Route::get('/kontakt', 'ContactController@index');
-Route::post('/kontakt', 'ContactController@sendMail');
+Route::post('/kontakt', 'ContactController@contact');
 
 Route::get('/priser', 'PricesController@index');
 
@@ -65,7 +65,3 @@ Route::group(['prefix' => 'admin'], function () {
 
 //Route::get('mail', 'MailController@mail');
 
-
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});

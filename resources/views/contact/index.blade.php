@@ -2,6 +2,13 @@
 
 @section('content')
 
+    @if(isset($_GET) && !empty($_GET) && $_GET['msg-send'])
+        <div id="flash-message" class="alert alert-success" role="alert">
+            Tak for din henvendelse, vi vender tilbage hurtigst muligt
+        </div>
+    @endif
+
+
 <section class="contact-page">
   <div class="jumbotron jumbotron-sm">
     <div class="container">

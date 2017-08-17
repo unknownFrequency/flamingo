@@ -4,7 +4,7 @@ mix.autoload({
     jquery: ['$', 'window.jQuery', 'jQuery'],
     tether: ['window.Tether', 'Tether']
 })
-.js([
+.react([
     'node_modules/tether/dist/js/tether.min.js',
     'node_modules/bootstrap/dist/js/bootstrap.js',
     'resources/assets/js/app.js'
