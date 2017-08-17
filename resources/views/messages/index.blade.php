@@ -1,8 +1,10 @@
 @extends('include/layout')
 @section('content')
 
+    <!-- TODO: extract to views and include -->
     @if(isset($needsResponse) || isset($messagesWithoutResponse))
         <div style="background-color: #2a95c5; margin-top: 20px; padding: 5px;">
+            {{--            {{ dd($needsResponse) }}--}}
             @if($needsResponse)
                 <h2>Admin: Ubesvarede beskeder!</h2>
                 @foreach($needsResponse as $msgToRespondTo)
@@ -15,6 +17,9 @@
                         Bruger: <a href="{{ URL::to('admin/users/'.$msgToRespondTo->responder_id) }}">
                             {{ \App\User::find($msgToRespondTo->responder_id)->name }}
                         </a>
+                        <span style="font-size: 70%; float:right;">
+                                {{\Carbon\Carbon::parse($msgToRespondTo->updated_at)->format('d/m/Y - H:i') }}
+                            </span>
                     </p>
                     <hr />
                 @endforeach
@@ -31,6 +36,9 @@
                         Bruger: <a href="{{ URL::to('admin/users/'.$messageWithoutResponse->user_id) }}">
                             {{ \App\User::find($messageWithoutResponse->user_id)->name }}
                         </a>
+                        <span style="font-size: 70%; float:right;">
+                            {{\Carbon\Carbon::parse($messageWithoutResponse->updated_at)->format('d/m/Y - H:i') }}
+                        </span>
                     </p>
                     <hr />
                 @endforeach
