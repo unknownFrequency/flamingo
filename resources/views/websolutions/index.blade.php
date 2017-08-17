@@ -67,7 +67,7 @@
                         Det typiske WordPress site vil være et infosite, blog, galleri, portfolio, en lille webshop eller lige præcis det du ønsker.
 
                     </p>
-                    <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+                    <button id="myBtn2">Få et uforpligtende tilbud</button>
                     <button data-toggle="collapse" class="btn btn-primary price" data-target="#wordpress">Se Priser <i class="caret-icon fa fa-caret-down" aria-hidden="true"></i></button>
                 </div>
                 <div class="priser" style="padding-top: 45px; padding-bottom: 20px;">
@@ -222,7 +222,7 @@
 
                     <p>Vi sætter en ære i udelukkende at lave smukke hjemmesider, så vores kunder stolt kan vise den frem til deres kunder. Vi laver layoutet, som du ønsker det, og udvikler hjemmesiden med nøjagtigt det farmetema, der passer til din virksomheds visuelle identitet. Vi har dygtiggjort os inden for alle former for webdesign, og kan derfor altid tilbyde en fuldstændig pakke.
                     </p>
-                    <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+                    <button id="myBtn2">Få et uforpligtende tilbud</button>
                     <button data-toggle="collapse" class="btn btn-primary price" data-target="#bootstrap">Se Priser <i class="fa fa-caret-down" aria-hidden="true"></i></button>
 
                 </div>
