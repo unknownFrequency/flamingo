@@ -1,6 +1,25 @@
 @extends('include/layout')
 @section('content')
 
+    @if(isset($needsResponse))
+        <div style="background-color: #2a95c5; margin-top: 20px; padding: 5px;">
+            <h2>Admin: Ubesvarede beskeder!</h2>
+        @foreach($needsResponse as $msgToRespondTo)
+                <p style="margin-left: 20px;">
+                    Titel: <a href="{{URL::to('beskeder/'.$msgToRespondTo->message_id)}}">
+                        {{ \App\Message::find($msgToRespondTo->message_id)->title }}
+                    </a>
+                </p>
+                <p style="margin-left: 40px;">
+                    Bruger: <a href="{{ URL::to('admin/users/'.$msgToRespondTo->responder_id) }}">
+                        {{ \App\User::find($msgToRespondTo->responder_id)->name }}
+                    </a>
+                </p>
+                <hr />
+        @endforeach
+        </div>
+    @endif
+    <!-- ReactJS Ready -->
     <div id="support-slider"></div>
 
     <div style="float:right; font-size: 20px; margin: 20px 50px 0 0;background-color: lightgrey; padding: 15px;">

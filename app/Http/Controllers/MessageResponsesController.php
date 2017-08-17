@@ -10,6 +10,7 @@ use App\Message;
 
 class MessageResponsesController extends Controller
 {
+    // TODO
 //    protected $fillable = ['message_id', 'responder_id', 'body'];
 
     public function create($message_id)

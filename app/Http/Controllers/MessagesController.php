@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Auth;
 use App\Message;
+use App\MessageResponse;
 
 class MessagesController extends Controller
 {
@@ -26,7 +27,8 @@ class MessagesController extends Controller
         if(isset($user_id)) {
             if(auth()->user()->role_id == 1) {
                 if($messages = Message::getMessagesFrom(10, $user_id, false)) {
-                    return view('messages/index', compact('messages'));
+                    $needsResponse = MessageResponse::getLatestResponse(auth()->user()->id);
+                    return view('messages/index', compact('messages', 'needsResponse'));
                 }
             } else {
                 if($messages = Message::getMessages($user_id)) {
