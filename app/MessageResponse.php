@@ -60,13 +60,6 @@ class MessageResponse extends Model
             } else {
                 return false;
             }
-
-
-            // 
-
-//            MessageResponse::all()
-//                ->where('responder_id', '=', $user_id)
-
         }
     }
 

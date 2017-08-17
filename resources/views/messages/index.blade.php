@@ -1,22 +1,40 @@
 @extends('include/layout')
 @section('content')
 
-    @if(isset($needsResponse))
+    @if(isset($needsResponse) || isset($messagesWithoutResponse))
         <div style="background-color: #2a95c5; margin-top: 20px; padding: 5px;">
-            <h2>Admin: Ubesvarede beskeder!</h2>
-        @foreach($needsResponse as $msgToRespondTo)
-                <p style="margin-left: 20px;">
-                    Titel: <a href="{{URL::to('beskeder/'.$msgToRespondTo->message_id)}}">
-                        {{ \App\Message::find($msgToRespondTo->message_id)->title }}
-                    </a>
-                </p>
-                <p style="margin-left: 40px;">
-                    Bruger: <a href="{{ URL::to('admin/users/'.$msgToRespondTo->responder_id) }}">
-                        {{ \App\User::find($msgToRespondTo->responder_id)->name }}
-                    </a>
-                </p>
-                <hr />
-        @endforeach
+            @if($needsResponse)
+                <h2>Admin: Ubesvarede beskeder!</h2>
+                @foreach($needsResponse as $msgToRespondTo)
+                    <p style="margin-left: 20px;">
+                        Titel: <a href="{{URL::to('beskeder/'.$msgToRespondTo->message_id)}}">
+                            {{ \App\Message::find($msgToRespondTo->message_id)->title }}
+                        </a>
+                    </p>
+                    <p style="margin-left: 40px;">
+                        Bruger: <a href="{{ URL::to('admin/users/'.$msgToRespondTo->responder_id) }}">
+                            {{ \App\User::find($msgToRespondTo->responder_id)->name }}
+                        </a>
+                    </p>
+                    <hr />
+                @endforeach
+            @endif
+
+            @if($messagesWithoutResponse)
+                @foreach($messagesWithoutResponse as $messageWithoutResponse)
+                    <p style="margin-left: 20px;">
+                        Titel: <a href="{{URL::to('beskeder/'.$messageWithoutResponse->id)}}">
+                            {{ $messageWithoutResponse->title }}
+                        </a>
+                    </p>
+                    <p style="margin-left: 40px;">
+                        Bruger: <a href="{{ URL::to('admin/users/'.$messageWithoutResponse->user_id) }}">
+                            {{ \App\User::find($messageWithoutResponse->user_id)->name }}
+                        </a>
+                    </p>
+                    <hr />
+                @endforeach
+            @endif
         </div>
     @endif
     <!-- ReactJS Ready -->

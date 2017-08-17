@@ -65,4 +65,37 @@ class Message extends Model
         }
     }
 
+    public static function getMessagesWithoutResponse($user_id) {
+        $messages = Message::with('MessageResponse')->get();
+
+        foreach ($messages as $message) {
+            if(!isset($message->relations['MessageResponse'][0]) && User::find($message->user_id)->role_id != 1) {
+                $needsResponse[] = $message;
+            }
+        }
+        return $needsResponse ? $needsResponse : false;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

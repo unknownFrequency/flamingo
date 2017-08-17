@@ -28,7 +28,9 @@ class MessagesController extends Controller
             if(auth()->user()->role_id == 1) {
                 if($messages = Message::getMessagesFrom(10, $user_id, false)) {
                     $needsResponse = MessageResponse::getLatestResponse(auth()->user()->id);
-                    return view('messages/index', compact('messages', 'needsResponse'));
+                    $messagesWithoutResponse = Message::getMessagesWithoutResponse(auth()->user()->id);
+
+                    return view('messages/index', compact('messages', 'needsResponse', 'messagesWithoutResponse'));
                 }
             } else {
                 if($messages = Message::getMessages($user_id)) {
