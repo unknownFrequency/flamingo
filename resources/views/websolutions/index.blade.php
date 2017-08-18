@@ -223,132 +223,12 @@
                     <p>Vi sætter en ære i udelukkende at lave smukke hjemmesider, så vores kunder stolt kan vise den frem til deres kunder. Vi laver layoutet, som du ønsker det, og udvikler hjemmesiden med nøjagtigt det farmetema, der passer til din virksomheds visuelle identitet. Vi har dygtiggjort os inden for alle former for webdesign, og kan derfor altid tilbyde en fuldstændig pakke.
                     </p>
                     <button id="myBtn2">Få et uforpligtende tilbud</button>
-                    <button data-toggle="collapse" class="btn btn-primary price" data-target="#bootstrap">Se Priser <i class="fa fa-caret-down" aria-hidden="true"></i></button>
-
                 </div>
                 <div class="col-sm-7">
                     <img class="img-responsive" src="{{asset('images/websolutions/bootstrap.png')}}" alt="">
                 </div>
 
             </div>
-            <div class="priser" style="padding-top: 45px; padding-bottom: 20px;">
-                <div id="bootstrap" class="collapse" style="margin-top: 15px; text-align: center;">
-                    <!-- Pricing -->
-                    <div class="container content">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="pricing hover-effect">
-                                    <div class="pricing-head">
-                                        <h3>Basis <span>
-                        Standard opsætning </span>
-                                        </h3>
-                                        <h4><i>DKK </i><i>4.000,-</i></h4>
-                                    </div>
-                                    <ul class="pricing-content list-unstyled">
-                                        <li>
-                                            Installation af Wordpress
-                                        </li>
-                                        <li>
-                                            Installation af tema
-                                        </li>
-                                        <li>
-                                            Fusce condimentum
-                                        </li>
-                                        <li>
-                                            Ut non libero
-                                        </li>
-                                        <li>
-                                            Consecte adiping elit
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-footer">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
-                                        </p>
-                                        <a href="javascript:;" class="btn yellow-crusta">
-                                            Sign Up
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="pricing hover-effect">
-                                    <div class="pricing-head">
-                                        <h3>Plus <span>
-                        Tekst her </span>
-                                        </h3>
-                                        <h4><i>DKK </i><i>12.000,-</i>
-                                        </h4>
-                                    </div>
-                                    <ul class="pricing-content list-unstyled">
-                                        <li>
-                                            Installation af Wordpress
-                                        </li>
-                                        <li>
-                                            Installation af tema
-                                        </li>
-                                        <li>
-                                            Mobiloptimering
-                                        </li>
-                                        <li>
-                                            Søgeoptimering
-                                        </li>
-                                        <li>
-                                            Op til 20 undersider
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-footer">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
-                                        </p>
-                                        <a href="javascript:;" class="btn yellow-crusta">
-                                            Sign Up
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="pricing pricing-active hover-effect">
-                                    <div class="pricing-head pricing-head-active">
-                                        <h3>Luksus<span>
-                        Tekst her </span>
-                                        </h3>
-                                        <h4><i>DKK </i><i>20.000,-</i>
-                                        </h4>
-                                    </div>
-                                    <ul class="pricing-content list-unstyled">
-                                        <li>
-                                            Installation af Wordpress
-                                        </li>
-                                        <li>
-                                            Installation af tema
-                                        </li>
-                                        <li>
-                                            Mobiloptimering
-                                        </li>
-                                        <li>
-                                            Søgeoptimering
-                                        </li>
-                                        <li>
-                                            Mere end 20 undersider
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-footer">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
-                                        </p>
-                                        <a href="javascript:;" class="btn yellow-crusta">
-                                            Sign Up
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--//End Pricing -->
-            </div>
-        </div>
 
         <div class="container reasons" style="margin-top: 38px;">
             <h3 style="text-align: center; font-weight:lighter; margin-bottom: 27px;"> 5 Grunde til at vælge Bootstrap: </h3>
@@ -383,287 +263,50 @@
 
     <!-- SEO -->
     <section id="overview">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7">
-                    <img class="img-responsive" src="{{asset('images/websolutions/wordpress.png')}}" alt="">
-                </div>
-                <div class="col-sm-5" style="padding-top: 8%;">
-                    <h3 class="column-title">Søgeoptimering</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7">
+            <img class="img-responsive" src="{{asset('images/websolutions/wordpress.png')}}" alt="">
+          </div>
+          <div class="col-sm-5" style="padding-top: 8%;">
+            <h3 class="column-title">Søgeoptimering</h3>
 
-                    <p>Dit logo er det første dine kunder, stifter bekendtskab med. Det er det vigtigste element i din visuelle identitet, og det er det, du bliver husket på. Derfor er det vigtigt, at logoet sidder helt i skabet, så du et letgenkendelig. Vi kan tegne et logo, der er din virksomhed værdig, og som vil komme til at fremstå helt skarp på din hjemmeside eller dine print.
-                    </p>
-                    <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
-                    <button data-toggle="collapse" class="btn btn-primary price" data-target="#seo">Se Priser <i class="fa fa-caret-down" aria-hidden="true"></i></button>
-                </div>
-            </div>
-            <div class="priser" style="padding-top: 45px; padding-bottom: 20px;">
-                <div id="seo" class="collapse" style="margin-top: 15px; text-align: center;">
-                    <!-- Pricing -->
-                    <div class="container content">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="pricing hover-effect">
-                                    <div class="pricing-head">
-                                        <h3>Basis <span>
-                            Standard opsætning </span>
-                                        </h3>
-                                        <h4><i>DKK </i><i>4.000,-</i></h4>
-                                    </div>
-                                    <ul class="pricing-content list-unstyled">
-                                        <li>
-                                            Installation af Wordpress
-                                        </li>
-                                        <li>
-                                            Installation af tema
-                                        </li>
-                                        <li>
-                                            Fusce condimentum
-                                        </li>
-                                        <li>
-                                            Ut non libero
-                                        </li>
-                                        <li>
-                                            Consecte adiping elit
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-footer">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
-                                        </p>
-                                        <a href="javascript:;" class="btn yellow-crusta">
-                                            Sign Up
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="pricing hover-effect">
-                                    <div class="pricing-head">
-                                        <h3>Plus <span>
-                            Tekst her </span>
-                                        </h3>
-                                        <h4><i>DKK </i><i>12.000,-</i>
-                                        </h4>
-                                    </div>
-                                    <ul class="pricing-content list-unstyled">
-                                        <li>
-                                            Installation af Wordpress
-                                        </li>
-                                        <li>
-                                            Installation af tema
-                                        </li>
-                                        <li>
-                                            Mobiloptimering
-                                        </li>
-                                        <li>
-                                            Søgeoptimering
-                                        </li>
-                                        <li>
-                                            Op til 20 undersider
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-footer">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
-                                        </p>
-                                        <a href="javascript:;" class="btn yellow-crusta">
-                                            Sign Up
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="pricing pricing-active hover-effect">
-                                    <div class="pricing-head pricing-head-active">
-                                        <h3>Luksus<span>
-                            Tekst her </span>
-                                        </h3>
-                                        <h4><i>DKK </i><i>20.000,-</i>
-                                        </h4>
-                                    </div>
-                                    <ul class="pricing-content list-unstyled">
-                                        <li>
-                                            Installation af Wordpress
-                                        </li>
-                                        <li>
-                                            Installation af tema
-                                        </li>
-                                        <li>
-                                            Mobiloptimering
-                                        </li>
-                                        <li>
-                                            Søgeoptimering
-                                        </li>
-                                        <li>
-                                            Mere end 20 undersider
-                                        </li>
-                                    </ul>
-                                    <div class="pricing-footer">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
-                                        </p>
-                                        <a href="javascript:;" class="btn yellow-crusta">
-                                            Sign Up
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--//End Pricing -->
-            </div>
+            <p>Dit logo er det første dine kunder, stifter bekendtskab med. Det er det vigtigste element i din visuelle identitet, og det er det, du bliver husket på. Derfor er det vigtigt, at logoet sidder helt i skabet, så du et letgenkendelig. Vi kan tegne et logo, der er din virksomhed værdig, og som vil komme til at fremstå helt skarp på din hjemmeside eller dine print.
+            </p>
+            <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+          </div>
         </div>
-    </div>
-      </section>
+
+      </div>
+    </section>
 
 
     <a id="custom-link" style="padding-top:100px;"></a>
 
     <!-- Custom kode -->
     <section id="overview">
-        <div class="container">
-            <div class="section-header">
-            </div>
-            <div class="row">
-                <div class="col-sm-5" style="padding-top: 8%;">
-                    <h3 class="column-title">Custom Kode</h3>
-
-                    <p>
-                        Forskellige programmeringssprog har forskellige fordele. Derfor mestrer vi hos Flamingo Media flere teknologier,
-                        så din idé kan blive til virkelighed uden at du skal begrænses af temaer, plugins osv. Med en "Custom kode" løsning kan du få dit
-                        website præcist som du ønsker.
-                    </p>
-                    <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
-                    <button data-toggle="collapse" class="btn btn-primary price" data-target="#">Se Priser <i class="fa fa-caret-down" aria-hidden="true"></i></button>
-                </div>
-
-                <div class="col-sm-7">
-                    <img class="img-responsive" src="{{asset('images/websolutions/customkode.png')}}" alt="">
-                </div>
-
-                <div class="priser" style="padding-top: 45px; padding-bottom: 20px;">
-                    <div id="custom" class="collapse" style="margin-top: 15px; text-align: center;">
-                        <!-- Pricing -->
-                        <div class="container content">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="pricing hover-effect">
-                                        <div class="pricing-head">
-                                            <h3>Basis <span>
-                            Standard opsætning </span>
-                                            </h3>
-                                            <h4><i>DKK </i><i>4.000,-</i></h4>
-                                        </div>
-                                        <ul class="pricing-content list-unstyled">
-                                            <li>
-                                                Installation af Wordpress
-                                            </li>
-                                            <li>
-                                                Installation af tema
-                                            </li>
-                                            <li>
-                                                Fusce condimentum
-                                            </li>
-                                            <li>
-                                                Ut non libero
-                                            </li>
-                                            <li>
-                                                Consecte adiping elit
-                                            </li>
-                                        </ul>
-                                        <div class="pricing-footer">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
-                                            </p>
-                                            <a href="javascript:;" class="btn yellow-crusta">
-                                                Sign Up
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="pricing hover-effect">
-                                        <div class="pricing-head">
-                                            <h3>Plus <span>
-                            Tekst her </span>
-                                            </h3>
-                                            <h4><i>DKK </i><i>12.000,-</i>
-                                            </h4>
-                                        </div>
-                                        <ul class="pricing-content list-unstyled">
-                                            <li>
-                                                Installation af Wordpress
-                                            </li>
-                                            <li>
-                                                Installation af tema
-                                            </li>
-                                            <li>
-                                                Mobiloptimering
-                                            </li>
-                                            <li>
-                                                Søgeoptimering
-                                            </li>
-                                            <li>
-                                                Op til 20 undersider
-                                            </li>
-                                        </ul>
-                                        <div class="pricing-footer">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
-                                            </p>
-                                            <a href="javascript:;" class="btn yellow-crusta">
-                                                Sign Up
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="pricing pricing-active hover-effect">
-                                        <div class="pricing-head pricing-head-active">
-                                            <h3>Luksus<span>
-                            Tekst her </span>
-                                            </h3>
-                                            <h4><i>DKK </i><i>20.000,-</i>
-                                            </h4>
-                                        </div>
-                                        <ul class="pricing-content list-unstyled">
-                                            <li>
-                                                Installation af Wordpress
-                                            </li>
-                                            <li>
-                                                Installation af tema
-                                            </li>
-                                            <li>
-                                                Mobiloptimering
-                                            </li>
-                                            <li>
-                                                Søgeoptimering
-                                            </li>
-                                            <li>
-                                                Mere end 20 undersider
-                                            </li>
-                                        </ul>
-                                        <div class="pricing-footer">
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna psum olor .
-                                            </p>
-                                            <a href="javascript:;" class="btn yellow-crusta">
-                                                Sign Up
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--//End Pricing -->
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
         </div>
-    </div>
-</section>
+        <div class="row">
+          <div class="col-sm-5" style="padding-top: 8%;">
+            <h3 class="column-title">Custom Kode</h3>
+
+            <p>
+              Forskellige programmeringssprog har forskellige fordele. Derfor mestrer vi hos Flamingo Media flere teknologier,
+              så din idé kan blive til virkelighed uden at du skal begrænses af temaer, plugins osv. Med en "Custom kode" løsning kan du få dit
+              website præcist som du ønsker.
+            </p>
+            <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+          </div>
+
+          <div class="col-sm-7">
+            <img class="img-responsive" src="{{asset('images/websolutions/customkode.png')}}" alt="">
+          </div>
+
+        </div>
+      </div>
+    </section>
     @include('include.portfolio')
     @include('include.footer')
 

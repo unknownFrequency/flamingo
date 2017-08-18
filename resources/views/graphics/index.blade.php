@@ -96,7 +96,7 @@
 
     <a class="jump-link" id="tryk"></a>
 
-    <section style="background-image: url({{ URL::asset('images/paper.png') }})">
+    <section id="overview" style="background-image: url({{ URL::asset('images/paper.png') }})">
         <div class="container">
             <div class="section-header" style="padding-top:15px;">
                 <h2 class="section-title">Tryksager</h2>
