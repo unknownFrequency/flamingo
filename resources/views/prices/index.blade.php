@@ -79,7 +79,9 @@
         <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
           <span class="title">Magento Webshop</span>
           <span class="description">Magento er bygget til webshops, hvilket også betyder at vi anbefaler det til mellemstore til store virksomheder. Magento kan sagtens fungere til små webshops, men grundet det komplicerede CMS-system, anbefales det til store virksomheder, som får glæde at den store funktionalitet som Magento tilbyder.</span>
-
+        </div>
+        <div class="price-button">
+          <button data-toggle="collapse" class="btn-price" data-target="#wordpress">Se fulde priser <i class="caret-icon fa fa-caret-down" aria-hidden="true"></i></button>
         </div>
       </div>
     </div>
@@ -91,15 +93,21 @@
           <span class="title">Shopify Webshop</span>
           <span class="description">Forskelligt fra de andre CMS-systemer skal der med Shopify betales et månedligt beløb for at bruge deres framework. Der er uendelige design – og opbygningsmuligheder, hvilket gør det perfekt til dig, som vil have din helt egen unikke webshop, og er villig til at betale mere for det.</span>
         </div>
+        <div class="price-button">
+          <button data-toggle="collapse" class="btn-price" data-target="#wordpress">Se fulde priser <i class="caret-icon fa fa-caret-down" aria-hidden="true"></i></button>
+        </div>
       </div>
     </div>
 
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
       <div class="product-chooser-item">
-        <img src="{{asset('images/webshop/woocommerce.png')}}" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Mobile">
+        <img src="{{asset('images/webshop/woocommerce_priser.png')}}" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Mobile">
         <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
           <span class="title">WooCommerce Webshop</span>
           <span class="description">Ved WooCommerce begiver vi os ud i den mere seriøse hjemmeside til iværksætteren med drømmen om en webshop. Ligesom WordPress er det utroligt let for dig at redigere i din hjemmeside, tilføje og redigere produkter med de nødvendige specifikationer, der passer til din webshop.</span>
+        </div>
+        <div class="price-button">
+          <button data-toggle="collapse" class="btn-price" data-target="#wordpress">Se fulde priser <i class="caret-icon fa fa-caret-down" aria-hidden="true"></i></button>
         </div>
       </div>
     </div>
