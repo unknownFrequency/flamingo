@@ -33,10 +33,11 @@
             <span class="description">WordPress er perfekt til dig, som vil i gang med din første hjemmeside. WordPress er for langt de fleste utroligt let at lære, og du vil selvstændigt kunne lave smårettelser på hjemmesiden.</span>
           </div>
           <div class="price-button">
-            <button data-toggle="collapse" class="btn-price" data-target="#wordpress">Se fulde priser <i class="caret-icon fa fa-caret-down" aria-hidden="true"></i></button>
+            <button class="btn-price"><a href="/weblosninger#wordpress-link">Se fulde priser</a></button>
           </div>
         </div>
       </div>
+
 
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <div class="product-chooser-item">
@@ -81,7 +82,7 @@
           <span class="description">Magento er bygget til webshops, hvilket også betyder at vi anbefaler det til mellemstore til store virksomheder. Magento kan sagtens fungere til små webshops, men grundet det komplicerede CMS-system, anbefales det til store virksomheder, som får glæde at den store funktionalitet som Magento tilbyder.</span>
         </div>
         <div class="price-button">
-          <button data-toggle="collapse" class="btn-price" data-target="#wordpress">Se fulde priser <i class="caret-icon fa fa-caret-down" aria-hidden="true"></i></button>
+          <button class="btn-price"><a href="/webshops#magento-link">Se fulde priser</a></button>
         </div>
       </div>
     </div>
@@ -94,7 +95,7 @@
           <span class="description">Forskelligt fra de andre CMS-systemer skal der med Shopify betales et månedligt beløb for at bruge deres framework. Der er uendelige design – og opbygningsmuligheder, hvilket gør det perfekt til dig, som vil have din helt egen unikke webshop, og er villig til at betale mere for det.</span>
         </div>
         <div class="price-button">
-          <button data-toggle="collapse" class="btn-price" data-target="#wordpress">Se fulde priser <i class="caret-icon fa fa-caret-down" aria-hidden="true"></i></button>
+          <button class="btn-price"><a href="/webshops#shopify-link">Se fulde priser</a></button>
         </div>
       </div>
     </div>
@@ -107,7 +108,7 @@
           <span class="description">Ved WooCommerce begiver vi os ud i den mere seriøse hjemmeside til iværksætteren med drømmen om en webshop. Ligesom WordPress er det utroligt let for dig at redigere i din hjemmeside, tilføje og redigere produkter med de nødvendige specifikationer, der passer til din webshop.</span>
         </div>
         <div class="price-button">
-          <button data-toggle="collapse" class="btn-price" data-target="#wordpress">Se fulde priser <i class="caret-icon fa fa-caret-down" aria-hidden="true"></i></button>
+          <button class="btn-price"><a href="/webshops#woo-link">Se fulde priser</a></button>
         </div>
       </div>
     </div>
