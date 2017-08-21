@@ -18,8 +18,8 @@
         <a target="_blank" href="https://www.sundhedmedmening.dk/"><div class="portfolio-overlay"><div class="portfolio-text"><img src="{{asset('images/portfolio/sundhedmedmening_logo.png')}}" alt="Sundhed Med Mening Logo"><h1>Sundhed Med Mening</h1><hr><p>Vi har lavet en hjemmeside for sundhedmedmening, der primært bruges som bookingkanal for virksomheden. </p> </div></div>
       </div></a>
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" onclick="setLocation('/resultater/5-green-comfort-a-s');" style="padding: 0px;">
-        <div class="portfolio-image"><img src="{{asset('images/portfolio/göteborg_case.png')}}" alt="Göteborg BHC"></div>
-        <div class="portfolio-overlay"><div class="portfolio-text"><img src="{{asset('images/portfolio/göteborg_logo.png')}}" alt="Göteborg BHC"><h1>Göteborg BHC</h1><hr><p>For Göteborg BHC har vi lavet et logo, som kan fremvises på holdtrøjer og diverse.</p> </div></div>
+        <div class="portfolio-image"><img src="{{asset('images/portfolio/goteborg_case.png')}}" alt="Göteborg BHC"></div>
+        <div class="portfolio-overlay"><div class="portfolio-text"><img src="{{asset('images/portfolio/goteborg_logo.png')}}" alt="Göteborg BHC"><h1>Göteborg BHC</h1><hr><p>For Göteborg BHC har vi lavet et logo, som kan fremvises på holdtrøjer og diverse.</p> </div></div>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" onclick="setLocation('/resultater/5-green-comfort-a-s');" style="padding: 0px;">
         <div class="portfolio-image"><img src="{{asset('images/portfolio/h-outlet_case.png')}}" alt="H-Outlet"></div>
