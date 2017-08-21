@@ -34,7 +34,7 @@
                                         {{ count(\App\Message::getMessagesWithoutResponse(auth()->user()->id)) + count(\App\MessageResponse::getLatestResponse(auth()->user()->id)) }}
                                     ubesvarede
                                 @endif
-                                <a href="{{ URL::to('/messages') }}">Beskeder</a>
+                                <a href="{{ URL::to('/beskeder') }}">Beskeder</a>
                             </p>
                         </div>
                     </div>
