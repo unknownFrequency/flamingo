@@ -66,7 +66,7 @@
             og det er det, du bliver husket på. Derfor er det vigtigt, at logoet sidder helt i skabet, så du et letgenkendelig.
             Vi kan tegne et logo, der er din virksomhed værdig, og som vil komme til at fremstå helt skarp på din hjemmeside eller dine print.
           </p>
-          <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+          <button class="myBtn" id="myBtn2">Få et uforpligtende tilbud</button>
         </div>
       </div>
     </section><!-- end grafiks-arbejde -->
@@ -83,7 +83,7 @@
 
             <p>Vi sætter en ære i udelukkende at lave smukke hjemmesider, så vores kunder stolt kan vise den frem til deres kunder. Vi laver layoutet, som du ønsker det, og udvikler hjemmesiden med nøjagtigt det farmetema, der passer til din virksomheds visuelle identitet. Vi har dygtiggjort os inden for alle former for webdesign, og kan derfor altid tilbyde en fuldstændig pakke.
             </p>
-            <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+            <button class="myBtn" id="myBtn2">Få et uforpligtende tilbud</button>
 
           </div>
           <div class="col-sm-7">

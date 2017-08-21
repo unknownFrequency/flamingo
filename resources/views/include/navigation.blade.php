@@ -71,7 +71,7 @@
       </ul>
       <!-- Trigger/Open The Modal -->
       <a class="btn-number" href="tel:+4556568181"><i class="fa fa-phone" aria-hidden="true"></i> 81 81 56 56</a>
-      <button type="button" id="myBtn">Bliv Kontaktet</button>
+      <button type="button" class="myBtn" id="myBtn2">Bliv Kontaktet</button>
 
       <!-- Bruger menu -->
       <div class="pull-xs-right">
@@ -85,39 +85,5 @@
   </div>
 </header>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-    </div>
-    <div class="modal-body">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:20px;">
-          <h2>Indhent dit gratis tilbud i dag.</h2>
-
-          <div class="well well-sm">
-            @include('include.contact_form')
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:20px;">
-          <p class="lead">Få et uforpligtende tilbud <span class="text-success">indenfor 24 timer</span></p>
-          <ul class="list-unstyled" style="line-height: 2">
-            <li><span class="fa fa-check text-success"></span> See all your orders</li>
-            <li><span class="fa fa-check text-success"></span> Fast re-order</li>
-            <li><span class="fa fa-check text-success"></span> Save your favorites</li>
-            <img class="img-responsive" src="{{asset('images/tilbud.png')}}" alt="">
-
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="modal-footer">
-
-    </div>
-  </div>
-</div>
 
 </div>

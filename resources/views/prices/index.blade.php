@@ -46,7 +46,7 @@
             <span class="description">Vi sætter en ære i udelukkende at lave smukke hjemmesider, så vores kunder stolt kan vise den frem til deres kunder. Vi laver layoutet, som du ønsker det, og udvikler hjemmesiden med nøjagtigt det farvetema, der passer til din virksomheds visuelle identitet.</span>
           </div>
           <div class="price-button">
-            <button class="btn-price" id="myBtn3">Modtag tilbud</button>
+            <button class="btn-price myBtn">Modtag tilbud</button>
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@
             <span class="description">Forskellige programmeringssprog har forskellige fordele. Derfor mestrer vi hos Flamingo Media flere teknologier, så din idé kan blive til virkelighed uden at du skal begrænses af temaer, plugins osv. </span>
           </div>
           <div class="price-button">
-            <button class="btn-price" id="myBtn1">Modtag tilbud</button>
+            <button class="btn-price myBtn">Modtag tilbud</button>
           </div>
         </div>
       </div>

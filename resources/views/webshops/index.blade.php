@@ -64,7 +64,7 @@
                         hvilket betyder at du kan få din hjemmeside nøjagtigt som du ønsker.
                     </p>
 
-                    <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+                    <button class="myBtn" id="myBtn2">Få et uforpligtende tilbud</button>
                     <button data-toggle="collapse" class="btn btn-primary price" data-target="#magento">Se Priser <i class="caret-icon fa fa-caret-down" aria-hidden="true"></i></button>
 
                 </div>
@@ -390,7 +390,7 @@
                         <br />Shopify er middelsvært selv at redigere i, hvorfor vi også i højere grad tilbyder denne løsning til den seriøse virksomhedsejer, som forventer meget af sin hjemmeside.
 
                     </p>
-                    <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+                    <button class="myBtn" id="myBtn2">Få et uforpligtende tilbud</button>
 
                 </div>
                 <div class="container reasons" style="margin-top: 38px;">
@@ -440,7 +440,7 @@
                         <br></br>WooCommerce er meget fleksibelt, og kan derfor huse de fleste webshops. Sammenlignet med WordPress er funktionaliteten større med hensyn til tracking, betalingsmuligheder osv. Derfor anbefaler vi WooCommerce til små webshops.
 
                     </p>
-                    <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+                    <button class="myBtn" id="myBtn2">Få et uforpligtende tilbud</button>
 
                 </div>
                 <div class="col-sm-7">

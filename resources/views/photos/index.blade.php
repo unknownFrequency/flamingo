@@ -73,7 +73,7 @@
                         visuelle udtryk du vil have. Vi tilbyder også on-shoot location, hvis du foretrækker at skyde
                         billederne i din virksomhed.
                     </p>
-                    <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+                    <button class="myBtn" id="myBtn2">Få et uforpligtende tilbud</button>
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
                         og en meget høj kvalitet på billederne. I vores eget fotostudie kan vi tage produktbilleder
                         på flere forskellige baggrundsfaver.
                     </p>
-                    <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+                    <button class="myBtn" id="myBtn2">Få et uforpligtende tilbud</button>
                 </div>
 
                 <div class="col-sm-7">
@@ -118,7 +118,7 @@
                         Vi tager mange forskellige former for fotoopgaver, og er altid åbne for nye opgaver og udfordringer.
                         Kontakt os med netop dit ønske, så vi kan drøfte dine idéer.
                     </p>
-                    <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+                    <button class="myBtn" id="myBtn2">Få et uforpligtende tilbud</button>
                 </div>
             </div>
         </div>
@@ -145,7 +145,7 @@
                     <p>Video er et rigtig godt værktøj til at vise dine produkter fra flere forskellige sider, så kunden kan se hele produktet og bedre beslutte sig. Vi har udstyret til at få dine produkter til at ligne en million, så du kan komme foran dine konkurrenter. Vi tilbyder mange forskellige former for produktvideoer, alt lige video på slider, drejeskive, samleguides og så videre.
 
                     </p>
-                    <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+                    <button class="myBtn" id="myBtn2">Få et uforpligtende tilbud</button>
 
                 </div>
             </div>
@@ -166,7 +166,7 @@
                     virkeliggøre netop den idé du har. Det eneste, der er vigtigt for os, er at I er tilfredse
                     med det færdige produkt, og at det skaber den opmærksomhed, du ønsker.
                 </p>
-                <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+                <button class="myBtn" id="myBtn2">Få et uforpligtende tilbud</button>
             </div>
 
             <div class="col-sm-7">
@@ -179,22 +179,23 @@
 
     <!-- profilvideo -->
         <div class="container">
-        <div class="row">
-            <div class="col-sm-7">
-                <img class="img-responsive" src="{{asset('images/foto/profilvideo.png')}}" alt="">
-            </div>
+            <div class="row">
+                <div class="col-sm-7">
+                    <img class="img-responsive" src="{{asset('images/foto/profilvideo.png')}}" alt="">
+                </div>
 
-            <div class="col-sm-5" style="padding-top: 8%;">
-                <h3 class="column-title">Profil Video</h3>
+                <div class="col-sm-5" style="padding-top: 8%;">
+                    <h3 class="column-title">Profil Video</h3>
 
-                <p>
-                    En god profilvideo til din virksomhed er med til at øge SEO-værdien, og kan i høj grad
-                    forbedre din troværdighed, så dine kommende kunder er mere trygge ved at handle hos dig.
-                    Du får mulighed for at fortælle om dine produkter eller ydelser, og give det gode indtryk
-                    dine kunder har brug for. Profilvideoerne skydes typisk i din egen virksomhed, så du er i
-                    dine vante omgivelser, og kan vise nøjagtigt hvem I er som virksomhed.
-                </p>
-                <a class="btn btn-primary" href="#">Få et uforpligtende tilbud</a>
+                    <p>
+                        En god profilvideo til din virksomhed er med til at øge SEO-værdien, og kan i høj grad
+                        forbedre din troværdighed, så dine kommende kunder er mere trygge ved at handle hos dig.
+                        Du får mulighed for at fortælle om dine produkter eller ydelser, og give det gode indtryk
+                        dine kunder har brug for. Profilvideoerne skydes typisk i din egen virksomhed, så du er i
+                        dine vante omgivelser, og kan vise nøjagtigt hvem I er som virksomhed.
+                    </p>
+                    <button class="myBtn" id="myBtn2">Få et uforpligtende tilbud</button>
+                </div>
             </div>
         </div>
     </section><!-- end profilvideo   -->
