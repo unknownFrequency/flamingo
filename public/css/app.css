@@ -10381,7 +10381,6 @@ p {
 .dropdown-menu-large > li ul > li > a:focus {
   text-decoration: none;
   color: #262626;
-  background-color: #f5f5f5;
 }
 
 .dropdown-menu-large .disabled > a,
