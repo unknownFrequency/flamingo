@@ -449,6 +449,12 @@ span.element{
   margin-right: 15px;
   height: 40px;
   width: 200px;
+  background-color: #eee;
+
+}
+
+#features .btn.btn-number:hover{
+  background-color: rgba(238, 238, 238, 0.33);
 
 }
 
@@ -748,8 +754,9 @@ cite{
 }
 
 .carousel-caption{
-    bottom: 26%;
-    right: 60%;
+  bottom: 18%;
+  right: 60%;
+  height: 50%;
 }
 
 .carousel-caption h3{
@@ -759,9 +766,7 @@ cite{
 
 @media (max-width: 1230px) {
 
-  .carousel-caption{
-    bottom: 10%;
-  }
+  
   .carousel-caption h3{
     font-size: 30px;
     font-weight: 200;
