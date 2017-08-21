@@ -3,10 +3,9 @@
         <div class="row">
             <div class="col-sm-3">
                 <h2 class="logo"><span class="header-highlight">Flamingo</span> #Media</h2>
-                <h4 class="widget-title">Følg os:</h4>
+                <h4 class="widget-title">Følg os på Facebook:</h4>
                  <ul class="social-nav">
-                     <li><a href="#" target="_blank" title="Facebook" rel="nofollow" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                     <li><a href="#" target="_blank" title="Linkedin" rel="nofollow" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                     <li><a href="https://www.facebook.com/flamingomediaweb/?fref=ts" target="_blank" title="Facebook" rel="nofollow" class="facebook"><i class="fa fa-facebook"></i></a></li>
                  </ul>
             </div>
             <div class="col-sm-3">

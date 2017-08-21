@@ -471,162 +471,162 @@
           </div>
         </div>
         <!--//End Pricing -->
-      <div class="container reasons" style="margin-top: 38px;">
-        <h3 style="text-align: center; font-weight:lighter; margin-bottom: 27px;"> 5 Grunde til at vælge Shopify: </h3>
-        <div class="process">
-          <div class="process-row">
-            <div class="process-step">
-              <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">1</h4></button>
-              <p> Vil have et meget nemt CMS system. </p>
-            </div>
-            <div class="process-step">
-              <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">2</h4></button>
-              <p>Er en mellemstor webshop.</p>
-            </div>
-            <div class="process-step">
-              <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">3</h4></button>
-              <p>Vil have adgang til mange plugins.</p>
-            </div>
-            <div class="process-step">
-              <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">4</h4></button>
-              <p>Kun sælger i ét land.</p>
-            </div>
-            <div class="process-step">
-              <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">5</h4></button>
-              <p>Ønsker god support, som er let at finde.</p>
+        <div class="container reasons" style="margin-top: 38px;">
+          <h3 style="text-align: center; font-weight:lighter; margin-bottom: 27px;"> 5 Grunde til at vælge Shopify: </h3>
+          <div class="process">
+            <div class="process-row">
+              <div class="process-step">
+                <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">1</h4></button>
+                <p> Vil have et meget nemt CMS system. </p>
+              </div>
+              <div class="process-step">
+                <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">2</h4></button>
+                <p>Er en mellemstor webshop.</p>
+              </div>
+              <div class="process-step">
+                <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">3</h4></button>
+                <p>Vil have adgang til mange plugins.</p>
+              </div>
+              <div class="process-step">
+                <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">4</h4></button>
+                <p>Kun sælger i ét land.</p>
+              </div>
+              <div class="process-step">
+                <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">5</h4></button>
+                <p>Ønsker god support, som er let at finde.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<a id="woo-link" class="jump-link"></a>
+  <a id="woo-link" class="jump-link"></a>
 
-<section id="overview">
-  <div class="container">
-    <div class="section-header">
-    </div>
-    <div class="row">
-
-      <div class="col-sm-5" style="padding-top: 8%;">
-        <h3 class="column-title">WooCommerce Webshop</h3>
-
-        <p>Ved WooCommerce begiver vi os ud i den mere seriøse hjemmeside til iværksætteren med drømmen om en webshop. Ligesom WordPress er det utroligt let for dig at redigere i din hjemmeside, tilføje og redigere produkter med de nødvendige specifikationer, der passer til din webshop.
-
-          <br></br>WooCommerce er meget fleksibelt, og kan derfor huse de fleste webshops. Sammenlignet med WordPress er funktionaliteten større med hensyn til tracking, betalingsmuligheder osv. Derfor anbefaler vi WooCommerce til små webshops.
-
-        </p>
-        <button class="myBtn" id="myBtn2">Få et uforpligtende tilbud</button>
-        <button data-toggle="collapse" class="btn btn-primary price" data-target="#woocommerce">Se Priser <i class="caret-icon fa fa-caret-down" aria-hidden="true"></i></button>
-
+  <section id="overview">
+    <div class="container">
+      <div class="section-header">
       </div>
+      <div class="row">
 
-      <div class="col-sm-7">
-        <img class="img-responsive" src="{{asset('images/webshop/woocommerce.png')}}" alt="">
-      </div>
-      <!-- Pricing -->
-      <div class="priser" style="padding-top: 45px; padding-bottom: 20px;">
-        <div id="woocommerce" class="collapse" style="margin-top: 15px; text-align: center;">
-          <div class="container content">
-            <div class="row" style="border: 3px solid #eee;">
-              <div class="col-md-3" style="padding:0px;">
-                <div class="pricing hover-effect" style="border: 0;">
-                  <div class="pricing-head">
-                    <h3>Woocommerce
-                    </h3>
-                    <h4><i>Ydelser </i><i></i></h4>
+        <div class="col-sm-5" style="padding-top: 8%;">
+          <h3 class="column-title">WooCommerce Webshop</h3>
+
+          <p>Ved WooCommerce begiver vi os ud i den mere seriøse hjemmeside til iværksætteren med drømmen om en webshop. Ligesom WordPress er det utroligt let for dig at redigere i din hjemmeside, tilføje og redigere produkter med de nødvendige specifikationer, der passer til din webshop.
+
+            <br></br>WooCommerce er meget fleksibelt, og kan derfor huse de fleste webshops. Sammenlignet med WordPress er funktionaliteten større med hensyn til tracking, betalingsmuligheder osv. Derfor anbefaler vi WooCommerce til små webshops.
+
+          </p>
+          <button class="myBtn" id="myBtn2">Få et uforpligtende tilbud</button>
+          <button data-toggle="collapse" class="btn btn-primary price" data-target="#woocommerce">Se Priser <i class="caret-icon fa fa-caret-down" aria-hidden="true"></i></button>
+
+        </div>
+
+        <div class="col-sm-7">
+          <img class="img-responsive" src="{{asset('images/webshop/woocommerce.png')}}" alt="">
+        </div>
+        <!-- Pricing -->
+        <div class="priser" style="padding-top: 45px; padding-bottom: 20px;">
+          <div id="woocommerce" class="collapse" style="margin-top: 15px; text-align: center;">
+            <div class="container content">
+              <div class="row" style="border: 3px solid #eee;">
+                <div class="col-md-3" style="padding:0px;">
+                  <div class="pricing hover-effect" style="border: 0;">
+                    <div class="pricing-head">
+                      <h3>Woocommerce
+                      </h3>
+                      <h4><i>Ydelser </i><i></i></h4>
+                    </div>
+                    <ul class="pricing-content list-unstyled">
+                      <li>
+                        Installation af Wordpress
+                      </li>
+                      <li>
+                        Installation af Woocommerce
+                      </li>
+                      <li>
+                        Installation af tema
+                      </li>
+                      <li>
+                        Mobiloptimering
+                      </li>
+                      <li>
+                        Søgeoptimering
+                      </li>
+                      <li>
+                        Op til 20 undersider
+                      </li>
+                      <li>
+                        Mere end 20 undersider
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="pricing-content list-unstyled">
-                    <li>
-                      Installation af Wordpress
-                    </li>
-                    <li>
-                      Installation af Woocommerce
-                    </li>
-                    <li>
-                      Installation af tema
-                    </li>
-                    <li>
-                      Mobiloptimering
-                    </li>
-                    <li>
-                      Søgeoptimering
-                    </li>
-                    <li>
-                      Op til 20 undersider
-                    </li>
-                    <li>
-                      Mere end 20 undersider
-                    </li>
-                  </ul>
                 </div>
-              </div>
-              <div class="col-md-3" style="padding:0px;">
-                <div class="pricing hover-effect" style="border: 0;">
-                  <div class="pricing-head">
-                    <h3>Basis
-                    </h3>
-                    <h4><i>DKK </i><i>4.500,-</i></h4>
+                <div class="col-md-3" style="padding:0px;">
+                  <div class="pricing hover-effect" style="border: 0;">
+                    <div class="pricing-head">
+                      <h3>Basis
+                      </h3>
+                      <h4><i>DKK </i><i>4.500,-</i></h4>
+                    </div>
+                    <ul class="pricing-content list-unstyled">
+                      <li>
+                        <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="pricing-content list-unstyled">
-                    <li>
-                      <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-times" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-times" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-times" aria-hidden="true"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-times" aria-hidden="true"></i>
-                    </li>
-                  </ul>
                 </div>
-              </div>
-              <div class="col-md-3" style="padding:0px;">
-                <div class="pricing hover-effect" style="border: 0;">
-                  <div class="pricing-head">
-                    <h3>Plus
-                    </h3>
-                    <h4><i>DKK </i><i>12.000,-</i>
-                    </h4>
+                <div class="col-md-3" style="padding:0px;">
+                  <div class="pricing hover-effect" style="border: 0;">
+                    <div class="pricing-head">
+                      <h3>Plus
+                      </h3>
+                      <h4><i>DKK </i><i>12.000,-</i>
+                      </h4>
+                    </div>
+                    <ul class="pricing-content list-unstyled">
+                      <li>
+                        <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="pricing-content list-unstyled">
-                    <li>
-                      <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-check" aria-hidden="true" style="color:#cd1959; font-size: 15px;"></i>
-                    </li>
-                    <li>
-                      <i class="fa fa-times" aria-hidden="true"></i>
-                    </li>
-                  </ul>
-                </div>
                 </div>
                 <div class="col-md-3" style="padding:0px;">
                   <div class="pricing hover-effect" style="border: 0;">
@@ -660,43 +660,43 @@
                       </li>
                     </ul>
                   </div>
-                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <!--//End Pricing -->
-      <div class="container reasons" style="margin-top: 38px;">
-        <h3 style="text-align: center; font-weight:lighter; margin-bottom: 27px;"> 5 Grunde til at vælge WooCommerce: </h3>
-        <div class="process">
-          <div class="process-row">
-            <div class="process-step">
-              <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">1</h4></button>
-              <p> Vil have et meget nemt CMS. </p>
-            </div>
-            <div class="process-step">
-              <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">2</h4></button>
-              <p>Er en lille webshop.</p>
-            </div>
-            <div class="process-step">
-              <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">3</h4></button>
-              <p>Vil have adgang til mange plugins.</p>
-            </div>
-            <div class="process-step">
-              <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">4</h4></button>
-              <p>Kun sælger i ét land.</p>
-            </div>
-            <div class="process-step">
-              <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">5</h4></button>
-              <p>Måske i forvejen kender Wordpress.</p>
+        <div class="container reasons" style="margin-top: 38px;">
+          <h3 style="text-align: center; font-weight:lighter; margin-bottom: 27px;"> 5 Grunde til at vælge WooCommerce: </h3>
+          <div class="process">
+            <div class="process-row">
+              <div class="process-step">
+                <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">1</h4></button>
+                <p> Vil have et meget nemt CMS. </p>
+              </div>
+              <div class="process-step">
+                <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">2</h4></button>
+                <p>Er en lille webshop.</p>
+              </div>
+              <div class="process-step">
+                <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">3</h4></button>
+                <p>Vil have adgang til mange plugins.</p>
+              </div>
+              <div class="process-step">
+                <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">4</h4></button>
+                <p>Kun sælger i ét land.</p>
+              </div>
+              <div class="process-step">
+                <button type="button" class="btn btn-success btn-circle"><h4 style="margin: 0 auto;">5</h4></button>
+                <p>Måske i forvejen kender Wordpress.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    @include('include.portfolio')
+      @include('include.portfolio')
 
-    @include('include.footer')
+      @include('include.footer')
 
-    @endsection
+      @endsection
