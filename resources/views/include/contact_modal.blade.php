@@ -2,9 +2,9 @@
 <div id="myModal" class="modal" role="dialog">
     <!-- Modal content -->
     <div class="modal-content">
-        <div class="modal-header">
-            <span class="close">&times;</span>
-        </div>
+        {{--<div class="modal-header">--}}
+            {{--<span class="close">&times;</span>--}}
+        {{--</div>--}}
         <div class="modal-body">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:20px;">
