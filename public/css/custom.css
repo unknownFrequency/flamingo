@@ -449,6 +449,12 @@ span.element{
   margin-right: 15px;
   height: 40px;
   width: 200px;
+  background-color: #eee;
+
+}
+
+#features .btn.btn-number:hover{
+  background-color: rgba(238, 238, 238, 0.33);
 
 }
 

@@ -220,7 +220,7 @@
                 <div class="col-sm-5" style="padding-top: 8%;">
                     <h3 class="column-title">Bootstrap Hjemmeside</h3>
 
-                    <p>Vi sætter en ære i udelukkende at lave smukke hjemmesider, så vores kunder stolt kan vise den frem til deres kunder. Vi laver layoutet, som du ønsker det, og udvikler hjemmesiden med nøjagtigt det farmetema, der passer til din virksomheds visuelle identitet. Vi har dygtiggjort os inden for alle former for webdesign, og kan derfor altid tilbyde en fuldstændig pakke.
+                    <p>Vi sætter en ære i udelukkende at lave smukke hjemmesider, så vores kunder stolt kan vise den frem til deres kunder. Vi laver layoutet, som du ønsker det, og udvikler hjemmesiden med nøjagtigt det farvetema, der passer til din virksomheds visuelle identitet. Vi har dygtiggjort os inden for alle former for webdesign, og kan derfor altid tilbyde en fuldstændig pakke.
                     </p>
                     <button id="myBtn2">Få et uforpligtende tilbud</button>
                 </div>

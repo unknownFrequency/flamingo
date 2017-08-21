@@ -43,7 +43,7 @@
           <img src="{{asset('images/websolutions/bootstrap.png')}}" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Mobile">
           <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
             <span class="title">Bootstrap Hjemmeside</span>
-            <span class="description">Vi sætter en ære i udelukkende at lave smukke hjemmesider, så vores kunder stolt kan vise den frem til deres kunder. Vi laver layoutet, som du ønsker det, og udvikler hjemmesiden med nøjagtigt det farmetema, der passer til din virksomheds visuelle identitet.</span>
+            <span class="description">Vi sætter en ære i udelukkende at lave smukke hjemmesider, så vores kunder stolt kan vise den frem til deres kunder. Vi laver layoutet, som du ønsker det, og udvikler hjemmesiden med nøjagtigt det farvetema, der passer til din virksomheds visuelle identitet.</span>
           </div>
           <div class="price-button">
             <button data-toggle="collapse" class="btn-price" data-target="#wordpress">Modtag tilbud</button>
