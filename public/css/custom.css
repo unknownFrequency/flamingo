@@ -1117,9 +1117,10 @@ font-size: 24px;
 
 .post
 {
-    background-color: #FFF;
-    overflow: hidden;
-    box-shadow: 0 0 1px #CCC;
+  background-color: #FFF;
+  overflow: hidden;
+  box-shadow: 0 0 1px #CCC;
+  min-height: 650px;
 }
 
 .post .content
