@@ -59,18 +59,25 @@
 
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ URL::to('/priser') }}">Priser</a>
+          <a class="nav-link {{ active('priser') }}"
+             href="{{ URL::to('/priser') }}">Priser
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ URL::to('/posts') }}">Blog</a>
+          <a class="nav-link {{ active(['posts', 'posts/*']) }}"
+             href="{{ URL::to('/posts') }}">Blog
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ URL::to('/kontakt') }}">Kontakt</a>
-
+          <a class="nav-link {{ active('kontakt') }}"
+             href="{{ URL::to('/kontakt') }}">Kontakt
+          </a>
         </li>
       </ul>
       <!-- Trigger/Open The Modal -->
-      <a class="btn-number" href="tel:+4556568181"><i class="fa fa-phone" aria-hidden="true"></i> 81 81 56 56</a>
+      <a class="btn-number" href="tel:+4556568181">
+        <i class="fa fa-phone" aria-hidden="true"></i> 81 81 56 56
+      </a>
       <button type="button" class="myBtn" id="myBtn3">Bliv Kontaktet</button>
 
       <!-- Bruger menu -->
