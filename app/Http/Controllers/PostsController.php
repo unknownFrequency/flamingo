@@ -14,7 +14,8 @@ class PostsController extends Controller
     function __construct()
     {
         // Only allow these path with auth
-        $this->middleware('auth')->except(['index', 'show']);
+        $this->middleware('auth')
+            ->except(['index', 'show']);
     }
 
     public function index() {

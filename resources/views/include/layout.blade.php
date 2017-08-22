@@ -35,20 +35,27 @@
 @include('include/navigation')
 
 @if($flash = session('message'))
-    <div id="flash-message" class="alert alert-success" role="alert">
+    <div id="flash-message-success" class="alert alert-success" role="alert">
         {{ $flash }}
     </div>
 @endif
 
-@if (count(session('errors')) > 0)
-    <div class="alert alert-danger">
-        <ul>
+        @if (count(session('errors')) > 1)
             @foreach (session('errors')->all() as $error)
-                <li>{{ $error }}</li>
+                <div id="flash-message-error" class="alert alert-danger">
+                    <ul>
+                        <li>{{ $error }}</li>
+                    </ul>
+                </div>
             @endforeach
-        </ul>
-    </div>
-@endif
+        @else
+            <div id="flash-message-error" class="alert alert-danger">
+                <ul>
+                    <li>{{ session('errors') }}</li>
+                </ul>
+            </div>
+        @endif
+
 
 @yield('content')
 
@@ -64,7 +71,8 @@
 
 <script>
     $(document).ready(function() {
-        $('#flash-message').fadeOut(8000);
+        $('#flash-message-success').fadeOut(9000);
+        $('#flash-message-error').fadeOut(9000);
     });
 </script>
 

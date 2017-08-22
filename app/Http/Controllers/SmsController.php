@@ -11,7 +11,6 @@ class SmsController extends Controller
 
     public function send()
     {
-        // TODO:
         $this->validate(request(),
             [
                 'phone'  => 'bail|required|min:8|max:8',
@@ -32,7 +31,11 @@ class SmsController extends Controller
         $message .= request('body') . " ";
         $message .= "Tlf.Nr. [ " . request('phone') . " ] ";
 
-        //TODO: Aktiver ved produktion
-//    Twilio::message("+45" . request('phone'), $message);
+        try {
+            Twilio::message("+45" . request('phone'), $message);
+        } catch(\Services_Twilio_RestException $e) {
+            return redirect('/')->with('errors', $e->getMessage());
+        }
+
     }
 }
