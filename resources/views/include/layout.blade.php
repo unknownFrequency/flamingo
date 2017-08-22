@@ -39,7 +39,6 @@
         {{ $flash }}
     </div>
 @endif
-
         @if (count(session('errors')) > 1)
             @foreach (session('errors')->all() as $error)
                 <div id="flash-message-error" class="alert alert-danger">
@@ -48,7 +47,7 @@
                     </ul>
                 </div>
             @endforeach
-        @else
+        @elseif(session('errors'))
             <div id="flash-message-error" class="alert alert-danger">
                 <ul>
                     <li>{{ session('errors') }}</li>
