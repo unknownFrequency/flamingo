@@ -72,7 +72,7 @@
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <h2> Produkter </h2>
                             <a class="btn btn-number" href="/weblosninger#wordpress-link">Wordpress</a>
-                            <a class="btn btn-number" href="/weblosninger#bootstap-link">Bootstrap</a>
+                            <a class="btn btn-number" href="/weblosninger#bootstrap-link">Bootstrap</a>
                             <a class="btn btn-number" href="/weblosninger#seo-link">Søgeoptimering</a>
                             <a class="btn btn-number" href="/weblosninger#custom-link">Custom Kode</a>
                         </div>
@@ -88,9 +88,9 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <h2> Produkter </h2>
-                            <a class="btn btn-number" href="/webshops#magento">Magento</a>
-                            <a class="btn btn-number" href="/webshops#woo">WooCommerce</a>
-                            <a class="btn btn-number" href="/webshops#shopify">Shopify</a>
+                            <a class="btn btn-number" href="/webshops#magento-link">Magento</a>
+                            <a class="btn btn-number" href="/webshops#woo-link">WooCommerce</a>
+                            <a class="btn btn-number" href="/webshops#shopify-link">Shopify</a>
                         </div>
                     </div>
                 </section>
@@ -119,12 +119,12 @@
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <h2> Produkter </h2>
-                            <a class="btn btn-number" href="#">Personalebilleder</a>
-                            <a class="btn btn-number" href="#">Produktbilleder</a>
-                            <a class="btn btn-number" href="#">Andre Fotoopgaver</a>
-                            <a class="btn btn-number" href="#">Produktvideo</a>
-                            <a class="btn btn-number" href="#">Reklamevideo</a>
-                            <a class="btn btn-number" href="#">Profil Video</a>
+                            <a class="btn btn-number" href="foto#personalebilleder">Personalebilleder</a>
+                            <a class="btn btn-number" href="foto#produktbilleder">Produktbilleder</a>
+                            <a class="btn btn-number" href="foto#personalebilleder">Andre Fotoopgaver</a>
+                            <a class="btn btn-number" href="foto#produktvideoe">Produktvideo</a>
+                            <a class="btn btn-number" href="foto#reklamevideo">Reklamevideo</a>
+                            <a class="btn btn-number" href="foto#profilvideo">Profil Video</a>
                         </div>
                     </div>
                 </section>
