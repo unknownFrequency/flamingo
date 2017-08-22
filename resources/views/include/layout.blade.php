@@ -40,17 +40,21 @@
     </div>
 @endif
 
-<div id="flash-message-error" class="alert alert-danger">
-    <ul>
         @if (count(session('errors')) > 1)
             @foreach (session('errors')->all() as $error)
-                <li>{{ $error }}</li>
+                <div id="flash-message-error" class="alert alert-danger">
+                    <ul>
+                        <li>{{ $error }}</li>
+                    </ul>
+                </div>
             @endforeach
         @else
-            <li>{{ session('errors') }}</li>
+            <div id="flash-message-error" class="alert alert-danger">
+                <ul>
+                    <li>{{ session('errors') }}</li>
+                </ul>
+            </div>
         @endif
-    </ul>
-</div>
 
 
 @yield('content')
