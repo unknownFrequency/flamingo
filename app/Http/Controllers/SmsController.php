@@ -33,6 +33,7 @@ class SmsController extends Controller
 
         try {
             Twilio::message("+45" . request('phone'), $message);
+            return redirect('/')->with('message',"Vi vender tilbage hurtigst muligt!");
         } catch(\Services_Twilio_RestException $e) {
             return redirect('/')->with('errors', $e->getMessage());
         }
