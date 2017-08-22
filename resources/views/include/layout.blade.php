@@ -56,12 +56,8 @@
     </div>
 @endif
 
-
 @yield('content')
 
-
-<!-- Scripts -->
-{{--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>--}}
 <script src="{{ mix('/js/app.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('js/typed.js') }}"></script>
 <script src="{{ asset('/js/cbpFWTabs.js') }}"></script>
