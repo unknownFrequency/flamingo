@@ -135,7 +135,7 @@
                 <p class="section-text">Vi elsker videoer, og er glade for vi har muligheden for at lave dem i samarbejde med vores kunder. Vi kan eksempevis lave produktvideoer, reklamevideoer eller en profilvideo til din virksomhed. Du er velkommen til at kontakte os, hvis du har specifikke idéer eller ønsker.
                 </p>
             </div>
-            <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px;">
+            <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px; padding-bottom: 35px;">
                 <div class="col-sm-7">
                     <img class="img-responsive" src="{{asset('images/foto/produktvideo.png')}}" alt="">
                 </div>
@@ -156,7 +156,8 @@
     <a class="jump-link" id="reklamevideo"></a>
 
     <!-- Reklamevideo -->
-        <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px; margin-left: 280px;">
+    <div class="container">
+        <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px; padding-bottom: 35px;">
             <div class="col-sm-5" style="padding-top: 8%;">
                 <h3 class="column-title">Reklamevideo</h3>
 
@@ -173,6 +174,7 @@
                 <img class="img-responsive" src="{{asset('images/foto/reklamevideo.png')}}" alt="">
             </div>
         </div>
+      </div>
     <!-- end Reklamevideo -->
 
     <a class="jump-link" id="profilvideo"></a>
