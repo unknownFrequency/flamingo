@@ -1,7 +1,5 @@
-<!-- The Modal -->
 <div id="myModal" class="modal" role="dialog"
      aria-labelledby="contact form" aria-hidden="true">
-    <!-- Modal content -->
     <div class="modal-content">
         <div class="modal-header">
             <span class="close">&times;</span>
@@ -29,7 +27,7 @@
             </div>
         </div>
         <div class="modal-footer">
-
+            <!-- TODO: delete? -->
         </div>
     </div>
 </div>
