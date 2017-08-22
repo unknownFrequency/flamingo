@@ -39,21 +39,22 @@
         {{ $flash }}
     </div>
 @endif
-        @if (count(session('errors')) > 1)
-            @foreach (session('errors')->all() as $error)
-                <div id="flash-message-error" class="alert alert-danger">
-                    <ul>
-                        <li>{{ $error }}</li>
-                    </ul>
-                </div>
-            @endforeach
-        @elseif(session('errors'))
-            <div id="flash-message-error" class="alert alert-danger">
-                <ul>
-                    <li>{{ session('errors') }}</li>
-                </ul>
-            </div>
-        @endif
+
+@if (count(session('errors')) > 1)
+    @foreach (session('errors')->all() as $error)
+        <div id="flash-message-error" class="alert alert-danger">
+            <ul>
+                <li>{{ $error }}</li>
+            </ul>
+        </div>
+    @endforeach
+@elseif(session('errors'))
+    <div id="flash-message-error" class="alert alert-danger">
+        <ul>
+            <li>{{ session('errors') }}</li>
+        </ul>
+    </div>
+@endif
 
 
 @yield('content')
@@ -79,11 +80,9 @@
 
 <script>
 (function() {
-
   [].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
     new CBPFWTabs( el );
   });
-
 })();
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -97,11 +96,7 @@ document.addEventListener("DOMContentLoaded", function(){
 <script>
     // Get the modal
     var modal = document.getElementById('myModal');
-    //// Get the button that opens the modal
-    //// Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
-    //// When the user clicks the button, open the modal
-    //btn.onclick = function() {
     $(".myBtn").on("click", function () {
       modal.style.display = "block";
     });
