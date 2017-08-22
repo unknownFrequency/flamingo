@@ -58,7 +58,7 @@
 
     <!-- Personalebilleder -->
         <div class="container">
-            <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px;">
+            <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px; padding-bottom: 35px;">
                 <div class="col-sm-7">
                     <img class="img-responsive" src="{{asset('images/foto/personalefoto.png')}}" alt="">
                 </div>
@@ -83,7 +83,7 @@
 
     <!-- Produktbilleder -->
         <div class="container">
-            <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px;">
+            <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px; padding-bottom: 35px;">
                 <div class="col-sm-5" style="padding-top: 8%;">
                     <h3 class="column-title">Produktbilleder</h3>
 

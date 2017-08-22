@@ -18,9 +18,8 @@
                         <span class="text-success">indenfor 24 timer</span>
                     </p>
                     <ul class="list-unstyled" style="line-height: 2">
-                        <li><span class="fa fa-check text-success"></span> See all your orders</li>
-                        <li><span class="fa fa-check text-success"></span> Fast re-order</li>
-                        <li><span class="fa fa-check text-success"></span> Save your favorites</li>
+                        <li><span class="fa fa-check text-success"></span> Altid svar fra en ekspert </li>
+                        <li><span class="fa fa-check text-success"></span> Et tilbud der er tilpasset netop din opgave</li>
                         <img class="img-responsive" src="{{asset('images/tilbud.png')}}" alt="Tilbud">
                     </ul>
                 </div>
