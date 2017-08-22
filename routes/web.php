@@ -63,5 +63,6 @@ Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
+//active(['kontakt', 'priser', 'posts/*']);
 //Route::get('mail', 'MailController@mail');
 
