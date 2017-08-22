@@ -76,10 +76,16 @@
 
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
       <div class="product-chooser-item">
-        <img src="{{asset('images/webshop/magento_priser1.png')}}" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Desktop">
+        <img src="{{asset('images/webshop/magento_priser1.png')}}"
+             class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Desktop">
         <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
           <span class="title">Magento Webshop</span>
-          <span class="description">Magento er bygget til webshops, hvilket også betyder at vi anbefaler det til mellemstore til store virksomheder. Magento kan sagtens fungere til små webshops, men grundet det komplicerede CMS-system, anbefales det til store virksomheder, som får glæde at den store funktionalitet som Magento tilbyder.</span>
+
+          <span class="description ">
+            Magento er bygget til webshops, hvilket også betyder at vi anbefaler det til mellemstore til store virksomheder.
+            Magento kan sagtens fungere til små webshops, men grundet det komplicerede CMS-system, anbefales det til store virksomheder,
+            som får glæde at den store funktionalitet som Magento tilbyder.
+          </span>
         </div>
         <div class="price-button">
           <button class="btn-price"><a href="/webshops#magento-link">Se fulde priser</a></button>
