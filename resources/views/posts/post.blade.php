@@ -26,7 +26,7 @@
 -->
 @if($post->status === "PUBLISHED")
 
-        <div class="col-sm-4 col-md-4">
+        <div class="col-sm-4 col-md-4" style="padding-bottom: 15px;">
             <div class="post">
                 <div class="post-img-content">
                   <a href="/posts/{{ $post->id }}">  <img class="img-responsive" src="{{ asset('storage/'. $post->image) }}" /></a>

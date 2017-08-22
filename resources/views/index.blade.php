@@ -122,7 +122,7 @@
                             <a class="btn btn-number" href="foto#personalebilleder">Personalebilleder</a>
                             <a class="btn btn-number" href="foto#produktbilleder">Produktbilleder</a>
                             <a class="btn btn-number" href="foto#personalebilleder">Andre Fotoopgaver</a>
-                            <a class="btn btn-number" href="foto#produktvideoe">Produktvideo</a>
+                            <a class="btn btn-number" href="foto#produktvideo">Produktvideo</a>
                             <a class="btn btn-number" href="foto#reklamevideo">Reklamevideo</a>
                             <a class="btn btn-number" href="foto#profilvideo">Profil Video</a>
                         </div>
