@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="{{ URL::asset('css/tabs.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/tabstyles.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/normalize.css') }}" />
-    <link rel="stylesheet" href="{{ URL::asset('css/lity.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/font-awesome.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/font-awesome.css') }}" />
 
