@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="{{asset('images/ico/favicon.ico')}}">
+    <link rel="shortcut icon" type="image/png" href="{{asset('images/ico/favicon.ico')}}"/>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -40,7 +41,21 @@
     </div>
 @endif
 
-@include('include/errors')
+@if (count(session('errors')) > 1)
+    @foreach (session('errors')->all() as $error)
+        <div id="flash-message-error" class="alert alert-danger">
+            <ul>
+                <li>{{ $error }}</li>
+            </ul>
+        </div>
+    @endforeach
+@elseif(session('errors'))
+    <div id="flash-message-error" class="alert alert-danger">
+        <ul>
+            <li>{{ session('errors') }}</li>
+        </ul>
+    </div>
+@endif
 
 @yield('content')
 
