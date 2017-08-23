@@ -21,6 +21,12 @@
         </small>
     @endif
 
+    @if(isset($data['message']->to_id))
+      <br /><br />
+      <p>
+          Til: {{ App\User::find($data['message']->to_id)->name }}
+      </p>
+    @endif
 
     <p style="margin: 30px 0 -20px 10px;">
         <a href="{{ URL::to('admin/users/' . \App\User::find($data['message']->user_id)->id) }}">
