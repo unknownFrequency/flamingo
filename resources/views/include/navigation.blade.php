@@ -19,7 +19,8 @@
           <ul class="dropdown-menu dropdown-menu-large row">
             <li class="col-sm-3">
               <ul>
-                <li class="dropdown-header"><a href="{{ URL::to('/weblosninger') }}" style="color:#fff;">Webløsninger</a></li>
+                <li class="dropdown-header">
+                  <a class="nav-produker-headers" href="{{ URL::to('/weblosninger') }}" style="color:#fff;">Webløsninger</a></li>
                 <li><a href="/weblosninger#wordpress-link">Wordpress</a></li>
                 <li><a href="/weblosninger#bootstrap-link">Bootstrap</a></li>
                 <li><a href="/weblosninger#seo-link">Søgeoptimering</a></li>
