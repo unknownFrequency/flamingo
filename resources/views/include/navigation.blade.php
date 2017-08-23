@@ -2,7 +2,8 @@
   <div class="container">
 
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -37,7 +38,9 @@
             </li>
             <li class="col-sm-3">
               <ul>
-                <li class="dropdown-header"><a href="{{ URL::to('/grafik') }}" style="color:#fff;">Grafisk Arbejde</a></li>
+                <li class="dropdown-header">
+                  <a href="{{ URL::to('/grafik') }}" style="color:#fff;">Grafisk Arbejde</a>
+                </li>
                 <li><a href="/grafik#logo">Logo</a></li>
                 <li><a href="/grafik#webdesign">Webdesign</a></li>
                 <li><a href="/grafik#tryksager">Tryksager</a></li>
