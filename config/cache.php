@@ -89,4 +89,3 @@ return [
     'prefix' => 'laravel',
 
 ];
-Cache::put('key', 'value', 10);
