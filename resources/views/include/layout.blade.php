@@ -61,7 +61,6 @@
 <script type="text/javascript" src="{{ URL::asset('js/typed.js') }}"></script>
 <script src="{{ asset('/js/cbpFWTabs.js') }}"></script>
 <script src="{{ asset('/js/modernizr.custom.js') }}"></script>
-<script src="{{ asset('/js/lity.js') }}"></script>
 <link href="{{ mix('/css/websolutions.css') }}" rel="stylesheet">
 
 <script>
