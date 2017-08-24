@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="{{asset('images/ico/favicon.ico')}}">
+    <link rel="shortcut icon" type="image/png" href="{{asset('images/ico/favicon.ico')}}"/>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -18,8 +19,6 @@
     <link rel="stylesheet" href="{{ URL::asset('css/tabs.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/tabstyles.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/normalize.css') }}" />
-    <link rel="stylesheet" href="{{ URL::asset('css/lity.css') }}" />
-    <link rel="stylesheet" href="{{ URL::asset('css/font-awesome.min.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/font-awesome.css') }}" />
 
 
@@ -40,7 +39,21 @@
     </div>
 @endif
 
-@include('include/errors')
+@if (count(session('errors')) > 1)
+    @foreach (session('errors')->all() as $error)
+        <div id="flash-message-error" class="alert alert-danger">
+            <ul>
+                <li>{{ $error }}</li>
+            </ul>
+        </div>
+    @endforeach
+@elseif(session('errors'))
+    <div id="flash-message-error" class="alert alert-danger">
+        <ul>
+            <li>{{ session('errors') }}</li>
+        </ul>
+    </div>
+@endif
 
 @yield('content')
 
@@ -48,7 +61,6 @@
 <script type="text/javascript" src="{{ URL::asset('js/typed.js') }}"></script>
 <script src="{{ asset('/js/cbpFWTabs.js') }}"></script>
 <script src="{{ asset('/js/modernizr.custom.js') }}"></script>
-<script src="{{ asset('/js/lity.js') }}"></script>
 <link href="{{ mix('/css/websolutions.css') }}" rel="stylesheet">
 
 <script>
