@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- SEO -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="@yield('Flamingo Media er et ambitiøst bureau, med mange forskellige færdigheder inden for webdesign, backend kodning, visuelt design, billederedigering, tryk i eget hus og markedsføring på flere platforme.', config('app.description'))"/>
+    <meta name="keywords" content="@yield('magento,wordpress,hjemmeside,webshop,udvikling,webdesign,grafisk arbejde,tryk,programmør,bureau,konsulent,aarhus', config('app.keywords'))"/>
+    <meta name="copyright" content="{{ config('app.name') }}">
+    <meta name="application-name" content="@yield('title', config('app.name'))">
+    <meta name="author" content="{{ config('app.name') }}"/>
+
+    <!-- Favicon -->
     <link rel="icon" href="{{asset('images/ico/favicon.ico')}}">
     <link rel="shortcut icon" type="image/png" href="{{asset('images/ico/favicon.ico')}}"/>
 
@@ -20,7 +26,6 @@
     <link rel="stylesheet" href="{{ URL::asset('css/tabstyles.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/normalize.css') }}" />
     <link rel="stylesheet" href="{{ URL::asset('css/font-awesome.css') }}" />
-
 
 
     <!-- Scripts -->
