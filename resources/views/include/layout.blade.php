@@ -10,6 +10,8 @@
     <meta name="application-name" content="@yield('title', config('app.name'))">
     <meta name="author" content="{{ config('app.name') }}"/>
 
+    <meta name="google-site-verification" content="nYQ2_kEoAHDZo2oXLsH2awazRoH27nIPT97f73OipkY" />
+
     <!-- Favicon -->
     <link rel="icon" href="{{asset('images/ico/favicon.ico')}}">
     <link rel="shortcut icon" type="image/png" href="{{asset('images/ico/favicon.ico')}}"/>
