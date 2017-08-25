@@ -9,14 +9,14 @@
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
-        <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider1_grafik.jpg')}}" alt="First slide">
+        <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider1_grafik.jpg')}}" alt="Tryksager slider">
         <div class="carousel-caption">
           <h3>Tryksager</h3>
           <p>Vi designer alt fra flyers til visitkort, og sørger for at de bliver leveret til dig.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider2_grafik.jpg')}}" alt="Second slide">
+        <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider2_grafik.jpg')}}" alt="Print slider">
         <div class="carousel-caption">
           <h3>Altid den billigste pris</h3>
           <p>Vi garanterer altid den billigste pris, så du ikke skal betale mere hos os, for at få dine tryksager printet.</p>
@@ -55,7 +55,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-7" style="margin-top:-70px;">
-          <img class="img-responsive" src="{{asset('images/grafisk/logo.png')}}" alt="">
+          <img class="img-responsive" src="{{asset('images/grafisk/logo.png')}}" alt="Grafisk Logo">
         </div>
 
         <div class="col-sm-5" >
@@ -87,7 +87,7 @@
 
           </div>
           <div class="col-sm-7">
-            <img class="img-responsive" src="{{asset('images/grafisk/webdesign.png')}}" alt="">
+            <img class="img-responsive" src="{{asset('images/grafisk/webdesign.png')}}" alt="Webdesign">
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@
 
         <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px;">
           <div class="col-sm-7">
-            <img class="img-responsive" src="{{asset('images/grafisk/tøjtryk.png')}}" alt="">
+            <img class="img-responsive" src="{{asset('images/grafisk/tøjtryk.png')}}" alt="Tryk på Tøj">
           </div>
           <div class="col-sm-5" style="padding-top: 8%;">
             <h3 class="column-title" style="padding-top:75px;">Tryk på tøj</h3>
@@ -129,7 +129,7 @@
             </p>
           </div>
           <div class="col-sm-7">
-            <img class="img-responsive" src="{{asset('images/grafisk/print.png')}}" alt="">
+            <img class="img-responsive" src="{{asset('images/grafisk/print.png')}}" alt="Print">
           </div>
         </div>
 
@@ -137,7 +137,7 @@
 
         <div class="row" style="margin-bottom: 42px;" id="visitkort">
           <div class="col-sm-7">
-            <img class="img-responsive" src="{{asset('images/grafisk/visitkort.png')}}" alt="">
+            <img class="img-responsive" src="{{asset('images/grafisk/visitkort.png')}}" alt="Visitkort">
           </div>
           <div class="col-sm-5" style="padding-top: 8%;">
             <h3 class="column-title">Visitkort</h3>

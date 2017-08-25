@@ -7,7 +7,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <a class="navbar-brand" href="{{ URL::to('/') }}"><img src={{asset('images/FlamingoLogoDONEDONE.png')}} alt=""></a>
+    <a class="navbar-brand" href="{{ URL::to('/') }}"><img src={{asset('images/FlamingoLogoDONEDONE.png')}} alt="Flamingo Media Logo"></a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
       <ul class="navbar-nav mr-auto">

@@ -20,7 +20,7 @@
                     <ul class="list-unstyled" style="line-height: 2">
                         <li><span class="fa fa-check text-success"></span> Altid svar fra en ekspert </li>
                         <li><span class="fa fa-check text-success"></span> Et tilbud der er tilpasset netop din opgave</li>
-                        <img class="img-responsive" src="{{asset('images/tilbud.png')}}" alt="Tilbud">
+                        <img class="img-responsive" src="{{asset('images/tilbud.png')}}" alt="Modtag Gratis Tilbud">
                     </ul>
                 </div>
             </div>

@@ -58,7 +58,7 @@
           <div class="row">
               <div class="col-sm-6 col-md-4 col-lg-3 mt-4" style="margin: 0 auto;">
                   <div class="card">
-                      <img class="card-img-top" src="{{asset('images/christopher_kontakt.png')}}">
+                      <img class="card-img-top" src="{{asset('images/christopher_kontakt.png')}}" alt="Christopher Mørk">
                       <div class="card-block">
                           <h4 class="card-title">Christopher Mørk</h4>
                           <div class="meta">
@@ -77,7 +77,7 @@
 
               <div class="col-sm-6 col-md-4 col-lg-3 mt-4" style="margin: 0 auto;">
                   <div class="card">
-                      <img class="card-img-top" src="{{asset('images/ruben_kontakt.png')}}">
+                      <img class="card-img-top" src="{{asset('images/ruben_kontakt.png')}}" alt="Ruben Thuesen">
                       <div class="card-block">
                           <h4 class="card-title">Ruben Thuesen</h4>
                           <div class="meta">
@@ -95,7 +95,7 @@
               </div>
               <div class="col-sm-6 col-md-4 col-lg-3 mt-4" style="margin: 0 auto;">
                   <div class="card">
-                      <img class="card-img-top" src="{{asset('images/anders_kontakt.png')}}">
+                      <img class="card-img-top" src="{{asset('images/anders_kontakt.png')}}" alt="Anders Jakobsen">
                       <div class="card-block">
                           <h4 class="card-title">Anders Jakobsen</h4>
                           <div class="meta">
@@ -128,7 +128,7 @@ Vi har som webbureau forstået, at en tilfreds og glad kunde, er en kunde, der f
 <br></br>Vi befinder os i Aarhus, hvor vi har haft fast base de sidste år. Vi har mulighed for at køre til hele landet, hvis dine systemer skulle have brug for det.   </p>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <img src="{{asset('images/logo-icon-light.png')}}">
+            <img src="{{asset('images/logo-icon-light.png')}}" alt="Flamingo Media Logo">
         </div>
 
       </div>

@@ -10,14 +10,14 @@
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
-        <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider1_webshop.jpg')}}" alt="First slide">
+        <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider1_webshop.jpg')}}" alt="Webshop slider">
         <div class="carousel-caption">
           <h3 style="color: #333;">Webshops</h3>
           <p style="color: #333;">Vi arbejder i de tre største e-commerce frameworks, fordi vi ved det virker.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider2_webshop.jpg')}}" alt="Second slide">
+        <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider2_webshop.jpg')}}" alt="Support slider">
         <div class="carousel-caption">
           <h3 style="color: #333;">Altid hurtig support</h3>
           <p style="color: #333;">Vores kunder er det vigtigste for os, derfor er vores support helt i top.</p>
@@ -70,7 +70,7 @@
       </div>
 
       <div class="col-sm-7">
-        <img class="img-responsive" src="{{asset('images/webshop/magento.png')}}" alt="">
+        <img class="img-responsive" src="{{asset('images/webshop/magento.png')}}" alt="Magento Webshop">
       </div>
       <!-- Pricing -->
       <div class="priser" style="padding-top: 45px; padding-bottom: 20px;">
@@ -360,7 +360,7 @@
     </div>
     <div class="row">
       <div class="col-sm-7">
-        <img class="img-responsive" src="{{asset('images/webshop/shopify.png')}}" alt="">
+        <img class="img-responsive" src="{{asset('images/webshop/shopify.png')}}" alt="Shopify Webshop">
       </div>
       <div class="col-sm-5" style="padding-top: 8%;">
         <h3 class="column-title">Shopify Webshop</h3>
@@ -524,7 +524,7 @@
         </div>
 
         <div class="col-sm-7">
-          <img class="img-responsive" src="{{asset('images/webshop/woocommerce.png')}}" alt="">
+          <img class="img-responsive" src="{{asset('images/webshop/woocommerce.png')}}" alt="Woocommerce Webshop">
         </div>
         <!-- Pricing -->
         <div class="priser" style="padding-top: 45px; padding-bottom: 20px;">

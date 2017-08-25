@@ -44,7 +44,7 @@
 
                 </div>
                 <div class="col-sm-7">
-                    <img class="img-responsive" src="{{asset('images/flamingoteam.png')}}" alt="">
+                    <img class="img-responsive" src="{{asset('images/flamingoteam.png')}}" alt="Flamingo Team">
                 </div>
             </div>
         </div>
@@ -141,7 +141,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <img class="img-responsive" src="{{asset('images/thomas2.png')}}" alt="" style="margin: 0 auto;">
+                    <img class="img-responsive" src="{{asset('images/thomas2.png')}}" alt="Thomas Køhler Hshop" style="margin: 0 auto;">
                 </div>
                 <div class="col-sm-8">
                     <div class="reviews">

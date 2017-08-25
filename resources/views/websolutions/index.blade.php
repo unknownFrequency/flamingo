@@ -10,14 +10,14 @@
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
-        <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider1_webløsninger.jpg')}}" alt="First slide">
+        <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider1_webløsninger.jpg')}}" alt="Webløsninger slider">
         <div class="carousel-caption">
           <h3 style="color: #333;">Webløsninger på flere platforme</h3>
           <p style="color: #333;">Vi laver hjemmesider, der opfylder lige netop de krav du har.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider2_webløsninger.jpg')}}" alt="Second slide">
+        <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider2_webløsninger.jpg')}}" alt="custom kodning slider">
         <div class="carousel-caption">
           <h3>Ingen begrænsninger</h3>
           <p>Vi kan kode i rigtig mange forskellige sprog, så du altid er sikker på at få det bedste.</p>
@@ -53,7 +53,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-7">
-        <img class="img-responsive" src="{{asset('images/websolutions/wordpress.png')}}" alt="">
+        <img class="img-responsive" src="{{asset('images/websolutions/wordpress.png')}}" alt="Wordpress hjemmeside">
       </div>
       <div class="col-sm-5" style="padding-top: 8%;">
         <h3 class="column-title">Wordpress Hjemmeside</h3>
@@ -210,7 +210,7 @@
         <button class="myBtn" id="myBtn2">Få et uforpligtende tilbud</button>
       </div>
       <div class="col-sm-7">
-        <img class="img-responsive" src="{{asset('images/websolutions/bootstrap.png')}}" alt="">
+        <img class="img-responsive" src="{{asset('images/websolutions/bootstrap.png')}}" alt="Bootstrap hjemmeside">
       </div>
 
     </div>
@@ -251,7 +251,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-7">
-        <img class="img-responsive" src="{{asset('images/websolutions/wordpress.png')}}" alt="">
+        <img class="img-responsive" src="{{asset('images/websolutions/wordpress.png')}}" alt="SEO søgemaskine optimering">
       </div>
       <div class="col-sm-5" style="padding-top: 8%;">
         <h3 class="column-title">Søgeoptimering</h3>
@@ -286,7 +286,7 @@
       </div>
 
       <div class="col-sm-7">
-        <img class="img-responsive" src="{{asset('images/websolutions/customkode.png')}}" alt="">
+        <img class="img-responsive" src="{{asset('images/websolutions/customkode.png')}}" alt="custom kode">
       </div>
 
     </div>

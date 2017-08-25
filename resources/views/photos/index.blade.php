@@ -11,21 +11,21 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider1_foto.jpg')}}" alt="First slide">
+                    <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider1_foto.jpg')}}" alt="Video Billede slider">
                     <div class="carousel-caption">
                         <h3 style="color: #333;">Videoer der er til at forstå</h3>
                         <p style="color: #333;">Vi sætter ikke begrænsinger for jeres drømme, når det gælder video.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider2_foto.jpg')}}" alt="Second slide">
+                    <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider2_foto.jpg')}}" alt="Nyeste udstyr slider">
                     <div class="carousel-caption">
                         <h3>Det nyeste udstyr</h3>
                         <p>Vi har alt det nyeste udstyr, så vi kan producere meget høj kvalitet til vores kunder.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider3_foto.jpg')}}" alt="Second slide">
+                    <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider3_foto.jpg')}}" alt="Produktbilleder slider">
                     <div class="carousel-caption">
                         <h3 style="color: #333;">Knivskarpe produktbilleder</h3>
                         <p style="color: #333;">Få unikke produktbilleder til netop din webshop.</p>
@@ -60,7 +60,7 @@
         <div class="container">
             <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px; padding-bottom: 35px;">
                 <div class="col-sm-7">
-                    <img class="img-responsive" src="{{asset('images/foto/personalefoto.png')}}" alt="">
+                    <img class="img-responsive" src="{{asset('images/foto/personalefoto.png')}}" alt="Personalefoto">
                 </div>
 
                 <div class="col-sm-5" style="padding-top: 8%;">
@@ -98,7 +98,7 @@
                 </div>
 
                 <div class="col-sm-7">
-                    <img class="img-responsive" src="{{asset('images/foto/produktfoto.png')}}" alt="">
+                    <img class="img-responsive" src="{{asset('images/foto/produktfoto.png')}}" alt="Produktfoto">
                 </div>
             </div>
         </div>
@@ -108,7 +108,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-7">
-                    <img class="img-responsive" src="{{asset('images/foto/andrefoto.png')}}" alt="">
+                    <img class="img-responsive" src="{{asset('images/foto/andrefoto.png')}}" alt="Foto Opgaver">
                 </div>
 
                 <div class="col-sm-5" style="padding-top: 8%;">
@@ -137,7 +137,7 @@
             </div>
             <div class="row" style="border-bottom: 1px #eee solid; margin-bottom: 42px; padding-bottom: 35px;">
                 <div class="col-sm-7">
-                    <img class="img-responsive" src="{{asset('images/foto/produktvideo.png')}}" alt="">
+                    <img class="img-responsive" src="{{asset('images/foto/produktvideo.png')}}" alt="Produktvideo">
                 </div>
                 <div class="col-sm-5" style="padding-top: 8%;">
                     <h3 class="column-title">Produktvideo</h3>
@@ -171,7 +171,7 @@
             </div>
 
             <div class="col-sm-7">
-                <img class="img-responsive" src="{{asset('images/foto/reklamevideo.png')}}" alt="">
+                <img class="img-responsive" src="{{asset('images/foto/reklamevideo.png')}}" alt="Reklamevideo">
             </div>
         </div>
       </div>
@@ -183,7 +183,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-7">
-                    <img class="img-responsive" src="{{asset('images/foto/profilvideo.png')}}" alt="">
+                    <img class="img-responsive" src="{{asset('images/foto/profilvideo.png')}}" alt="Profilvideo">
                 </div>
 
                 <div class="col-sm-5" style="padding-top: 8%;">
