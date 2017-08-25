@@ -1,10 +1,4 @@
 @extends('include/layout')
-@section('title')
-Flamingo Media
-@stop
-@section('description')
-TEST
-@stop
 @section('content')
     <section class="video-section">
         <div class="video">

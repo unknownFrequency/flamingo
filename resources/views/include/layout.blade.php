@@ -4,7 +4,7 @@
     <!-- SEO -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="@yield('description')" />
+    <meta name="description" content="@yield('Få din nye hjemmeside fra Flamingo Media. Hjemmeside Århus, webudvikling, Shopify, Wordpress, WooCommerce og Magento webshop.', config('app.description'))"/>
     <meta name="keywords" content="@yield('magento,wordpress,hjemmeside,webshop,udvikling,webdesign,grafisk arbejde,tryk,programmør,bureau,konsulent,aarhus', config('app.keywords'))"/>
     <meta name="copyright" content="{{ config('app.name') }}">
     <meta name="application-name" content="@yield('title', config('app.name'))">
@@ -17,7 +17,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title')</title>
+    <title>{{ config('app.name', 'Webbureau Århus | FlamingoMedia.dk') }}</title>
 
     <!-- Styles -->
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
