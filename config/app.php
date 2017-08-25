@@ -164,7 +164,6 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         JeroenNoten\LaravelCkEditor\ServiceProvider::class,
         Watson\Active\ActiveServiceProvider::class,
-        Spatie\ResponseCache\ResponseCacheServiceProvider::class,
 
 
         /*
@@ -234,7 +233,6 @@ return [
         'Twilio' => Aloha\Twilio\Support\Laravel\Facade::class,
         'Mailgun' => Bogardo\Mailgun\Facades\Mailgun::class,
         'Active' => Watson\Active\Facades\Active::class,
-        'ResponseCache' => Spatie\ResponseCache\ResponseCacheFacade::class,
     ],
 
 ];
