@@ -79,7 +79,7 @@
         </li>
       </ul>
       <!-- Trigger/Open The Modal -->
-      <a class="btn-number" href="tel:+4556568181">
+      <a class="btn-number" href="tel:+4581815656">
         <i class="fa fa-phone" aria-hidden="true"></i> 81 81 56 56
       </a>
       <button type="button" class="myBtn" id="myBtn3">Bliv Kontaktet</button>
