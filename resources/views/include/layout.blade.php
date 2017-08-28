@@ -4,8 +4,8 @@
     <!-- SEO -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="@yield('Få din nye hjemmeside fra Flamingo Media. Hjemmeside Århus, webudvikling, Shopify, Wordpress, WooCommerce og Magento webshop.', config('app.description'))"/>
-    <meta name="keywords" content="@yield('magento,wordpress,hjemmeside,webshop,udvikling,webdesign,grafisk arbejde,tryk,programmør,bureau,konsulent,aarhus', config('app.keywords'))"/>
+    <meta name="description" content="Få din nye hjemmeside fra Flamingo Media. Hjemmeside Århus, webudvikling, Shopify, Wordpress, WooCommerce og Magento webshop.">
+    <meta name="keywords" content="magento,wordpress,hjemmeside,webshop,udvikling,webdesign,grafisk arbejde,tryk,programmør,bureau,konsulent,aarhus">
     <meta name="copyright" content="{{ config('app.name') }}">
     <meta name="application-name" content="@yield('title', config('app.name'))">
     <meta name="author" content="{{ config('app.name') }}"/>
