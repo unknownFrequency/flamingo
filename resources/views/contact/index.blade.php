@@ -128,7 +128,7 @@ Vi har som webbureau forstået, at en tilfreds og glad kunde, er en kunde, der f
 <br></br>Vi befinder os i Aarhus, hvor vi har haft fast base de sidste år. Vi har mulighed for at køre til hele landet, hvis dine systemer skulle have brug for det.   </p>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <img src="{{asset('images/logo-icon-light.png')}}" alt="Flamingo Media Logo">
+            <img src="{{asset('images/logo-icon-light.png')}}" alt="Flamingo Media Logo" style="width: 100%;">
         </div>
 
       </div>
