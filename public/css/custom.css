@@ -280,7 +280,7 @@ div.product-chooser div.product-chooser-item input{position:absolute;left:0;top:
   font-family: verdana;
   font-size: 12px;
   font-weight: 200;
-  background-color: #2e353d;
+  background-color: #242a33;
   position: fixed;
   top: 0px;
   width: 300px;
@@ -366,7 +366,7 @@ div.product-chooser div.product-chooser-item input{position:absolute;left:0;top:
 .nav-side-menu li {
   padding-left: 0px;
   border-left: 3px solid #2e353d;
-  border-bottom: 1px solid #23282e;
+  border-bottom: 1px solid #454a50;
 }
 .nav-side-menu li a {
   text-decoration: none;

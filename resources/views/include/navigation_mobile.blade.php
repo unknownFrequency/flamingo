@@ -5,7 +5,7 @@
         <div class="menu-list">
 
             <ul id="menu-content" class="menu-content collapse out">
-                <li class="active">
+                <li class="active" style="background-color: #cd1958">
                   <a href="tel:+4581815656">
                   <i class="fa fa-phone"></i> 81 81 56 56 - Ring og få gratis tilbud
                   </a>
