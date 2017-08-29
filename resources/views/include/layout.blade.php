@@ -39,6 +39,8 @@
 </head>
 <body>
 @include('include/navigation')
+@include('include/navigation_mobile')
+
 
 @if($flash = session('message'))
     <div id="flash-message-success" class="alert alert-success" role="alert">
