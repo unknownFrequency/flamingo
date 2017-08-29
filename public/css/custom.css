@@ -417,3 +417,5 @@ div.product-chooser div.product-chooser-item input{position:absolute;left:0;top:
     display: none;
   }
 }
+
+.tabs nav ul li{min-width: 130px !important;}
