@@ -275,6 +275,11 @@ div.product-chooser div.product-chooser-item input{position:absolute;left:0;top:
 .price-button{bottom:0;position:absolute;padding-bottom:5%;padding-left:4%;}
 .btn-price{-moz-border-radius:2px;border-radius:3px;display:inline-block;cursor:pointer;font-family:Arial;font-size:14px;padding:9px 20px;text-decoration:none;background-color:#eee;box-shadow:0px 1px 0px 0px rgba(36, 42, 51, 0.45);color:#cd1958;text-shadow:none;border:0;font-weight:600;}
 
+@media (max-width:575px){.price-button{position:inherit;}
+}
+
+
+
 .nav-side-menu {
   overflow: auto;
   font-family: verdana;
