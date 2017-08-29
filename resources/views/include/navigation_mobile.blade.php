@@ -73,8 +73,8 @@
                    </li>
 
                  <li>
-                  <a href="#">
-                  <i class="fa fa-user fa-lg"></i> Din Profil
+                  <a href="/admin/login"><i class="fa fa-user fa-lg"></i> Din Profil
+
                   </a>
                   </li>
 
