@@ -16,5 +16,6 @@ class ContactController extends Controller
 
     public function contact() {
         MailMethods::sendMail(request());
+        return redirect()->route('tak');
     }
 }

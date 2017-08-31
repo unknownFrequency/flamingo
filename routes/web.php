@@ -59,6 +59,10 @@ Route::post('/kontakt', 'ContactController@contact');
 
 Route::get('/priser', 'PricesController@index');
 
+Route::get('/tak', function () {
+  return view('tak');
+})->name('tak');
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

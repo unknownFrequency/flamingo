@@ -72,7 +72,7 @@ class MailMethods
                 }
             );
 
-            header("Location:kontakt?msg-send=1");
+//            header("Location:kontakt?msg-send=1");
         } else {
             return redirect('/kontakt')->with('message',
                 'Der skete en fejl på mailserveren - Vi beklager! Prøv eventuelt igen eller skriv direkte til: info@flamingomedia.dk');
