@@ -137,7 +137,7 @@ document.getElementById('change').src = buttonLink;
     <div class="c aq aje">
       <div class="fq ju ajs">
         <h6 class="an ayt ahe">Magento Webshop</h6>
-        <h3 class="ahs" style="line-height: 1.3;">“Flamingo Media har etableret en velfungerende pakkeløsning,med en kompleks multi store forretning med eget lager, forskellige leverings- og betalingsmuligheder.”</h3>
+        <h3 class="ahs" style="line-height: 1.3;">“Flamingo Media har etableret en velfungerende pakkeløsning, med en kompleks multi store forretning med eget lager, forskellige leverings- og betalingsmuligheder.”</h3>
         <p class="ahs an">Thomas Køhler, medejer af Hshop.dk</p>
       </div>
     </div>
