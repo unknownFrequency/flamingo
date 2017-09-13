@@ -151,6 +151,19 @@ document.getElementById('change').src = buttonLink;
     <a href="/webshops#shopify-link"><img class="programs" src="{{asset('images/shopifylogo.png')}}"></a>
     <a href="/webshops#woo-link"><img class="programs" src="{{asset('images/woocommercelogo.png')}}"></a>
   </div>
+
+</div>
+<div class="teknologi_strip">
+      <div class="c-carousel">
+        <div class="c-carousel__arrow c-carousel__arrow--left"></div>
+        <div class="c-carousel__arrow c-carousel__arrow--right"></div>
+        <ul class="c-carousel__slides">
+          <li><a href="/webshops#magento-link"><img class="programs" src="{{asset('images/magentologo.png')}}" style="padding: 30px;"></a></li>
+          <li><a href="/webshops#wordpress-link"><img class="programs" src="{{asset('images/wordpresslogo.png')}}" style="padding: 30px;"></a></li>
+          <li><a href="/webshops#woo-link"><img class="programs" src="{{asset('images/woocommercelogo.png')}}" style="padding: 30px;"></a>
+          <li><a href="/webshops#shopify-link"><img class="programs" src="{{asset('images/shopifylogo.png')}}" style="padding: 30px;"></a></li>
+        </ul>
+      </div>
 </div>
 
 @include('include.portfolio')
