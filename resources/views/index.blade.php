@@ -68,13 +68,10 @@ document.getElementById('change').src = buttonLink;
             <h2> Webløsninger </h2>
             <p>Vi udvikler hjemmesider på mange forskellige platforme, så du kan få det resultat du ønsker, uden at gå på kompromis med dine ønsker, og dine forventninger til fulde kan blive indfriet. <br></br>Vi udvikler hjemmesider i alt fra Wordpress, Woocommerce, Shopify, Magento og en webløsning helt fra bunden. Du får derfor en hjemmeside, du selv kan vedligeholde og redigere.
             </p>
+            <a class="btn btn-primary" href="{{ URL::to('/weblosninger') }}" style="float: left; margin-top: 13px;">Se alle webløsninger</a>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h2> Produkter </h2>
-            <a class="btn btn-number" href="/weblosninger#wordpress-link">Wordpress</a>
-            <a class="btn btn-number" href="/weblosninger#bootstrap-link">Bootstrap</a>
-            <a class="btn btn-number" href="/weblosninger#seo-link">Søgeoptimering</a>
-            <a class="btn btn-number" href="/weblosninger#custom-link">Custom Kode</a>
+            <img class="img-responsive" src="{{asset('images/websolutions/wordpress_priser2.png')}}" alt="Wordpress Hjemmeside">
           </div>
         </div>
       </section>
@@ -85,12 +82,10 @@ document.getElementById('change').src = buttonLink;
             <h2> Webshops </h2>
             <p>Vi har tre multimediedesignere ansat i virksomheden, som har specialiseret sig inden for blandt andet grafisk design.<br></br> Vi laver alt fra billederedigering, visitkort, logo, brochurer, flyers, tryk på tøj og alt hvad man ellers kan forestille sig. Det betyder at din visuelle identitet sidder helt i skabet.
             </p>
+            <a class="btn btn-primary" href="{{ URL::to('/webshops') }}" style="float: left; margin-top: 13px;">Se alle webshops</a>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h2> Produkter </h2>
-            <a class="btn btn-number" href="/webshops#magento-link">Magento</a>
-            <a class="btn btn-number" href="/webshops#woo-link">WooCommerce</a>
-            <a class="btn btn-number" href="/webshops#shopify-link">Shopify</a>
+            <img class="img-responsive" src="{{asset('images/webshop/magento_priser2.png')}}" alt="Magento Webshop">
           </div>
         </div>
       </section>
@@ -99,14 +94,10 @@ document.getElementById('change').src = buttonLink;
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <h2> Grafisk Arbejde </h2>
             <p>Vi ved hvor vigtig en god markedsføringsstrategi er for din virksomhed, og det er vi også specialiserede inden for. Vi hjælper med opsætning af Google Adwords, generel søgeoptimering, opsætning af nyhedsbreve og meget mere. <br></br>Vi ved hvilke aktiviteter, der kan hjælpe din virksomhed, så din virksomhed kan vækste og gå op i en højere enhed. </p>
+            <a class="btn btn-primary" href="{{ URL::to('/grafik') }}" style="float: left; margin-top: 13px;">Se alle Grafiske løsninger</a>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h2> Produkter </h2>
-            <a class="btn btn-number" href="grafik#logo">Logo Design</a>
-            <a class="btn btn-number" href="grafik#webdesign">Webdesign</a>
-            <a class="btn btn-number" href="grafik#tryk">Tryksager</a>
-            <a class="btn btn-number" href="grafik#print">Print</a>
-            <a class="btn btn-number" href="grafik#visitkort">Visitkort</a>
+            <img class="img-responsive" src="{{asset('images/grafisk/tøjtryk.png')}}" alt="Tryk på tøj">
           </div>
         </div>
       </section>
@@ -116,20 +107,55 @@ document.getElementById('change').src = buttonLink;
             <h2> Foto/Video </h2>
             <p>Flamingo Media har eget fotostudie, med alt hvad der hører til. Uanset om du skal bruge en video, der beskriver din virksomhed, billeder af dine produkter, personalebilleder til visitkort, eller en spændende reklame eller en produktvideo – så kan vi lave det.
             </p>
+            <a class="btn btn-primary" href="{{ URL::to('/foto') }}" style="float: left; margin-top: 13px;">Se alle produkter</a>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h2> Produkter </h2>
-            <a class="btn btn-number" href="foto#personalebilleder">Personalebilleder</a>
-            <a class="btn btn-number" href="foto#produktbilleder">Produktbilleder</a>
-            <a class="btn btn-number" href="foto#personalebilleder">Andre Fotoopgaver</a>
-            <a class="btn btn-number" href="foto#produktvideo">Produktvideo</a>
-            <a class="btn btn-number" href="foto#reklamevideo">Reklamevideo</a>
-            <a class="btn btn-number" href="foto#profilvideo">Profil Video</a>
+            <img class="img-responsive" src="{{asset('images/foto/reklamevideo.png')}}" alt="Foto og video">
           </div>
         </div>
       </section>
     </div><!-- /content -->
   </div><!-- /tabs -->
+</section>
+
+<section id="offers" style="padding: 50px;">
+  <div class="container">
+  	<div class="row">
+              <div class="row">
+                  <div class="col-md-4 text-center">
+                      <div class="box">
+                          <div class="box-content">
+                              <h1 class="tag-title">Noget Fedt</h1>
+                              <hr />
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra quam sollicitudin nibh aliquam finibus. Etiam efficitur felis vel imperdiet varius. Maecenas bibendum elementum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus finibus semper. Fusce molestie tincidunt leo vel varius. Nam scelerisque nulla feugiat leo consequat, id dignissim sem tincidunt. Proin elit mauris, hendrerit in varius sed, facilisis sit amet neque.</p>
+                              <br />
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 text-center">
+                      <div class="box">
+                          <div class="box-content">
+                              <h1 class="tag-title">Andet fedt her</h1>
+                              <hr />
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra quam sollicitudin nibh aliquam finibus. Etiam efficitur felis vel imperdiet varius. Maecenas bibendum elementum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus finibus semper. Fusce molestie tincidunt leo vel varius. Nam scelerisque nulla feugiat leo consequat, id dignissim sem tincidunt. Proin elit mauris, hendrerit in varius sed, facilisis sit amet neque.</p>
+                              <br />
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 text-center">
+                      <div class="box">
+                          <div class="box-content">
+                              <h1 class="tag-title">Support </h1>
+                              <hr />
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra quam sollicitudin nibh aliquam finibus. Etiam efficitur felis vel imperdiet varius. Maecenas bibendum elementum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus finibus semper. Fusce molestie tincidunt leo vel varius. Nam scelerisque nulla feugiat leo consequat, id dignissim sem tincidunt. Proin elit mauris, hendrerit in varius sed, facilisis sit amet neque.</p>
+                              <br />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  	</div>
+  </div>
 </section>
 
 <div class="k am ad" style="background: url({{ URL::asset('images/thomas_testimonial2.jpg') }})">
@@ -142,8 +168,6 @@ document.getElementById('change').src = buttonLink;
       </div>
     </div>
   </div>
-</div>
-
 </div>
 
 <div class="slider2">

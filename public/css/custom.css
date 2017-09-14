@@ -634,7 +634,7 @@ padding: 150px 1rem; }
 .slider2 .slider-row2 {
   width: 2956px;
   height: 125.5px;
-  background-image: url(../images/testfyr.jpg);
+  background-image: url(../images/teknologi_strip.jpg);
   -webkit-animation: slide 50s linear infinite;
           animation: slide 50s linear infinite;
 }
@@ -655,4 +655,46 @@ padding: 150px 1rem; }
   to {
     background-position-x: -2956px;
   }
+}
+
+#offers{
+  background-color: whitesmoke;
+}
+
+.box {
+  background:#fff;
+  transition:all 0.2s ease;
+  border:2px dashed #dadada;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-clip: padding-box;
+  padding:0 20px 20px 20px;
+  min-height:340px;
+}
+
+.box:hover {
+  border:2px solid #cd1958;
+}
+
+.box span.box-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.box .box-content {
+  padding: 16px;
+  border-radius: 0 0 2px 2px;
+  background-clip: padding-box;
+  box-sizing: border-box;
+}
+.box .box-content p {
+  color:#515c66;
+  text-transform:none;
+}
+
+.tag-title{
+  color: #cd1958;
 }
