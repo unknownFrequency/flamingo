@@ -44,7 +44,7 @@ document.getElementById('change').src = buttonLink;
 
       </div>
       <div class="col-sm-7">
-        <img class="img-responsive" src="{{asset('images/flamingoteam.png')}}" alt="Flamingo Team">
+        <img class="img-responsive" src="{{asset('images/teamet2.jpg')}}" alt="Flamingo Team">
       </div>
     </div>
   </div>
@@ -125,7 +125,8 @@ document.getElementById('change').src = buttonLink;
                   <div class="col-md-4 text-center">
                       <div class="box">
                           <div class="box-content">
-                              <h1 class="tag-title">Noget Fedt</h1>
+                            <h1 class="tag-title"><i class="fa fa-bars" aria-hidden="true"></i></h1>
+                              <h1 class="tag-title">Responsive design</h1>
                               <hr />
                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra quam sollicitudin nibh aliquam finibus. Etiam efficitur felis vel imperdiet varius. Maecenas bibendum elementum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus finibus semper. Fusce molestie tincidunt leo vel varius. Nam scelerisque nulla feugiat leo consequat, id dignissim sem tincidunt. Proin elit mauris, hendrerit in varius sed, facilisis sit amet neque.</p>
                               <br />
@@ -145,9 +146,10 @@ document.getElementById('change').src = buttonLink;
                   <div class="col-md-4 text-center">
                       <div class="box">
                           <div class="box-content">
+                            <h1 class="tag-title"><i class="fa fa-life-ring" aria-hidden="true"></i></h1>
                               <h1 class="tag-title">Support </h1>
                               <hr />
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra quam sollicitudin nibh aliquam finibus. Etiam efficitur felis vel imperdiet varius. Maecenas bibendum elementum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus finibus semper. Fusce molestie tincidunt leo vel varius. Nam scelerisque nulla feugiat leo consequat, id dignissim sem tincidunt. Proin elit mauris, hendrerit in varius sed, facilisis sit amet neque.</p>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra quam sollicitudin nibh aliquam finibus. Etiam efficitur felis vel imperdiet varius. Maecenas bibendum elementum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                               <br />
                           </div>
                       </div>
