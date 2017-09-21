@@ -119,6 +119,8 @@ document.getElementById('change').src = buttonLink;
 </section>
 
 <section id="offers" style="padding: 50px;">
+    <h2 class="section-title">Flamingo Media tilbyder altid</h2>
+    <br></br>
   <div class="container">
   	<div class="row">
               <div class="row">
@@ -128,7 +130,7 @@ document.getElementById('change').src = buttonLink;
                             <h1 class="tag-title"><i class="fa fa-bars" aria-hidden="true"></i></h1>
                               <h1 class="tag-title">Responsive design</h1>
                               <hr />
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra quam sollicitudin nibh aliquam finibus. Etiam efficitur felis vel imperdiet varius. Maecenas bibendum elementum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus finibus semper. Fusce molestie tincidunt leo vel varius. Nam scelerisque nulla feugiat leo consequat, id dignissim sem tincidunt. Proin elit mauris, hendrerit in varius sed, facilisis sit amet neque.</p>
+                              <p>I en verden hvor det primære fokus ligger hos mobile enheder, er det for os en selvfølge at de webløsninger vi udvikler, altid fungerer responsivt. Det betyder at dine kunder kan navigere problemfrit på din nye hjemmeside – uanset hvilken platform de er er på. </p>
                               <br />
                           </div>
                       </div>
@@ -136,9 +138,10 @@ document.getElementById('change').src = buttonLink;
                   <div class="col-md-4 text-center">
                       <div class="box">
                           <div class="box-content">
-                              <h1 class="tag-title">Andet fedt her</h1>
+                            <h1 class="tag-title"><i class="fa fa-code" aria-hidden="true"></i></h1>
+                              <h1 class="tag-title">Nyeste Teknologier</h1>
                               <hr />
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra quam sollicitudin nibh aliquam finibus. Etiam efficitur felis vel imperdiet varius. Maecenas bibendum elementum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus finibus semper. Fusce molestie tincidunt leo vel varius. Nam scelerisque nulla feugiat leo consequat, id dignissim sem tincidunt. Proin elit mauris, hendrerit in varius sed, facilisis sit amet neque.</p>
+                              <p>Teknologierne udvikler sig konstant, og bliver hele tiden opdateret, men vores udviklere er hele tiden up to date med de seneste teknologier, og kan derfor udvikle dine løsninger i præcis de sprog, du ønsker. </p>
                               <br />
                           </div>
                       </div>
@@ -149,7 +152,7 @@ document.getElementById('change').src = buttonLink;
                             <h1 class="tag-title"><i class="fa fa-life-ring" aria-hidden="true"></i></h1>
                               <h1 class="tag-title">Support </h1>
                               <hr />
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra quam sollicitudin nibh aliquam finibus. Etiam efficitur felis vel imperdiet varius. Maecenas bibendum elementum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                              <p>Det er vores førsteprioritet at din virksomhed kan fungere uden nedetid, derfor yder vi den optimale support til din hjemmeside. Vi samarbejder efter vores mening med det bedste hosting selskab i Danmark, som også tilbyder 24 timers support.</p>
                               <br />
                           </div>
                       </div>
@@ -159,7 +162,23 @@ document.getElementById('change').src = buttonLink;
   	</div>
   </div>
 </section>
+<!--
+<section id="offers2">
+  <div class="container">
+  	<div class="row">
+      <div class="col-md-5 text-center">
+        <h3>Klar på at få et tilbud?</h3>
+        <p> Vi kontakter dig indenfor 24 timer. </p>
+      </div>
+      <div class="col-md-5 text-center">
+          @include('include/sms_form')
+        </div>
 
+      </div>
+  	</div>
+  </div>
+</section>
+-->
 <div class="k am ad" style="background: url({{ URL::asset('images/thomas_testimonial2.jpg') }})">
   <div class="e">
     <div class="c aq aje">
