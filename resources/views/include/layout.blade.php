@@ -11,6 +11,7 @@
     <meta name="author" content="{{ config('app.name') }}"/>
 
     <meta name="google-site-verification" content="nYQ2_kEoAHDZo2oXLsH2awazRoH27nIPT97f73OipkY" />
+    
 
     <!-- Favicon -->
     <link rel="icon" href="{{asset('images/ico/favicon.ico')}}">
