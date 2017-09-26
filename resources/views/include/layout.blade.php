@@ -11,7 +11,6 @@
     <meta name="author" content="{{ config('app.name') }}"/>
 
     <meta name="google-site-verification" content="nYQ2_kEoAHDZo2oXLsH2awazRoH27nIPT97f73OipkY" />
-    
 
     <!-- Favicon -->
     <link rel="icon" href="{{asset('images/ico/favicon.ico')}}">
@@ -37,15 +36,16 @@
             'csrfToken' => csrf_token(),
         ]) !!};
     </script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
-      Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-105616036-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105584679-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+
+    gtag('config', 'UA-105584679-1');
+  </script>
+
 </head>
 <body>
 @include('include/navigation')
