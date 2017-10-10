@@ -52,6 +52,8 @@ Route::get('/weblosninger', [
 Route::get('/webshops', 'WebshopsController@index');
 Route::get('/grafik', 'GraphicsController@index');
 Route::get('/foto', 'PhotosController@index');
+Route::get('/haandvaerkertilbud', 'OfferController@index');
+
 
 // KONTAKT //
 Route::get('/kontakt', 'ContactController@index');
@@ -69,4 +71,3 @@ Route::group(['prefix' => 'admin'], function () {
 
 //active(['kontakt', 'priser', 'posts/*']);
 //Route::get('mail', 'MailController@mail');
-
