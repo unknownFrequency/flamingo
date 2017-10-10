@@ -11,7 +11,8 @@
         <img class="d-block img-fluid ml-auto mr-auto" src="{{asset('images/slider/slider1_tilbud.png')}}" alt="Webløsninger slider">
         <div class="carousel-caption">
           <h3 style="color: #333;">Håndværkertilbud</h3>
-          <p style="color: #333;">Vi laver hjemmesider, der opfylder lige netop de krav du har.</p>
+          <br>
+          <h2 style="color: #cd1a58;">Spar 33% på din nye hjemmeside!</h2>
         </div>
       </div>
     </div>
