@@ -46,7 +46,7 @@ Vi anbefaler også at du i samme stil med hjemmesiden får udarbejdet visitkort,
           <img src="{{asset('images/hjemmeside_tibud.jpg')}}" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Wordpress Priser">
           <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
             <span class="title">Hjemmeside</span>
-            <span class="description">Du kommer online på en ny flot hjemmeside, udviklet i det system, der passer til din virksomheds behov. Dine kunder får let ved at finde jer og booke en tid - så I kan fokusere på det I er gode til.</span>
+            <span class="description">Du kommer online på en ny flot hjemmeside, udviklet i det system, der passer til din virksomheds behov. Dine kunder får let ved at finde og kontakte jer, så I kan fokusere på det I er gode til. </span>
           </div>
           <div class="price-button">
             <button class="btn-price myBtn">Modtag tilbud</button>
@@ -60,9 +60,7 @@ Vi anbefaler også at du i samme stil med hjemmesiden får udarbejdet visitkort,
           <img src="{{asset('images/visitkort_tilbud.jpg')}}" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Bootstrap Priser">
           <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
             <span class="title">Visitkort</span>
-            <span class="description">Vi anbefaler et sæt visitkort, så I kan vise hvem I er, og hvordan man finder jeres hjemmeside og salon.
-
-I kan enten dele dem ud, eller have dem liggende i salonen - eventuelt også som aftalekort. </span>
+            <span class="description">Vi anbefaler et sæt visitkort, så I kan vise hvem I er, og hvordan man finder jeres hjemmeside og kontaktoplysninger.  </span>
           </div>
           <div class="price-button">
             <button class="btn-price myBtn">Modtag tilbud</button>
@@ -75,7 +73,7 @@ I kan enten dele dem ud, eller have dem liggende i salonen - eventuelt også som
           <img src="{{asset('images/fotografi_tilbud.jpg')}}" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Custom kode priser">
           <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
             <span class="title">Fotografi</span>
-            <span class="description">I skal selvfølgelig vise billeder af jeres styles, så potentielle kunder kan se hvad jeres speciale er. Hvis I ikke allerede ligger inde med gode billeder, vil vores fotografer gerne tage dem for jer - til en meget rimelig pris. </span>
+            <span class="description">I skal selvfølgelig vise billeder af jeres fremførte projekter. Hvis I ikke allerede ligger inde med gode billeder, vil vores fotografer gerne tage dem for jer - til en meget rimelig pris.  </span>
           </div>
           <div class="price-button">
             <button class="btn-price myBtn">Modtag tilbud</button>
