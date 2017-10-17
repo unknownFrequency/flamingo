@@ -68,7 +68,7 @@ class MailMethods
                 {
                     $message->from('info@flamingomedia.dk');
 //                $message->to(env('MAIL_FROM_NAME', 'Admin'))->subject('Flamingo Kundekontakt');
-                    $message->to('rt@hshop.dk', 'Admin')->subject('Flamingo Kundekontakt');
+                    $message->to('info@flamingomedia.dk', 'Admin')->subject('Flamingo Kundekontakt');
                 }
             );
 
