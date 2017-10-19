@@ -68,8 +68,7 @@ class MailMethods
                 {
                     $message->from("info@flamingomedia.dk");
                     //$message->to('rubyte@protonmail.com', 'Admin')->bcc('sales@company.com')->subject('Flamingo Kundekontakt');
-                
-                    $message->to("rt@flamingomedia.dk", 'Admin')->subject('Flamingo Kundekontakt');
+                    $message->to("rt@hshop.dk", 'Admin')->subject('Flamingo Kundekontakt');
                 }
             );
 
