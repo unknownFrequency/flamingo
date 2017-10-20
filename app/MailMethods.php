@@ -66,11 +66,10 @@ class MailMethods
 //                'user_id' => $data['user_id']
                 ], function($message)
                 {
-                    $message->from("info@flamingomedia.dk");
-                    //$message->to('rubyte@protonmail.com', 'Admin')->bcc('sales@company.com')->subject('Flamingo Kundekontakt');
+                    $message->from("support@info.flamingomedia.dk");
                     $message
-                        ->to("rubyte@protonmail.com", "andersjakobsen0308@gmail.com", "ezaim@hotmail.com", "Admin")
-                        ->subject('Flamingo Kundekontakt');
+                      ->to("rubyte@protonmail.com", "andersjakobsen0308@gmail.com", "ezaim@hotmail.com", 'Admin')
+                      ->subject('Flamingo Kundekontakt');
                 }
             );
 
