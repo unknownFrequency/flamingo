@@ -34,6 +34,6 @@
     </div>
     <hr class="footer-line">
     <div class="footer-copyright">
-        <p>© Flamingo Media - CVR: 37215856</p>
+        <p>© Flamingo Media - CVR: 38250639</p>
     </div>
 </footer>
