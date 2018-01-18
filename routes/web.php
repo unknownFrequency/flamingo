@@ -6,6 +6,13 @@ Route::group(['middleware' => 'isAdmin'], function () {
     Route::post('/posts', 'PostsController@store');
 });
 
+//Route::get('/filemanager', '\Unisharp\Laravelfilemanager\controllers\LfmController@show');
+Route::get('/filemanager', [
+        'as' => 'filemanager',
+        'uses' => '\Unisharp\Laravelfilemanager\controllers\LfmController@show' ]
+);
+Route::post('/upload', '\Unisharp\Laravelfilemanager\controllers\UploadController@upload');
+
 // MESSAGES //
 Route::get('/beskeder', 'MessagesController@index');
 Route::get('/beskeder/create', 'MessagesController@create');

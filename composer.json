@@ -4,6 +4,9 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
+    "repositories": {
+        "packagist": { "url": "https://packagist.org", "type": "composer" }
+    },
     "require": {
         "php": ">=5.6.4",
         "aloha/twilio": "^3.0",
@@ -15,6 +18,7 @@
         "phpmailer/phpmailer": "^5.2",
         "spatie/laravel-responsecache": "^3.2",
         "tcg/voyager": "^0.11.14",
+        "unisharp/laravel-filemanager": "~1.8",
         "watson/active": "^2.0"
     },
     "require-dev": {

@@ -164,6 +164,8 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         JeroenNoten\LaravelCkEditor\ServiceProvider::class,
         Watson\Active\ActiveServiceProvider::class,
+        Unisharp\Laravelfilemanager\LaravelFilemanagerServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
 
 
         /*
@@ -233,6 +235,7 @@ return [
         'Twilio' => Aloha\Twilio\Support\Laravel\Facade::class,
         'Mailgun' => Bogardo\Mailgun\Facades\Mailgun::class,
         'Active' => Watson\Active\Facades\Active::class,
+        'Image' => Intervention\Image\Facades\Image::class,
     ],
 
 ];
