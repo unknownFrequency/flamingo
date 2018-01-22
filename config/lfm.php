@@ -96,11 +96,7 @@ return [
     ],
 
     // If true, image thumbnails would be created during upload
-<<<<<<< HEAD
-    'should_create_thumbnails' => false,
-=======
     'should_create_thumbnails' => true,
->>>>>>> 55397353c8ccb721f5db40a21f2813153dfc01a6
 
     // Create thumbnails automatically only for listed types.
     'raster_mimetypes' => [
