@@ -26965,19 +26965,16 @@ class Main extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
   }
 
   componentDidMount() {
-    //code omitted for brevity
-  }
-
-  renderProducts() {
-    // return this.state.products.map(product => {
-    //   return (
-    //     //this.handleClick() method is invoked onClick.
-    //     <li onClick={
-    //       () => this.handleClick(product)} key={product.id} >
-    //       { product.title }
-    //     </li>
-    //   );
-    // })
+    fetch('/api/klippekort').then(response => {
+      return response.json();
+    }).then(klippekorts => {
+      klippekorts.forEach(klippekort => {
+        this.setState({
+          hoursMax: klippekort.hoursMax,
+          hoursSpend: klippekort.hoursSpend
+        });
+      });
+    }).catch(e => console.log(e));
   }
 
   handleClick(product) {
@@ -26986,6 +26983,7 @@ class Main extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
   }
 
   render() {
+    console.log(this.state);
     /* Some css code has been removed for brevity */
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',

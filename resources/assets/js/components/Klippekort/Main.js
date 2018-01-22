@@ -15,20 +15,21 @@ class Main extends Component {
   }
 
   componentDidMount() {
-    //code omitted for brevity
+    fetch('/api/klippekort')
+      .then(response => {
+        return response.json();
+      })
+      .then(klippekorts => {
+        klippekorts.forEach((klippekort) => {
+          this.setState({
+            hoursMax: klippekort.hoursMax,
+            hoursSpend: klippekort.hoursSpend
+          });
+        })
+      })
+      .catch(e => console.log(e));
   }
 
-  renderProducts() {
-    // return this.state.products.map(product => {
-    //   return (
-    //     //this.handleClick() method is invoked onClick.
-    //     <li onClick={
-    //       () => this.handleClick(product)} key={product.id} >
-    //       { product.title }
-    //     </li>
-    //   );
-    // })
-  }
 
   handleClick(product) {
     //handleClick is used to set the state
@@ -37,6 +38,7 @@ class Main extends Component {
   }
 
   render() {
+   console.log(this.state);
     /* Some css code has been removed for brevity */
     return (
       <div>
