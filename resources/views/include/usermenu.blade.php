@@ -49,7 +49,7 @@
                         <div class="col-sm-12">
                             <p class="logout-btn">
                                 <a href="/logout" class="btn btn-danger btn-block">Log ud</a>
-                            </pclass>
+                            </p>
                         </div>
                     </div>
                 </div>

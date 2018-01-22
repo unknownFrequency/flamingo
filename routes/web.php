@@ -4,7 +4,11 @@
 Route::group(['middleware' => 'isAdmin'], function () {
     Route::get('/posts/create', 'PostsController@create');
     Route::post('/posts', 'PostsController@store');
+
 });
+
+Route::get('/filemanager', '\Unisharp\Laravelfilemanager\controllers\LfmController@show');
+Route::post('/upload', '\Unisharp\Laravelfilemanager\controllers\UploadController@upload');
 
 // MESSAGES //
 Route::get('/beskeder', 'MessagesController@index');
