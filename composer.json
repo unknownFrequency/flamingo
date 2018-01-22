@@ -4,6 +4,9 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
+    "repositories": {
+        "packagist": { "url": "https://packagist.org", "type": "composer" }
+    },
     "require": {
         "php": ">=5.6.4",
         "aloha/twilio": "^3.0",
