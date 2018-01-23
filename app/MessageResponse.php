@@ -48,10 +48,12 @@ class MessageResponse extends Model
                 // bliver en Collection med relations['MessageResponse'] array
                 $responses[$message->id] = $message->relations['MessageResponse'];
             }
-            foreach ($responses as $response) {
-                if(last(last($response)) !== false) {
-                    if( User::find(last(last($response))->responder_id)->role_id != 1 ) {
-                        $lastResponses[] = last(last($response));
+            if(isset($responses)) {
+                foreach ($responses as $response) {
+                    if(last(last($response)) !== false) {
+                        if( User::find(last(last($response))->responder_id)->role_id != 1 ) {
+                            $lastResponses[] = last(last($response));
+                        }
                     }
                 }
             }
