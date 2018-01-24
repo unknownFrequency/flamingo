@@ -5,8 +5,8 @@ import Klippekort from './Klippekort';
 /* Main Component */
 class Main extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       hoursMax: 0,
@@ -14,20 +14,20 @@ class Main extends Component {
     }
   }
 
-  componentDidMount() {
-    fetch('/api/klippekort')
-      .then(response => {
-        return response.json();
-      })
-      .then(klippekorts => {
-        klippekorts.forEach((klippekort) => {
+  componentWillMount() {
+    // fetch('/api/klippekort')
+    //   .then(response => {
+    //     return response.json();
+    //   })
+    //   .then(klippekorts => {
+    //     klippekorts.forEach((klippekort) => {
           this.setState({
-            hoursMax: klippekort.hoursMax,
-            hoursSpend: klippekort.hoursSpend
+            hoursMax: this.props.hoursmax,
+            hoursSpend: this.props.hoursspend
           });
-        })
-      })
-      .catch(e => console.log(e));
+    //     })
+    //   })
+    //   .catch(e => console.log(e));
   }
 
 
@@ -38,17 +38,17 @@ class Main extends Component {
   }
 
   render() {
-   console.log(this.state);
-    /* Some css code has been removed for brevity */
+    // console.log(this.state);
     return (
       <div>
         <Klippekort hoursMax={this.state.hoursMax} hoursSpend={this.state.hoursSpend} />
       </div>
-
-
     );
   }
 }
+// export default Main;
 if (document.getElementById('main')) {
-  ReactDOM.render(<Main />, document.getElementById('main'));
+  const element = document.getElementById('main');
+  const props = Object.assign({}, element.dataset);
+  ReactDOM.render(<Main {...props} />, element);
 }

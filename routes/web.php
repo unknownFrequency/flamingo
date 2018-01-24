@@ -43,9 +43,10 @@ Route::get('/pages/{slug}', 'PagesController@getPage');
 Route::get('/users/{id}', 'UsersController@show');
 Route::get('/users/{id}/edit', 'UsersController@edit'); // edit action redirects to Voyager edit user view /admin/users/{id}/edit
 
+// KLIPPEKORT //
+Route::get('/klippekort', 'KlippekortController@index');
+Route::get('/klippekort/{id}', 'KlippekortController@show');
 
-
-Route::post('/sms', 'SmsController@send');
 
 Route::get('/weblosninger', [
         'as' => 'weblosninger',
@@ -62,6 +63,7 @@ Route::get('/haandvaerkertilbud', 'OfferController@index');
 // KONTAKT //
 Route::get('/kontakt', 'ContactController@index');
 Route::post('/kontakt', 'ContactController@contact');
+Route::post('/sms', 'SmsController@send');
 
 Route::get('/priser', 'PricesController@index');
 

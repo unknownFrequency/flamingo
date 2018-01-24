@@ -4,18 +4,31 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Klippekort;
+use Auth;
 
 class KlippekortController extends Controller
 {
+    function __construct()
+    {
+      $this->middleware('auth');
+    }
 
   public function index()
   {
-    return Klippekort::all();
+    $user = Auth::user();
+    return view('klippekort/index', compact('user'));
   }
 
-  public function show(Klippekort $klippekort)
+  public function show($id)
   {
-    return $klippekort;
+    $user = Auth::user()->find($id);
+    $klippekort = Klippekort::get()->where('user_id', $id)->first();
+
+    if($klippekort) {
+      return view('klippekort/index', compact('user', 'klippekort'));
+    } else {
+      return redirect('/')->with('message', "Du skal være logget indfor at se den side");
+    }
   }
 
   public function store(Request $request)
