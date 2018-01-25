@@ -29,7 +29,7 @@ document.getElementById('change').src = buttonLink;
   <div class="container">
     <div class="section-header">
       <h2 class="section-title">Velkommen til Flamingo Media</h2>
-      <p class="section-text">Vi er et bureau med brede kompetencer, og vi er ikke tilfredse, før du er. Hos os får du mulighed for at købe en samlet pakke,<br> så du ikke skal overlade din virksomheds visuelle identitet til tilfældigheder.
+      <p class="section-text">Vi er et bureau med brede kompetencer, og vi er ikke tilfredse før du er. Hos os får du mulighed for at købe en samlet pakke,<br> så du ikke skal overlade din virksomheds visuelle identitet til tilfældigheder.
       </p>
     </div>
 

@@ -7,7 +7,12 @@ Route::group(['middleware' => 'isAdmin'], function () {
 
 });
 
-Route::get('/filemanager', '\Unisharp\Laravelfilemanager\controllers\LfmController@show');
+//Route::get('/filemanager', '\Unisharp\Laravelfilemanager\controllers\LfmController@show');
+//Route::get('/filemanager', '\Unisharp\Laravelfilemanager\controllers\LfmController@show');
+Route::get('/filemanager', [
+        'as' => 'filemanager',
+        'uses' => '\Unisharp\Laravelfilemanager\controllers\LfmController@show' ]
+);
 Route::post('/upload', '\Unisharp\Laravelfilemanager\controllers\UploadController@upload');
 
 // MESSAGES //
