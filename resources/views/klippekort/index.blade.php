@@ -1,12 +1,11 @@
 @extends('include/layout')
 @section('content')
 
+@if(isset($klippekort, $user))
 <h1>{{ $user->name }}</h1>
 <ul>
-  @if($klippekort)
-    <li>Timer i alt: {{ $klippekort->hoursMax }}</li>
-    <li>Timer brugt: {{ $klippekort->hoursSpend }}</li>
-  @endif
+  <li>Timer i alt: {{ $klippekort->hoursMax }}</li>
+  <li>Timer brugt: {{ $klippekort->hoursSpend }}</li>
 </ul>
 
 
@@ -14,11 +13,12 @@
 
 
 
-<div id="main"
+<div id="klippekort"
      data-userid="{{$user->id}}"
      data-hoursmax="{{$klippekort->hoursMax}}"
      data-hoursspend="{{$klippekort->hoursSpend}}">
 </div>
+@endif
 
 @include('include.footer')
 @endsection
