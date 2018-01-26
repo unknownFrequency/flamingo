@@ -11,8 +11,8 @@ Route::group(['middleware' => 'isAdmin'], function () {
 //Route::get('/filemanager', '\Unisharp\Laravelfilemanager\controllers\LfmController@show');
 Route::get('/filemanager', [
         'as' => 'filemanager',
-        'uses' => '\Unisharp\Laravelfilemanager\controllers\LfmController@show' ]
-);
+        'uses' => '\Unisharp\Laravelfilemanager\controllers\LfmController@show' 
+]);
 Route::post('/upload', '\Unisharp\Laravelfilemanager\controllers\UploadController@upload');
 
 // MESSAGES //
@@ -51,6 +51,8 @@ Route::get('/users/{id}/edit', 'UsersController@edit'); // edit action redirects
 // KLIPPEKORT //
 Route::get('/klippekort', 'KlippekortController@index');
 Route::get('/klippekort/{id}', 'KlippekortController@show');
+Route::put('/klippekort/{id}', 'KlippekortController@update');
+Route::post('/klippekort', 'KlippekortController@store');
 
 
 Route::get('/weblosninger', [

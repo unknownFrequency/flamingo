@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import ColorCard from './ColorCard';
 import Rainbow from 'rainbowvis.js';
+import UpdateForm from './UpdateForm'
 
 class Klippekort extends Component {
   constructor(props) {
     super(props);
   }
 
-  percentLeft(hoursSpend, hoursMax) {
-    const remainder = hoursMax - hoursSpend;
-    return (remainder / hoursMax) * 100;
+  percentLeft(hoursspend, hoursmax) {
+    const remainder = hoursmax - hoursspend;
+    return (remainder / hoursmax) * 100;
   }
 
   getColors(percentLeft) {
@@ -33,8 +34,8 @@ class Klippekort extends Component {
   }
 
   render() {
-    const { hoursSpend, hoursMax } = this.props;
-    const percentLeft = this.percentLeft(hoursSpend, hoursMax);
+    const { user_id, hoursspend, hoursmax } = this.props;
+    const percentLeft = this.percentLeft(hoursspend, hoursmax);
     const colors = this.getColors(percentLeft);
     const colorCards = colors.map((color, i) => {
       const style = {
@@ -48,9 +49,16 @@ class Klippekort extends Component {
 
     return (
       <div>
+        <br />
         <h1>Service klippekort</h1>
+        <UpdateForm 
+          user_id={user_id}
+          hoursspend={Number(hoursspend)}
+          hoursmax={Number(hoursmax)} 
+          setState={this.setState} 
+        />
         {colorCards}
-        <p className="text-center" style={{}}>Timer tilbage: {hoursMax - hoursSpend}</p>
+        <p className="text-center" style={{}}>Timer tilbage: {hoursmax - hoursspend}</p>
       </div>
     );
   }

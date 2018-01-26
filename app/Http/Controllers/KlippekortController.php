@@ -8,10 +8,10 @@ use Auth;
 
 class KlippekortController extends Controller
 {
-    function __construct()
-    {
-      $this->middleware('auth');
-    }
+  function __construct()
+  {
+    /* $this->middleware('auth:api'); */
+  }
 
   public function index()
   {
@@ -33,17 +33,29 @@ class KlippekortController extends Controller
 
   public function store(Request $request)
   {
+    var_dump($request);
     $this->validate($request, [
-      'user_id' => 'required',
-      'hoursMax' => 'required',
-      'hoursSpend' => 'required',
+      'to_user' => 'required',
+      'hours_max' => 'required',
+      'hours_spend' => 'required',
     ]);
-    $klippekort = Klippekort::create($request->all());
+
+    /* $klippekort = Klippekort([ */
+    /*   'user_id' => $request->get('to_user'), */
+    /*   'hours_max' => $request->get('hours_max'), */
+    /*   'hours_spend' => $request->get('hours_spend') */
+    /* ]); */
+    /* $klippekort->save(); */
+    $klippekort = Klippekort::create([
+      'user_id' => $request->get('to_user'),
+      'hours_max' => $request->get('hours_max'),
+      'hours_spend' => $request->get('hours_spend')
+    ]);
 
     return response()->json($klippekort, 201);
   }
 
-  public function update(Request $request, Klippekort $klippekort)
+  public function update()
   {
     $klippekort->update($request->all());
     return response()->json($klippekort, 200);

@@ -4,46 +4,40 @@ import PropTypes from 'prop-types';
 class UpdateForm extends Component {
   constructor(props) {
     super(props);
-    this.state = { hoursMax: false };
+    this.state = { 
+      hoursmax: false,
+      hoursspend: false
+    };
 
     this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.setState({
-      hoursMax: this.props.hoursMax,
-      hoursSpend: this.props.hoursSpend,
+      hoursmax: this.props.hoursmax,
+      hoursspend: this.props.hoursspend,
     });
   }
 
-  handleChange(event) {
-    this.setState({ hoursMax: event.target.value });
+  handleChange(e) {
+    this.setState({ [e.target.name]: e.target.value });
   }
 
-  handleSubmit(event) {
-    event.preventDefault();
+  handleSubmit(e) {
+    e.preventDefault();
 
-
-    fetch( 'api/klippekorts/', {
-      method:'post',
-      /* headers are important*/
+    fetch(`/klippekort/${this.props.user_id}`, {
+      method: 'PUT',
       headers: {
         'Accept': 'application/json',
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-
-      body: JSON.stringify(product)
+      body: JSON.stringify({
+        hoursspend: this.state.hoursspend,
+        hoursmax: this.state.hoursmax,
+      }),
     })
-      .then(response => {
-        return response.json();
-      })
-      .then( data => {
-        //update the state of products and currentProduct
-        this.setState((prevState)=> ({
-          products: prevState.products.concat(data),
-          currentProduct : data
-        }))
-      })
   }
 
   render() {
@@ -52,7 +46,16 @@ class UpdateForm extends Component {
         <form onSubmit={this.handleSubmit}>
           <label>
               Antal support timer:
-            <input type="text" value={this.state.hoursMax} onChange={this.handleChange} />
+              <input type="text" 
+                name="hoursmax"
+                value={this.state.hoursmax} 
+                onChange={this.handleChange} 
+              />
+              <input type="text" 
+                name="hoursspend"
+                value={this.state.hoursspend} 
+                onChange={this.handleChange} 
+              />
           </label>
           <input type="submit" value="Submit" />
         </form>
@@ -63,8 +66,8 @@ class UpdateForm extends Component {
 
 
 UpdateForm.propTypes = {
-  hoursMax: PropTypes.number.isRequired,
-  hoursSpend: PropTypes.number.isRequired,
+  hoursmax: PropTypes.number.isRequired,
+  hoursspend: PropTypes.number.isRequired,
   setState: PropTypes.func.isRequired,
 };
 

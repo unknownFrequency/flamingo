@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Klippekort from './Klippekort';
+import StoreForm from './StoreForm'
 
 /* Main Component */
+/* <Klippekort {...props} /> */
 const Main = (props) => {
   return (
     <div>
-      <Klippekort {...props} />
+      <StoreForm {...props} />
     </div>
   );
 }
