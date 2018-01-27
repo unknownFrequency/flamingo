@@ -22,6 +22,7 @@ class StoreForm extends Component {
   async handleSubmit(e) {
     e.preventDefault();
     const {to_user, hours_spend, hours_max} = this.state
+    const responses = [200, 201];
 
     try {
       let response = await fetch('api/klippekort', {
@@ -36,7 +37,8 @@ class StoreForm extends Component {
           hours_max: hours_max
         })
       })
-      if(response.status === 200) {
+
+      if(responses.indexOf(response.status)) {
         window.location.replace(`/klippekort/${to_user}`);
       } 
     } catch(e) {

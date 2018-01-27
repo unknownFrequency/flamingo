@@ -28931,7 +28931,7 @@ var StoreForm = function (_Component) {
     key: 'handleSubmit',
     value: function () {
       var _ref = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee(e) {
-        var _state, to_user, hours_spend, hours_max, response;
+        var _state, to_user, hours_spend, hours_max, responses, response;
 
         return _regenerator2.default.wrap(function _callee$(_context) {
           while (1) {
@@ -28939,8 +28939,9 @@ var StoreForm = function (_Component) {
               case 0:
                 e.preventDefault();
                 _state = this.state, to_user = _state.to_user, hours_spend = _state.hours_spend, hours_max = _state.hours_max;
-                _context.prev = 2;
-                _context.next = 5;
+                responses = [200, 201];
+                _context.prev = 3;
+                _context.next = 6;
                 return fetch('api/klippekort', {
                   method: 'POST',
                   headers: {
@@ -28954,27 +28955,28 @@ var StoreForm = function (_Component) {
                   })
                 });
 
-              case 5:
+              case 6:
                 response = _context.sent;
 
-                if (response.status === 200) {
+
+                if (responses.indexOf(response.status)) {
                   window.location.replace('/klippekort/' + to_user);
                 }
-                _context.next = 12;
+                _context.next = 13;
                 break;
 
-              case 9:
-                _context.prev = 9;
-                _context.t0 = _context['catch'](2);
+              case 10:
+                _context.prev = 10;
+                _context.t0 = _context['catch'](3);
 
                 console.log('Error: ' + _context.t0);
 
-              case 12:
+              case 13:
               case 'end':
                 return _context.stop();
             }
           }
-        }, _callee, this, [[2, 9]]);
+        }, _callee, this, [[3, 10]]);
       }));
 
       function handleSubmit(_x) {

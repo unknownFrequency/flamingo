@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Klippekort;
+use App\User;
 use Auth;
 
 class KlippekortController extends Controller
@@ -11,6 +12,16 @@ class KlippekortController extends Controller
   function __construct()
   {
     /* $this->middleware('auth:api'); */
+  }
+
+  public function getUsersArr() 
+  {
+    $users = User::all();
+    $userIds = [];
+    foreach($users as $user) {
+     $usersIds[] = $user->id; 
+    }
+    return $userIds;
   }
 
   public function index()
@@ -21,7 +32,11 @@ class KlippekortController extends Controller
     } else {
       return redirect('/')->with('message', "Du skal være logget indfor at se den side");
     }
+  }
 
+  public function create() {
+    $users = $this->getUsersArr();
+    return view('klippekort/create', compact('users'));
   }
 
   public function show($id)
@@ -38,8 +53,9 @@ class KlippekortController extends Controller
 
   public function store(Request $request)
   {
+    $users = $this->getUsersArr();
     $this->validate($request, [
-      'to_user' => 'required',
+      'to_user' => 'required|in' . implode(',', $userIds),
       'hours_max' => 'required',
       'hours_spend' => 'required',
     ]);

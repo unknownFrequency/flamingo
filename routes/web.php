@@ -50,9 +50,10 @@ Route::get('/users/{id}/edit', 'UsersController@edit'); // edit action redirects
 
 // KLIPPEKORT //
 Route::get('/klippekort', 'KlippekortController@index');
+Route::get('/nyt-klippekort', 'KlippekortController@create');
+Route::post('/klippekort', 'KlippekortController@store');
 Route::get('/klippekort/{id}', 'KlippekortController@show');
 Route::put('/klippekort/{id}', 'KlippekortController@update');
-Route::post('/klippekort', 'KlippekortController@store');
 
 
 Route::get('/weblosninger', [
