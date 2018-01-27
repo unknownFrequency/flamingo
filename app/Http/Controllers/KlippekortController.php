@@ -15,9 +15,13 @@ class KlippekortController extends Controller
 
   public function index()
   {
-    $user = Auth::user();
-    $klippekorts = Klippekort::all();
-    return view('klippekort/index', compact('user', 'klippekort'));
+    if(Auth::user()->role_id === 1) {
+      $klippekorts = Klippekort::all();
+      return view('klippekort/index', compact('klippekorts'));
+    } else {
+      return redirect('/')->with('message', "Du skal være logget indfor at se den side");
+    }
+
   }
 
   public function show($id)
@@ -26,7 +30,7 @@ class KlippekortController extends Controller
     $klippekort = Klippekort::get()->where('user_id', $id)->first();
 
     if($klippekort) {
-      return view('klippekort/index', compact('user', 'klippekort'));
+      return view('klippekort/show', compact('user', 'klippekort'));
     } else {
       return redirect('/')->with('message', "Du skal være logget indfor at se den side");
     }
@@ -34,19 +38,12 @@ class KlippekortController extends Controller
 
   public function store(Request $request)
   {
-    var_dump($request);
-    /* $this->validate($request, [ */
-    /*   'to_user' => 'required', */
-    /*   'hours_max' => 'required', */
-    /*   'hours_spend' => 'required', */
-    /* ]); */
+    $this->validate($request, [
+      'to_user' => 'required',
+      'hours_max' => 'required',
+      'hours_spend' => 'required',
+    ]);
 
-    /* $klippekort = Klippekort([ */
-    /*   'user_id' => $request->get('to_user'), */
-    /*   'hours_max' => $request->get('hours_max'), */
-    /*   'hours_spend' => $request->get('hours_spend') */
-    /* ]); */
-    /* $klippekort->save(); */
     $klippekort = Klippekort::create([
       'user_id' => $request->get('to_user'),
       'hoursMax' => $request->get('hours_max'),
