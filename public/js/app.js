@@ -27977,13 +27977,14 @@ var StoreForm = function (_Component) {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
-        body: {
-          "to_user": "1",
-          "hours_spend": "20",
-          "hours_max": "40"
-        }
+        body: JSON.stringify({
+          to_user: to_user,
+          hours_spend: hours_spend,
+          hours_max: hours_max
+        })
       }).then(function (res) {
-        return res.json();
+        console.log(res);
+        return res;
       }).then(function (data) {
         console.log(data);
       }).catch(function (e) {

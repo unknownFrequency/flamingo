@@ -16,7 +16,8 @@ class KlippekortController extends Controller
   public function index()
   {
     $user = Auth::user();
-    return view('klippekort/index', compact('user'));
+    $klippekorts = Klippekort::all();
+    return view('klippekort/index', compact('user', 'klippekort'));
   }
 
   public function show($id)
@@ -34,11 +35,11 @@ class KlippekortController extends Controller
   public function store(Request $request)
   {
     var_dump($request);
-    $this->validate($request, [
-      'to_user' => 'required',
-      'hours_max' => 'required',
-      'hours_spend' => 'required',
-    ]);
+    /* $this->validate($request, [ */
+    /*   'to_user' => 'required', */
+    /*   'hours_max' => 'required', */
+    /*   'hours_spend' => 'required', */
+    /* ]); */
 
     /* $klippekort = Klippekort([ */
     /*   'user_id' => $request->get('to_user'), */
@@ -48,8 +49,8 @@ class KlippekortController extends Controller
     /* $klippekort->save(); */
     $klippekort = Klippekort::create([
       'user_id' => $request->get('to_user'),
-      'hours_max' => $request->get('hours_max'),
-      'hours_spend' => $request->get('hours_spend')
+      'hoursMax' => $request->get('hours_max'),
+      'hoursSpend' => $request->get('hours_spend')
     ]);
 
     return response()->json($klippekort, 201);
