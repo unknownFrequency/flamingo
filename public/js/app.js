@@ -28848,8 +28848,8 @@ var Main = function Main(props) {
   );
 };
 
-if (document.getElementById('new-klippekort')) {
-  var el = document.getElementById('new-klippekort');
+if (document.getElementById('nyt-klippekort')) {
+  var el = document.getElementById('nyt-klippekort');
   var props = Object.assign({}, el.dataset);
   _reactDom2.default.render(_react2.default.createElement(Main, props), el);
 }
@@ -28914,7 +28914,8 @@ var StoreForm = function (_Component) {
     _this.state = {
       hours_max: null,
       hours_spend: null,
-      to_user: null
+      to_user: null,
+      selectedUser: ''
     };
 
     _this.handleChange = _this.handleChange.bind(_this);
@@ -28941,7 +28942,9 @@ var StoreForm = function (_Component) {
                 _state = this.state, to_user = _state.to_user, hours_spend = _state.hours_spend, hours_max = _state.hours_max;
                 responses = [200, 201];
                 _context.prev = 3;
-                _context.next = 6;
+
+                console.log(to_user, hours_spend, hours_max);
+                _context.next = 7;
                 return fetch('api/klippekort', {
                   method: 'POST',
                   headers: {
@@ -28955,28 +28958,29 @@ var StoreForm = function (_Component) {
                   })
                 });
 
-              case 6:
+              case 7:
                 response = _context.sent;
 
+                console.log(response);
 
                 if (responses.indexOf(response.status)) {
-                  window.location.replace('/klippekort/' + to_user);
+                  window.location.replace('/klippekort');
                 }
-                _context.next = 13;
+                _context.next = 15;
                 break;
 
-              case 10:
-                _context.prev = 10;
+              case 12:
+                _context.prev = 12;
                 _context.t0 = _context['catch'](3);
 
                 console.log('Error: ' + _context.t0);
 
-              case 13:
+              case 15:
               case 'end':
                 return _context.stop();
             }
           }
-        }, _callee, this, [[3, 10]]);
+        }, _callee, this, [[3, 12]]);
       }));
 
       function handleSubmit(_x) {
@@ -28988,10 +28992,7 @@ var StoreForm = function (_Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _props = this.props,
-          user_id = _props.user_id,
-          csrf_token = _props.csrf_token;
-
+      var options = JSON.parse(this.props.user_ids);
 
       return _react2.default.createElement(
         'div',
@@ -28999,16 +29000,21 @@ var StoreForm = function (_Component) {
         _react2.default.createElement(
           'form',
           { onSubmit: this.handleSubmit },
-          _react2.default.createElement('input', { type: 'hidden', name: '_token', value: csrf_token }),
           _react2.default.createElement(
             'label',
             null,
             'Bruger:',
-            _react2.default.createElement('input', { type: 'text',
-              name: 'to_user',
-              value: this.state.user_id,
-              onChange: this.handleChange
-            })
+            _react2.default.createElement(
+              'select',
+              { name: 'to_user', onChange: this.handleChange, value: this.state.to_user },
+              options.map(function (option) {
+                return _react2.default.createElement(
+                  'option',
+                  { key: option.id, value: option.id },
+                  option.name
+                );
+              })
+            )
           ),
           _react2.default.createElement('br', null),
           _react2.default.createElement(
@@ -29042,7 +29048,7 @@ var StoreForm = function (_Component) {
 }(_react.Component);
 
 StoreForm.propTypes = {
-  user_id: _propTypes2.default.string.isRequired
+  user_ids: _propTypes2.default.string.isRequired
 };
 
 exports.default = StoreForm;

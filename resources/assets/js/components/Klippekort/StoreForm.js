@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 
 class StoreForm extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       hours_max: null,
       hours_spend: null,
       to_user: null,
+      selectedUser: ''
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -25,6 +26,7 @@ class StoreForm extends Component {
     const responses = [200, 201];
 
     try {
+      console.log(to_user, hours_spend, hours_max);
       let response = await fetch('api/klippekort', {
         method: 'POST',
         headers: {
@@ -37,9 +39,10 @@ class StoreForm extends Component {
           hours_max: hours_max
         })
       })
+      console.log(response);
 
       if(responses.indexOf(response.status)) {
-        window.location.replace(`/klippekort/${to_user}`);
+        window.location.replace(`/klippekort`);
       } 
     } catch(e) {
       console.log(`Error: ${e}`);
@@ -47,19 +50,20 @@ class StoreForm extends Component {
   }
 
   render() {
-    const { user_id, csrf_token } = this.props;
+    const options = JSON.parse(this.props.user_ids)
 
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <input type="hidden" name="_token" value={csrf_token} />
           <label>
             Bruger: 
-            <input type="text" 
-              name="to_user"
-              value={this.state.user_id} 
-              onChange={this.handleChange} 
-            />
+            <select name="to_user" onChange={this.handleChange} value={this.state.to_user}>
+              { 
+                options.map(option  => {
+                  return <option key={option.id} value={option.id}>{option.name}</option>
+                })
+              }
+            </select>
           </label>
           <br />
           <label>
@@ -89,7 +93,7 @@ class StoreForm extends Component {
 
 
 StoreForm.propTypes = {
-  user_id: PropTypes.string.isRequired,
+  user_ids: PropTypes.string.isRequired,
 };
 
 export default StoreForm;

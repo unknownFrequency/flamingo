@@ -3,13 +3,12 @@
 @extends('include/layout')
 @section('content')
 <script src={{ mix('js/app.js') }}></script>
+<div style="margin: 1em; font-size: 2em; ">
+  <a style="border-bottom: 4px solid blue" href="/nyt-klippekort">Nyt klippekort</a>
+</div>
 @if(isset($klippekorts))
   @foreach($klippekorts as $klippekort) 
     <?php $user = Auth::user()->find($klippekort->user_id) ?>
-    <div id="new-klippekort" 
-        data-user_id={{$user->id}}
-         />
-
     <h4 style="margin-left: 0.5em; font-weight: 999; text-decoration: underline;">
       <a href="/admin/users/{{$user->id}}">{{$user->name}}</a>
     </h4>

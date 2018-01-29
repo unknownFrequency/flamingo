@@ -13,8 +13,8 @@ const Main = (props) => {
   );
 }
 
-if(document.getElementById('new-klippekort')) {
-  const el = document.getElementById('new-klippekort')
+if(document.getElementById('nyt-klippekort')) {
+  const el = document.getElementById('nyt-klippekort')
   const props = Object.assign({}, el.dataset)
   ReactDOM.render(<Main {...props} />, el);
 }

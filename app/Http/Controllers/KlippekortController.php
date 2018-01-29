@@ -14,20 +14,20 @@ class KlippekortController extends Controller
     /* $this->middleware('auth:api'); */
   }
 
-  public function getUsersArr() 
+  public function getUserIdsArr() 
   {
     $users = User::all();
     $userIds = [];
     foreach($users as $user) {
-     $usersIds[] = $user->id; 
+      $userIds[] = $user->id;
     }
     return $userIds;
   }
 
   public function index()
   {
-    if(Auth::user()->role_id === 1) {
-      $klippekorts = Klippekort::all();
+    if(null !== Auth::user() && Auth::user()->role_id === 1) {
+      $klippekorts = Klippekort::all()->sortByDesc('id');
       return view('klippekort/index', compact('klippekorts'));
     } else {
       return redirect('/')->with('message', "Du skal være logget indfor at se den side");
@@ -35,8 +35,11 @@ class KlippekortController extends Controller
   }
 
   public function create() {
-    $users = $this->getUsersArr();
-    return view('klippekort/create', compact('users'));
+    if(null !== Auth::user() && Auth::user()->role_id === 1) {
+      /* $user_ids = $this->getUserIdsArr(); */
+      $user_ids = User::all();
+      return view('klippekort/create', compact('user_ids'));
+    }
   }
 
   public function show($id)
@@ -53,9 +56,8 @@ class KlippekortController extends Controller
 
   public function store(Request $request)
   {
-    $users = $this->getUsersArr();
     $this->validate($request, [
-      'to_user' => 'required|in' . implode(',', $userIds),
+      'to_user' => 'required',
       'hours_max' => 'required',
       'hours_spend' => 'required',
     ]);

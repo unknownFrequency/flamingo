@@ -7,6 +7,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('klippekort', 'KlippekortController@index');
+Route::get('/nyt-klippekort', 'KlippekortController@create');
 Route::get('klippekort/{klippekort}', 'KlippekortController@show');
 Route::post('klippekort','KlippekortController@store');
 Route::put('klippekort/{klippekort}','KlippekortController@update');
