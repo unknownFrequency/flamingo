@@ -41,7 +41,7 @@ class KlippekortController extends Controller
   public function show($id)
   {
     $klippekort = Klippekort::find((int)$id);
-    if(null !== Auth::user() && Auth::user()->id === $klippekort->user_id) {
+    if(null !== Auth::user() && Auth::user()->id === $klippekort->user_id || Auth::user()->role_id === 1) {
       $user = User::find($klippekort->user_id);
       $is_admin = Auth::user()->role_id;
     } else {
