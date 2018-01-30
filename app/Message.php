@@ -73,7 +73,7 @@ class Message extends Model
                 $needsResponse[] = $message;
             }
         }
-        return $needsResponse ? $needsResponse : false;
+        return isset($needsResponse) ? $needsResponse : false;
     }
 
 }

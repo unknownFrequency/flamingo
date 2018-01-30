@@ -35,6 +35,8 @@ document.getElementById('change').src = buttonLink;
 
     <div class="row">
       <div class="col-sm-5">
+        <script src={{ mix('js/app.js') }}></script>
+        <div id="main"></div>
         <h3 class="column-title">Kort om os</h3>
 
         <p>Flamingo Media er et ambitiøst bureau, med mange forskellige færdigheder inden for webdesign, backend kodning, visuelt design, billederedigering, tryk i eget hus og markedsføring på flere platforme. Vi er dygtige til det vi laver, og vil altid gå distancen for at du som kunde, bliver helt tilfreds med det færdige resultat.

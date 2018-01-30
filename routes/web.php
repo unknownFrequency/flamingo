@@ -4,13 +4,15 @@
 Route::group(['middleware' => 'isAdmin'], function () {
     Route::get('/posts/create', 'PostsController@create');
     Route::post('/posts', 'PostsController@store');
+
 });
 
 //Route::get('/filemanager', '\Unisharp\Laravelfilemanager\controllers\LfmController@show');
+//Route::get('/filemanager', '\Unisharp\Laravelfilemanager\controllers\LfmController@show');
 Route::get('/filemanager', [
         'as' => 'filemanager',
-        'uses' => '\Unisharp\Laravelfilemanager\controllers\LfmController@show' ]
-);
+        'uses' => '\Unisharp\Laravelfilemanager\controllers\LfmController@show' 
+]);
 Route::post('/upload', '\Unisharp\Laravelfilemanager\controllers\UploadController@upload');
 
 // MESSAGES //
@@ -46,9 +48,13 @@ Route::get('/pages/{slug}', 'PagesController@getPage');
 Route::get('/users/{id}', 'UsersController@show');
 Route::get('/users/{id}/edit', 'UsersController@edit'); // edit action redirects to Voyager edit user view /admin/users/{id}/edit
 
+// KLIPPEKORT //
+Route::get('/klippekort', 'KlippekortController@index');
+Route::post('/klippekort', 'KlippekortController@store');
+Route::get('/nyt-klippekort', 'KlippekortController@create');
+Route::get('/klippekort/{id}', 'KlippekortController@show');
+Route::put('/klippekort/{id}', 'KlippekortController@update');
 
-
-Route::post('/sms', 'SmsController@send');
 
 Route::get('/weblosninger', [
         'as' => 'weblosninger',
@@ -65,6 +71,7 @@ Route::get('/haandvaerkertilbud', 'OfferController@index');
 // KONTAKT //
 Route::get('/kontakt', 'ContactController@index');
 Route::post('/kontakt', 'ContactController@contact');
+Route::post('/sms', 'SmsController@send');
 
 Route::get('/priser', 'PricesController@index');
 
