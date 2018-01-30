@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "flamingomedia/laravel",
+    "description": "Flamingo media webudvikling og medier",
+    "keywords": ["Hjemmesider", "Webudvikling"],
     "license": "MIT",
     "type": "project",
     "repositories": {
