@@ -7,13 +7,14 @@
     <li>Timer i alt: {{ $klippekort->hoursMax }}</li>
     <li>Timer brugt: {{ $klippekort->hoursSpend }}</li>
   </ul>
-
-
-  <div id="klippekort"
-     data-user_id="{{$user->id}}"
-     data-hours_max="{{$klippekort->hoursMax}}"
-     data-hours_spend="{{$klippekort->hoursSpend}}">
-  </div>
+  @if($is_admin === 1 || $klippekort->user_id === $user->id)
+    <div id="vis-klippekort"
+       data-user_id="{{$user->id}}"
+       data-id="{{$klippekort->id}}"
+       data-hours_max="{{$klippekort->hoursMax}}"
+       data-hours_spend="{{$klippekort->hoursSpend}}">
+    </div>
+  @endif
 @endif
 @include('include.footer')
 @endsection

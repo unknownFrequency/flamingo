@@ -11,10 +11,13 @@ class KlippekortController extends Controller
 {
   function __construct()
   {
-    /* $this->middleware('auth:api'); */
+//    $this->middleware('auth:api');
   }
 
-  public function getUserIdsArr() 
+  /**
+   * @return array
+   */
+  public function userIds() 
   {
     $users = User::all();
     $userIds = [];
@@ -34,47 +37,66 @@ class KlippekortController extends Controller
     }
   }
 
-  public function create() {
-    if(null !== Auth::user() && Auth::user()->role_id === 1) {
-      /* $user_ids = $this->getUserIdsArr(); */
-      $user_ids = User::all();
-      return view('klippekort/create', compact('user_ids'));
-    }
-  }
 
   public function show($id)
   {
-    $user = Auth::user()->find($id);
-    $klippekort = Klippekort::get()->where('user_id', $id)->first();
-
-    if($klippekort) {
-      return view('klippekort/show', compact('user', 'klippekort'));
+    $klippekort = Klippekort::find((int)$id);
+    if(null !== Auth::user() && Auth::user()->id === $klippekort->user_id) {
+      $user = User::find($klippekort->user_id);
+      $is_admin = Auth::user()->role_id;
     } else {
-      return redirect('/')->with('message', "Du skal være logget indfor at se den side");
+      return redirect('/')->with('message', "Du har ikke adgang dertil");
+    }
+
+    if($klippekort && $user && $is_admin) {
+      return view('klippekort/show', compact('is_admin', 'user', 'klippekort'));
+    }
+  }
+
+  public function create() {
+    if(null !== Auth::user() && Auth::user()->role_id === 1) {
+      /* $user_ids = $this->userIds(); */
+      $user_ids = User::all();
+      return view('klippekort/create', compact('user_ids'));
     }
   }
 
   public function store(Request $request)
   {
     $this->validate($request, [
-      'to_user' => 'required',
+      'user_id' => 'required|unique:klippekorts,user_id', // only 1 per user  //
       'hours_max' => 'required',
       'hours_spend' => 'required',
     ]);
 
     $klippekort = Klippekort::create([
-      'user_id' => $request->get('to_user'),
+      'user_id' => $request->get('user_id'),
       'hoursMax' => $request->get('hours_max'),
       'hoursSpend' => $request->get('hours_spend')
     ]);
 
-    return response()->json($klippekort, 201);
+    if($klippekort) {
+      return response()->json($klippekort, 201);
+    } else {
+      redirect('/klippekort')->with('errors', ["Noget gik galt"]);
+    }
+
+
   }
 
-  public function update()
+  public function update(Request $request)
   {
-    $klippekort->update($request->all());
-    return response()->json($klippekort, 200);
+    $klippekort = Klippekort::find($request->get('id'));
+    $klippekort->update([
+      'hoursMax' => $request->get('hours_max'),
+      'hoursSpend' => $request->get('hours_spend'),
+    ]);
+
+    if($klippekort->save()) {
+      return response()->json($klippekort, 200);
+    } else {
+      return response()->json($klippekort, 500);
+    }
   }
 
   public function delete(Klippekort $klippekort)

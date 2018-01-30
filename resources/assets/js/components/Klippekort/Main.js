@@ -18,3 +18,9 @@ if(document.getElementById('nyt-klippekort')) {
   const props = Object.assign({}, el.dataset)
   ReactDOM.render(<Main {...props} />, el);
 }
+
+if(document.getElementById('vis-klippekort')) {
+  const el = document.getElementById('vis-klippekort')
+  const props = Object.assign({}, el.dataset)
+  ReactDOM.render(<Klippekort {...props} />, el);
+}

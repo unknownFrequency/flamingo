@@ -16,7 +16,7 @@
       <li>Email: {{$user->email}}</li>
       <li>Timer købt: {{$klippekort->hoursMax}}</li>
       <li>Timer tilbage: {{$klippekort->hoursMax - $klippekort->hoursSpend}}</li>
-      <li><a href="/klippekort/{{$user->id}}">Se Klippekort</a></li>
+      <li><a href="/klippekort/{{$klippekort->id}}">Se Klippekort</a></li>
     </ul>
   @endforeach
 @endif

@@ -28734,10 +28734,29 @@ var Klippekort = function (_Component) {
 
   function Klippekort(props) {
     (0, _classCallCheck3.default)(this, Klippekort);
-    return (0, _possibleConstructorReturn3.default)(this, (Klippekort.__proto__ || Object.getPrototypeOf(Klippekort)).call(this, props));
+
+    var _this = (0, _possibleConstructorReturn3.default)(this, (Klippekort.__proto__ || Object.getPrototypeOf(Klippekort)).call(this, props));
+
+    _this.state = {
+      id: false,
+      user_id: false,
+      hours_max: false,
+      hours_spend: false
+    };
+    return _this;
   }
 
   (0, _createClass3.default)(Klippekort, [{
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.setState({
+        id: this.props.id,
+        user_id: this.props.user_id,
+        hours_max: this.props.hours_max,
+        hours_spend: this.props.hours_spend
+      });
+    }
+  }, {
     key: 'percentLeft',
     value: function percentLeft(hoursspend, hoursmax) {
       var remainder = hoursmax - hoursspend;
@@ -28764,14 +28783,25 @@ var Klippekort = function (_Component) {
       return colors;
     }
   }, {
+    key: 'updateHours',
+    value: function updateHours(hours_max, hours_spend) {
+      var _this2 = this;
+
+      console.log(hours_spend, hours_max);
+      this.setState({ hours_max: hours_max, hours_spend: hours_spend }, function () {
+        return console.log(_this2.state);
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
-      var _props = this.props,
-          user_id = _props.user_id,
-          hoursspend = _props.hoursspend,
-          hoursmax = _props.hoursmax;
+      var _state = this.state,
+          id = _state.id,
+          user_id = _state.user_id,
+          hours_spend = _state.hours_spend,
+          hours_max = _state.hours_max;
 
-      var percentLeft = this.percentLeft(hoursspend, hoursmax);
+      var percentLeft = this.percentLeft(hours_spend, hours_max);
       var colors = this.getColors(percentLeft);
       var colorCards = colors.map(function (color, i) {
         var style = {
@@ -28782,7 +28812,6 @@ var Klippekort = function (_Component) {
         };
         return _react2.default.createElement(_ColorCard2.default, { key: 'colorcard-' + i, style: style });
       });
-
       return _react2.default.createElement(
         'div',
         null,
@@ -28793,17 +28822,18 @@ var Klippekort = function (_Component) {
           'Service klippekort'
         ),
         _react2.default.createElement(_UpdateForm2.default, {
-          user_id: user_id,
-          hoursspend: Number(hoursspend),
-          hoursmax: Number(hoursmax),
-          setState: this.setState
+          id: Number(id),
+          user_id: Number(user_id),
+          hours_spend: Number(hours_spend),
+          hours_max: Number(hours_max),
+          updateHours: this.updateHours.bind(this)
         }),
         colorCards,
         _react2.default.createElement(
           'p',
           { className: 'text-center', style: {} },
           'Timer tilbage: ',
-          hoursmax - hoursspend
+          hours_max - hours_spend
         )
       );
     }
@@ -28852,6 +28882,12 @@ if (document.getElementById('nyt-klippekort')) {
   var el = document.getElementById('nyt-klippekort');
   var props = Object.assign({}, el.dataset);
   _reactDom2.default.render(_react2.default.createElement(Main, props), el);
+}
+
+if (document.getElementById('vis-klippekort')) {
+  var _el = document.getElementById('vis-klippekort');
+  var _props = Object.assign({}, _el.dataset);
+  _reactDom2.default.render(_react2.default.createElement(_Klippekort2.default, _props), _el);
 }
 
 /***/ }),
@@ -28942,9 +28978,7 @@ var StoreForm = function (_Component) {
                 _state = this.state, to_user = _state.to_user, hours_spend = _state.hours_spend, hours_max = _state.hours_max;
                 responses = [200, 201];
                 _context.prev = 3;
-
-                console.log(to_user, hours_spend, hours_max);
-                _context.next = 7;
+                _context.next = 6;
                 return fetch('api/klippekort', {
                   method: 'POST',
                   headers: {
@@ -28952,35 +28986,36 @@ var StoreForm = function (_Component) {
                     'Content-Type': 'application/json'
                   },
                   body: JSON.stringify({
-                    to_user: to_user,
+                    user_id: to_user,
                     hours_spend: hours_spend,
                     hours_max: hours_max
                   })
                 });
 
-              case 7:
+              case 6:
                 response = _context.sent;
 
-                console.log(response);
 
-                if (responses.indexOf(response.status)) {
+                if (response.status === 200 || response.status === 201) {
                   window.location.replace('/klippekort');
+                } else if (response.status === 422) {
+                  alert("Noget gik galt. Har brugeren allerede et klippekort?");
                 }
-                _context.next = 15;
+                _context.next = 13;
                 break;
 
-              case 12:
-                _context.prev = 12;
+              case 10:
+                _context.prev = 10;
                 _context.t0 = _context['catch'](3);
 
                 console.log('Error: ' + _context.t0);
 
-              case 15:
+              case 13:
               case 'end':
                 return _context.stop();
             }
           }
-        }, _callee, this, [[3, 12]]);
+        }, _callee, this, [[3, 10]]);
       }));
 
       function handleSubmit(_x) {
@@ -29064,6 +29099,14 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _regenerator = __webpack_require__(188);
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+var _asyncToGenerator2 = __webpack_require__(185);
+
+var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
+
 var _defineProperty2 = __webpack_require__(96);
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
@@ -29103,8 +29146,10 @@ var UpdateForm = function (_Component) {
     var _this = (0, _possibleConstructorReturn3.default)(this, (UpdateForm.__proto__ || Object.getPrototypeOf(UpdateForm)).call(this, props));
 
     _this.state = {
-      hoursmax: false,
-      hoursspend: false
+      id: false,
+      user_id: false,
+      hours_max: false,
+      hours_spend: false
     };
 
     _this.handleChange = _this.handleChange.bind(_this);
@@ -29116,8 +29161,11 @@ var UpdateForm = function (_Component) {
     key: 'componentWillMount',
     value: function componentWillMount() {
       this.setState({
-        hoursmax: this.props.hoursmax,
-        hoursspend: this.props.hoursspend
+        id: this.props.id,
+        user_id: this.props.user_id,
+        hours_max: this.props.hours_max,
+        hours_spend: this.props.hours_spend,
+        updateHours: this.props.updateHours
       });
     }
   }, {
@@ -29127,21 +29175,63 @@ var UpdateForm = function (_Component) {
     }
   }, {
     key: 'handleSubmit',
-    value: function handleSubmit(e) {
-      e.preventDefault();
+    value: function () {
+      var _ref = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee(e) {
+        var _state, id, user_id, hours_spend, hours_max, updateHours, response;
 
-      fetch('/klippekort/' + this.props.user_id, {
-        method: 'PUT',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          hoursspend: this.state.hoursspend,
-          hoursmax: this.state.hoursmax
-        })
-      });
-    }
+        return _regenerator2.default.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                e.preventDefault();
+                _state = this.state, id = _state.id, user_id = _state.user_id, hours_spend = _state.hours_spend, hours_max = _state.hours_max, updateHours = _state.updateHours;
+                _context.prev = 2;
+                _context.next = 5;
+                return fetch('/api/klippekort/' + id, {
+                  method: 'PUT',
+                  headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({
+                    to_user: user_id,
+                    id: id,
+                    hours_spend: hours_spend,
+                    hours_max: hours_max
+                  })
+                });
+
+              case 5:
+                response = _context.sent;
+
+                if (response.status === 200) {
+                  console.log(response);
+                  updateHours(hours_max, hours_spend);
+                  // window.location.replace(`/klippekort`);
+                }
+                _context.next = 12;
+                break;
+
+              case 9:
+                _context.prev = 9;
+                _context.t0 = _context['catch'](2);
+
+                console.log('Error: ' + _context.t0);
+
+              case 12:
+              case 'end':
+                return _context.stop();
+            }
+          }
+        }, _callee, this, [[2, 9]]);
+      }));
+
+      function handleSubmit(_x) {
+        return _ref.apply(this, arguments);
+      }
+
+      return handleSubmit;
+    }()
   }, {
     key: 'render',
     value: function render() {
@@ -29156,13 +29246,13 @@ var UpdateForm = function (_Component) {
             null,
             'Antal support timer:',
             _react2.default.createElement('input', { type: 'text',
-              name: 'hoursmax',
-              value: this.state.hoursmax,
+              name: 'hours_max',
+              value: this.state.hours_max,
               onChange: this.handleChange
             }),
             _react2.default.createElement('input', { type: 'text',
-              name: 'hoursspend',
-              value: this.state.hoursspend,
+              name: 'hours_spend',
+              value: this.state.hours_spend,
               onChange: this.handleChange
             })
           ),
@@ -29175,9 +29265,11 @@ var UpdateForm = function (_Component) {
 }(_react.Component);
 
 UpdateForm.propTypes = {
-  hoursmax: _propTypes2.default.number.isRequired,
-  hoursspend: _propTypes2.default.number.isRequired,
-  setState: _propTypes2.default.func.isRequired
+  id: _propTypes2.default.number.isRequired,
+  user_id: _propTypes2.default.number.isRequired,
+  hours_max: _propTypes2.default.number.isRequired,
+  hours_spend: _propTypes2.default.number.isRequired,
+  updateHours: _propTypes2.default.func.isRequired
 };
 
 exports.default = UpdateForm;

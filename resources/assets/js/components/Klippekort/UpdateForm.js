@@ -4,9 +4,11 @@ import PropTypes from 'prop-types';
 class UpdateForm extends Component {
   constructor(props) {
     super(props);
-    this.state = { 
-      hoursmax: false,
-      hoursspend: false
+    this.state = {
+      id: false,
+      user_id: false,
+      hours_max: false,
+      hours_spend: false
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -15,8 +17,11 @@ class UpdateForm extends Component {
 
   componentWillMount() {
     this.setState({
-      hoursmax: this.props.hoursmax,
-      hoursspend: this.props.hoursspend,
+      id: this.props.id,
+      user_id: this.props.user_id,
+      hours_max: this.props.hours_max,
+      hours_spend: this.props.hours_spend,
+      updateHours: this.props.updateHours
     });
   }
 
@@ -24,20 +29,31 @@ class UpdateForm extends Component {
     this.setState({ [e.target.name]: e.target.value });
   }
 
-  handleSubmit(e) {
+  async handleSubmit(e) {
     e.preventDefault();
-
-    fetch(`/klippekort/${this.props.user_id}`, {
-      method: 'PUT',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        hoursspend: this.state.hoursspend,
-        hoursmax: this.state.hoursmax,
-      }),
-    })
+    const {id, user_id, hours_spend, hours_max, updateHours} = this.state
+    try {
+      let response = await fetch(`/api/klippekort/${id}`, {
+        method: 'PUT',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          to_user: user_id,
+          id,
+          hours_spend,
+          hours_max
+        })
+      })
+      if(response.status === 200) {
+        console.log(response);
+        updateHours(hours_max, hours_spend);
+        // window.location.replace(`/klippekort`);
+      }
+    } catch(e) {
+      console.log(`Error: ${e}`);
+    }
   }
 
   render() {
@@ -47,13 +63,13 @@ class UpdateForm extends Component {
           <label>
               Antal support timer:
               <input type="text" 
-                name="hoursmax"
-                value={this.state.hoursmax} 
+                name="hours_max"
+                value={this.state.hours_max} 
                 onChange={this.handleChange} 
               />
               <input type="text" 
-                name="hoursspend"
-                value={this.state.hoursspend} 
+                name="hours_spend"
+                value={this.state.hours_spend} 
                 onChange={this.handleChange} 
               />
           </label>
@@ -66,9 +82,11 @@ class UpdateForm extends Component {
 
 
 UpdateForm.propTypes = {
-  hoursmax: PropTypes.number.isRequired,
-  hoursspend: PropTypes.number.isRequired,
-  setState: PropTypes.func.isRequired,
+  id: PropTypes.number.isRequired,
+  user_id: PropTypes.number.isRequired,
+  hours_max: PropTypes.number.isRequired,
+  hours_spend: PropTypes.number.isRequired,
+  updateHours: PropTypes.func.isRequired,
 };
 
 export default UpdateForm;

@@ -26,7 +26,6 @@ class StoreForm extends Component {
     const responses = [200, 201];
 
     try {
-      console.log(to_user, hours_spend, hours_max);
       let response = await fetch('api/klippekort', {
         method: 'POST',
         headers: {
@@ -34,16 +33,17 @@ class StoreForm extends Component {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          to_user: to_user,
+          user_id: to_user,
           hours_spend: hours_spend,
           hours_max: hours_max
         })
       })
-      console.log(response);
 
-      if(responses.indexOf(response.status)) {
+      if(response.status === 200 || response.status === 201) {
         window.location.replace(`/klippekort`);
-      } 
+      } else if(response.status === 422) {
+        alert("Noget gik galt. Har brugeren allerede et klippekort?")
+      }
     } catch(e) {
       console.log(`Error: ${e}`);
     }

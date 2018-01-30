@@ -7,6 +7,22 @@ import UpdateForm from './UpdateForm'
 class Klippekort extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      id: false,
+      user_id: false,
+      hours_max: false,
+      hours_spend: false
+    }
+  }
+
+  componentWillMount() {
+    this.setState({
+      id: this.props.id,
+      user_id: this.props.user_id,
+      hours_max: this.props.hours_max,
+      hours_spend: this.props.hours_spend
+    })
   }
 
   percentLeft(hoursspend, hoursmax) {
@@ -33,9 +49,15 @@ class Klippekort extends Component {
     return colors;
   }
 
+
+  updateHours(hours_max, hours_spend) {
+    console.log(hours_spend, hours_max);
+    this.setState({ hours_max, hours_spend }, () => console.log(this.state));
+  }
+
   render() {
-    const { user_id, hoursspend, hoursmax } = this.props;
-    const percentLeft = this.percentLeft(hoursspend, hoursmax);
+    const { id, user_id, hours_spend, hours_max } = this.state;
+    const percentLeft = this.percentLeft(hours_spend, hours_max);
     const colors = this.getColors(percentLeft);
     const colorCards = colors.map((color, i) => {
       const style = {
@@ -46,19 +68,19 @@ class Klippekort extends Component {
       };
       return <ColorCard key={`colorcard-${i}`} style={style} />;
     });
-
     return (
       <div>
         <br />
         <h1>Service klippekort</h1>
-        <UpdateForm 
-          user_id={user_id}
-          hoursspend={Number(hoursspend)}
-          hoursmax={Number(hoursmax)} 
-          setState={this.setState} 
+        <UpdateForm
+          id={Number(id)}
+          user_id={Number(user_id)}
+          hours_spend={Number(hours_spend)}
+          hours_max={Number(hours_max)}
+          updateHours={this.updateHours.bind(this)}
         />
         {colorCards}
-        <p className="text-center" style={{}}>Timer tilbage: {hoursmax - hoursspend}</p>
+        <p className="text-center" style={{}}>Timer tilbage: {hours_max - hours_spend}</p>
       </div>
     );
   }
