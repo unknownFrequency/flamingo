@@ -3,6 +3,9 @@ composer.lock
 /node_modules
 /public/hot
 /public/storage
+public/images/
+public/photos/
+public/files
 /storage/*.key
 /vendor
 /.idea
@@ -13,4 +16,5 @@ npm-debug.log
 .env
 certbot.log
 !./vendor/tcg
+!./vendor/unisharp/laravel-filemanager/
 
