@@ -1,3 +1,4 @@
+
 <header id="top-header" class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top" >
   <div class="container">
 
@@ -95,6 +96,3 @@
     </div>
   </div>
 </header>
-
-
-</div>

@@ -87,7 +87,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 @yield('content')
 
-<script src="{{ mix('/js/app.js') }}"></script>
 <script type="text/javascript" src="{{ URL::asset('js/typed.js') }}"></script>
 <script src="{{ asset('/js/cbpFWTabs.js') }}"></script>
 <script src="{{ asset('/js/modernizr.custom.js') }}"></script>
@@ -136,5 +135,6 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 </script>
 
+<script src="{{ mix('/js/app.js') }}"></script>
 </body>
 </html>
