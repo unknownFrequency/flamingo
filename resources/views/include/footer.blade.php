@@ -37,3 +37,4 @@
         <p>© Flamingo Media - CVR: 38250639</p>
     </div>
 </footer>
+<script src="{{ mix('/js/app.js') }}"></script>

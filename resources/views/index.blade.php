@@ -198,7 +198,6 @@ document.getElementById('change').src = buttonLink;
 </div>
 
 @include('include.portfolio')
-<script src="{{ mix('/js/app.js') }}"></script>
 @include('include.footer')
 
 @endsection
