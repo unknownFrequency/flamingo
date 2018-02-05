@@ -118,11 +118,14 @@ document.addEventListener("DOMContentLoaded", function(){
 @include('include.contact_modal')
 <script>
     // Get the modal
-    var modal = document.getElementById('myModal');
-    var span = document.getElementsByClassName("close")[0];
-    $(".myBtn").on("click", function () {
+    let modal = document.getElementById('myModal');
+    let span = document.getElementsByClassName("close")[0];
+    let myBtn = document.getElementById("myBtn3");
+    console.log(myBtn);
+    // $(".myBtn").on("click", function () {
+    myBtn.onclick = function () {
       modal.style.display = "block";
-    });
+    };
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
         modal.style.display = "none";
