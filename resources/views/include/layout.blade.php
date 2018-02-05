@@ -121,8 +121,6 @@ document.addEventListener("DOMContentLoaded", function(){
     let modal = document.getElementById('myModal');
     let span = document.getElementsByClassName("close")[0];
     let myBtn = document.getElementById("myBtn3");
-    console.log(myBtn);
-    // $(".myBtn").on("click", function () {
     myBtn.onclick = function () {
       modal.style.display = "block";
     };
