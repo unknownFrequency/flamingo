@@ -1,5 +1,4 @@
 @extends('include/layout')
-
 @section('content')
 
 <div class="slider section">
@@ -33,7 +32,7 @@
             <span class="description">WordPress er perfekt til dig, som vil i gang med din første hjemmeside. WordPress er for langt de fleste utroligt let at lære, og du vil selvstændigt kunne lave smårettelser på hjemmesiden.</span>
           </div>
           <div class="price-button">
-            <button class="btn-price"><a href="/weblosninger#wordpress-link">Se fulde priser</a></button>
+            <div class="btn-price"><a href="/weblosninger#wordpress-link">Se fulde priser</a></div>
           </div>
         </div>
       </div>
@@ -47,7 +46,7 @@
             <span class="description">Vi sætter en ære i udelukkende at lave smukke hjemmesider, så vores kunder stolt kan vise den frem til deres kunder. Vi laver layoutet, som du ønsker det, og udvikler hjemmesiden med nøjagtigt det farvetema, der passer til din virksomheds visuelle identitet.</span>
           </div>
           <div class="price-button">
-            <button class="btn-price myBtn">Modtag tilbud</button>
+            <div class="btn-price myBtn">Modtag tilbud</div>
           </div>
         </div>
       </div>
@@ -60,7 +59,7 @@
             <span class="description">Forskellige programmeringssprog har forskellige fordele. Derfor mestrer vi hos Flamingo Media flere teknologier, så din idé kan blive til virkelighed uden at du skal begrænses af temaer, plugins osv. </span>
           </div>
           <div class="price-button">
-            <button class="btn-price myBtn">Modtag tilbud</button>
+            <div class="btn-price myBtn">Modtag tilbud</div>
           </div>
         </div>
       </div>
@@ -88,7 +87,7 @@
           </span>
         </div>
         <div class="price-button">
-          <button class="btn-price"><a href="/webshops#magento-link">Se fulde priser</a></button>
+          <div class="btn-price"><a href="/webshops#magento-link">Se fulde priser</a></div>
         </div>
       </div>
     </div>
@@ -101,7 +100,7 @@
           <span class="description">Forskelligt fra de andre CMS-systemer skal der med Shopify betales et månedligt beløb for at bruge deres framework. Der er uendelige design – og opbygningsmuligheder, hvilket gør det perfekt til dig, som vil have din helt egen unikke webshop, og er villig til at betale mere for det.</span>
         </div>
         <div class="price-button">
-          <button class="btn-price"><a href="/webshops#shopify-link">Se fulde priser</a></button>
+          <div class="btn-price"><a href="/webshops#shopify-link">Se fulde priser</a></div>
         </div>
       </div>
     </div>
@@ -114,7 +113,7 @@
           <span class="description">Ved WooCommerce begiver vi os ud i den mere seriøse hjemmeside til iværksætteren med drømmen om en webshop. Ligesom WordPress er det utroligt let for dig at redigere i din hjemmeside, tilføje og redigere produkter med de nødvendige specifikationer, der passer til din webshop.</span>
         </div>
         <div class="price-button">
-          <button class="btn-price"><a href="/webshops#woo-link">Se fulde priser</a></button>
+          <div class="btn-price"><a href="/webshops#woo-link">Se fulde priser</a></div>
         </div>
       </div>
     </div>
@@ -133,9 +132,6 @@
 
   <!-- Modal content -->
   <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-    </div>
     <div class="modal-body">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:20px;">
@@ -165,9 +161,6 @@
 <div id="myModal2" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">&times;</span>
-    </div>
     <div class="modal-body">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding:20px;">
@@ -194,4 +187,5 @@
     </div>
   </div>
 </div>
+
 @endsection
